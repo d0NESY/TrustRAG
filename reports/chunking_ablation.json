@@ -1,0 +1,112 @@
+{
+  "split": "dev",
+  "objective": "MRR, then nDCG@5 and Hit@5; exact ties prefer recursive, fixed, semantic",
+  "selected": "recursive",
+  "results": {
+    "fixed": {
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "mrr": 1.0,
+      "ndcg@5": 1.0,
+      "answerable_count": 30,
+      "total_count": 40,
+      "retrieval_latency_ms": {
+        "mean_ms": 225.89209499992648,
+        "p50_ms": 234.3508500007374,
+        "p95_ms": 254.4857250009045,
+        "count": 40
+      },
+      "reranking_latency_ms": {
+        "mean_ms": 0.0,
+        "p50_ms": 0.0,
+        "p95_ms": 0.0,
+        "count": 40
+      },
+      "total_latency_ms": {
+        "mean_ms": 226.02897999986453,
+        "p50_ms": 234.4698500010054,
+        "p95_ms": 254.5926150000014,
+        "count": 40
+      },
+      "definition": "Binary chunk relevance; answerable queries only for ranking; unique ranked IDs; latency includes all queries. MRR is truncated at saved ranking depth.",
+      "index_id": "dc453363b3c8e4969d91eb9d",
+      "chunk_count": 120
+    },
+    "recursive": {
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "mrr": 1.0,
+      "ndcg@5": 1.0,
+      "answerable_count": 30,
+      "total_count": 40,
+      "retrieval_latency_ms": {
+        "mean_ms": 219.1904350000641,
+        "p50_ms": 218.95564999977069,
+        "p95_ms": 244.19398999971236,
+        "count": 40
+      },
+      "reranking_latency_ms": {
+        "mean_ms": 0.0,
+        "p50_ms": 0.0,
+        "p95_ms": 0.0,
+        "count": 40
+      },
+      "total_latency_ms": {
+        "mean_ms": 219.32165749999513,
+        "p50_ms": 219.08294999957434,
+        "p95_ms": 244.30869999987408,
+        "count": 40
+      },
+      "definition": "Binary chunk relevance; answerable queries only for ranking; unique ranked IDs; latency includes all queries. MRR is truncated at saved ranking depth.",
+      "index_id": "4d7f831de112c20aac2f27d1",
+      "chunk_count": 120
+    },
+    "semantic_recursive": {
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "mrr": 1.0,
+      "ndcg@5": 1.0,
+      "answerable_count": 30,
+      "total_count": 40,
+      "retrieval_latency_ms": {
+        "mean_ms": 216.56248499994035,
+        "p50_ms": 220.51739999915299,
+        "p95_ms": 241.36966999949436,
+        "count": 40
+      },
+      "reranking_latency_ms": {
+        "mean_ms": 0.0,
+        "p50_ms": 0.0,
+        "p95_ms": 0.0,
+        "count": 40
+      },
+      "total_latency_ms": {
+        "mean_ms": 216.68157500002962,
+        "p50_ms": 220.62170000026526,
+        "p95_ms": 241.47651499934,
+        "count": 40
+      },
+      "definition": "Binary chunk relevance; answerable queries only for ranking; unique ranked IDs; latency includes all queries. MRR is truncated at saved ranking depth.",
+      "index_id": "be48d10ccd5e6a890ae26dcc",
+      "chunk_count": 146
+    }
+  }
+}

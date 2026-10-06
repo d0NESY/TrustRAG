@@ -1,0 +1,182 @@
+{
+  "split": "dev",
+  "objective": "MRR, nDCG@5, Hit@5; exact ties prefer default 20/60, then smaller candidates",
+  "selected": "candidates_10_rrf_60",
+  "results": {
+    "candidates_20_rrf_60": {
+      "recall@1": 0.9666666666666667,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "hit@1": 0.9666666666666667,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "mrr": 0.9833333333333333,
+      "ndcg@5": 0.9876976584523819,
+      "answerable_count": 30,
+      "total_count": 40,
+      "retrieval_latency_ms": {
+        "mean_ms": 80.04678250003963,
+        "p50_ms": 76.42175000000861,
+        "p95_ms": 94.82740500061482,
+        "count": 40
+      },
+      "reranking_latency_ms": {
+        "mean_ms": 380.7207974999983,
+        "p50_ms": 381.76560000010795,
+        "p95_ms": 399.8322349998488,
+        "count": 40
+      },
+      "total_latency_ms": {
+        "mean_ms": 460.7702875000541,
+        "p50_ms": 460.3071000001364,
+        "p95_ms": 491.37128000111255,
+        "count": 40
+      },
+      "definition": "Binary chunk relevance; answerable queries only for ranking; unique ranked IDs; latency includes all queries. MRR is truncated at saved ranking depth.",
+      "candidates": 20,
+      "rrf_k": 60
+    },
+    "candidates_10_rrf_60": {
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "mrr": 1.0,
+      "ndcg@5": 1.0,
+      "answerable_count": 30,
+      "total_count": 40,
+      "retrieval_latency_ms": {
+        "mean_ms": 75.2528575001179,
+        "p50_ms": 73.4904999999344,
+        "p95_ms": 92.06225999996603,
+        "count": 40
+      },
+      "reranking_latency_ms": {
+        "mean_ms": 167.26709999988998,
+        "p50_ms": 165.55224999956408,
+        "p95_ms": 181.64182500031527,
+        "count": 40
+      },
+      "total_latency_ms": {
+        "mean_ms": 242.52270749998388,
+        "p50_ms": 242.0781500004523,
+        "p95_ms": 273.185879999437,
+        "count": 40
+      },
+      "definition": "Binary chunk relevance; answerable queries only for ranking; unique ranked IDs; latency includes all queries. MRR is truncated at saved ranking depth.",
+      "candidates": 10,
+      "rrf_k": 60
+    },
+    "candidates_40_rrf_60": {
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "mrr": 1.0,
+      "ndcg@5": 1.0,
+      "answerable_count": 30,
+      "total_count": 40,
+      "retrieval_latency_ms": {
+        "mean_ms": 77.45758249993742,
+        "p50_ms": 73.68255000073987,
+        "p95_ms": 94.08370999972247,
+        "count": 40
+      },
+      "reranking_latency_ms": {
+        "mean_ms": 779.9190449999514,
+        "p50_ms": 782.2323000009419,
+        "p95_ms": 801.4168149990837,
+        "count": 40
+      },
+      "total_latency_ms": {
+        "mean_ms": 857.3791899999833,
+        "p50_ms": 859.341399999721,
+        "p95_ms": 889.3572200003291,
+        "count": 40
+      },
+      "definition": "Binary chunk relevance; answerable queries only for ranking; unique ranked IDs; latency includes all queries. MRR is truncated at saved ranking depth.",
+      "candidates": 40,
+      "rrf_k": 60
+    },
+    "candidates_20_rrf_10": {
+      "recall@1": 0.9666666666666667,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "hit@1": 0.9666666666666667,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "mrr": 0.9833333333333333,
+      "ndcg@5": 0.9876976584523819,
+      "answerable_count": 30,
+      "total_count": 40,
+      "retrieval_latency_ms": {
+        "mean_ms": 79.68884250017254,
+        "p50_ms": 75.66535000023578,
+        "p95_ms": 97.48861000043689,
+        "count": 40
+      },
+      "reranking_latency_ms": {
+        "mean_ms": 380.4017399997974,
+        "p50_ms": 378.5079499994026,
+        "p95_ms": 421.9494549995033,
+        "count": 40
+      },
+      "total_latency_ms": {
+        "mean_ms": 460.09347750004963,
+        "p50_ms": 452.7945500003625,
+        "p95_ms": 510.9225150002203,
+        "count": 40
+      },
+      "definition": "Binary chunk relevance; answerable queries only for ranking; unique ranked IDs; latency includes all queries. MRR is truncated at saved ranking depth.",
+      "candidates": 20,
+      "rrf_k": 10
+    },
+    "candidates_20_rrf_100": {
+      "recall@1": 0.9666666666666667,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "hit@1": 0.9666666666666667,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "mrr": 0.9833333333333333,
+      "ndcg@5": 0.9876976584523819,
+      "answerable_count": 30,
+      "total_count": 40,
+      "retrieval_latency_ms": {
+        "mean_ms": 80.15524999982517,
+        "p50_ms": 77.09094999881927,
+        "p95_ms": 103.14572500037683,
+        "count": 40
+      },
+      "reranking_latency_ms": {
+        "mean_ms": 383.02175999979227,
+        "p50_ms": 380.4927500004851,
+        "p95_ms": 420.7208750002792,
+        "count": 40
+      },
+      "total_latency_ms": {
+        "mean_ms": 463.17969749984513,
+        "p50_ms": 457.85199999954784,
+        "p95_ms": 501.0060599996905,
+        "count": 40
+      },
+      "definition": "Binary chunk relevance; answerable queries only for ranking; unique ranked IDs; latency includes all queries. MRR is truncated at saved ranking depth.",
+      "candidates": 20,
+      "rrf_k": 100
+    }
+  }
+}

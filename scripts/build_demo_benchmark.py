@@ -173,7 +173,7 @@ UNANSWERABLE = {
 
 def write_jsonl(path, rows):
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text("".join(json.dumps(row, ensure_ascii=False) + "\n" for row in rows), encoding="utf-8")
+    path.write_text("".join(json.dumps(row, ensure_ascii=False) + "\n" for row in rows), encoding="utf-8", newline="\n")
 
 
 def main():
@@ -222,7 +222,7 @@ def main():
     write_jsonl(source / "facts.jsonl", facts)
     files = sorted(documents.glob("*.pdf")) + [benchmark / "dev.jsonl", benchmark / "test.jsonl", source / "facts.jsonl"]
     manifest = {"version": "northstar-v1", "seed": 42, "synthetic": True, "gold_provenance": "facts authored alongside fictional policies; no LLM-generated gold", "answerable": 120, "unanswerable": 40, "dev": {"answerable": 30, "unanswerable": 10}, "test": {"answerable": 90, "unanswerable": 30}, "files": {str(file.relative_to(ROOT)).replace('\\', '/'): hashlib.sha256(file.read_bytes()).hexdigest() for file in files}}
-    (benchmark / "manifest.json").write_text(json.dumps(manifest, indent=2), encoding="utf-8")
+    (benchmark / "manifest.json").write_text(json.dumps(manifest, indent=2), encoding="utf-8", newline="\n")
     print(json.dumps({"documents": 10, "pages": 120, "dev": len(dev), "test": len(test), "manifest": str(benchmark / 'manifest.json')}))
 
 

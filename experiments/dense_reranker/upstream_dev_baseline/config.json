@@ -1,0 +1,18 @@
+{
+  "name": "dense_reranker",
+  "source_commit": "5af7b79162329fa0b725b39d1aeeea7eb1e4428b",
+  "git_commit": "affe772140654638757310c6baea40efba650348",
+  "timestamp": "2026-10-06T16:05:16.183451+08:00",
+  "split": "dev",
+  "embedding_model": "BAAI/bge-base-en-v1.5",
+  "reranker_model": "ms-marco-MiniLM-L-12-v2",
+  "chunking": "original whole-document semantic + recursive; 2048/128",
+  "dense_top_k": 5,
+  "final_top_k": 3,
+  "ingestion_ms": null,
+  "chunk_count": 105,
+  "corpus_version": "northstar-v1",
+  "benchmark_sha256": "a135712510252dba1bc677fa9ad4f59a9d18ba70b658544ebb195fcc955ba585",
+  "llm": null,
+  "generation": "not run in this retrieval-only original baseline"
+}

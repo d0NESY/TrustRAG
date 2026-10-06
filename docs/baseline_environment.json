@@ -1,0 +1,44 @@
+{
+  "recorded_at": "2026-10-06T15:50:22.075897+08:00",
+  "python": "3.12.7",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU, 8188 MiB",
+  "ollama_version": "0.35.1",
+  "llm": {
+    "name": "gemma2:9b",
+    "model": "gemma2:9b",
+    "modified_at": "2026-10-06T15:45:15.5726443+08:00",
+    "size": 5443152417,
+    "digest": "ff02c3702f322b9e075e9568332d96c0a7028002f1a5a056e0a6784320a4db0b",
+    "details": {
+      "parent_model": "",
+      "format": "gguf",
+      "family": "gemma2",
+      "families": [
+        "gemma2"
+      ],
+      "parameter_size": "9.2B",
+      "quantization_level": "Q4_0",
+      "context_length": 8192,
+      "embedding_length": 3584
+    },
+    "capabilities": [
+      "completion"
+    ]
+  },
+  "dependencies": {
+    "langchain": "0.2.6",
+    "langchain-core": "0.2.11",
+    "langchain-community": "0.2.6",
+    "langchain-experimental": "0.0.62",
+    "langchain-qdrant": "0.1.1",
+    "langchain-groq": "0.1.6",
+    "streamlit": "1.36.0",
+    "qdrant-client": "1.10.1",
+    "fastembed": "0.3.3",
+    "flashrank": "0.2.8",
+    "pypdfium2": "4.30.0",
+    "pystemmer": "2.2.0.3"
+  },
+  "phase_0_passed": true
+}

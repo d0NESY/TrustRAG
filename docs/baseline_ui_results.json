@@ -1,0 +1,23 @@
+[
+  {
+    "kind": "explicit",
+    "question": "How many working days of paid sick leave do employees receive per year?",
+    "ui_answer_with_sources": "Employees receive 10 working days of paid sick leave per calendar year.\n\nSource #1",
+    "latency_seconds": 4.839345100001083,
+    "screenshot": "question_1.png"
+  },
+  {
+    "kind": "semantic",
+    "question": "If I catch the flu and cannot work, how many paid days can I take off?",
+    "ui_answer_with_sources": "You can take up to 10 working days of paid sick leave.\n\nSource #1",
+    "latency_seconds": 6.647526500000822,
+    "screenshot": "question_2.png"
+  },
+  {
+    "kind": "unanswerable",
+    "question": "What is the company's 2028 IPO valuation target?",
+    "ui_answer_with_sources": "This document does not include company valuation, IPO plans, or future stock prices.\n\nSource #1",
+    "latency_seconds": 4.298587699999189,
+    "screenshot": "question_3.png"
+  }
+]

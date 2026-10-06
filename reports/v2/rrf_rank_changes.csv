@@ -1,0 +1,181 @@
+﻿split,id,category,question,dense_candidate_hit,bm25_candidate_hit,hybrid_candidate_hit,union_hit,rrf_dropped_union_gold,hybrid_rescue_vs_dense,hybrid_loss_vs_dense,gold_rank_before,gold_rank_after,censored_rank_before,censored_rank_after,rank_delta,classification
+dev,v2_privacy_requests_cross_document,cross_document,Which schedule determines retention of the identity-check evidence after case closure?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+dev,v2_router_replacement_exact_term,exact_term,Which condition is signalled by NET-904 on the replacement console?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+dev,v2_audit_evidence_hard_negative,hard_negative,How do review rights differ for an external auditor and an internal control tester?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+dev,v2_wallet_disputes_version_conflict,version_conflict,How long is the customer evidence window under the active wallet procedure?,True,True,True,True,False,False,False,2,2,2,2,0,Unchanged
+dev,v2_accessible_events_exact_term,exact_term,Which adjustment request is registered as ACC-893?,True,True,True,True,False,False,False,3,1,3,1,2,Improved
+dev,v2_software_licensing_numeric_date,numeric_date,How many unused days cause an analyst licence to enter reclaim review?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+dev,v2_software_licensing_semantic,semantic,A departing analyst frees a software licence; may a replacement use the old person's sign-in instead of receiving a fresh assignment?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+dev,v2_router_replacement_hard_negative,hard_negative,Are branch routers and temporary event routers checked by the same approver?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+dev,v2_clinic_booking_version_conflict,version_conflict,How many days ahead must a routine hearing test now be arranged?,True,True,True,True,False,False,False,3,2,3,2,1,Improved
+dev,v2_software_licensing_hard_negative,hard_negative,Do concurrent lab seats and named analyst seats allow the same number of simultaneous devices?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+dev,v2_privacy_requests_hard_negative,hard_negative,Are identity checks waived for a current employee but retained for a former employee?,True,True,True,True,False,False,False,4,1,4,1,3,Improved
+dev,v2_router_replacement_semantic,semantic,A replacement box has arrived without a verified configuration; may the installer connect it to the live circuit just to test it?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+dev,v2_support_handover_hard_negative,hard_negative,Do premium and standard cases have the same handover acknowledgement deadline?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+dev,v2_support_handover_version_conflict,version_conflict,What is the premium acknowledgement deadline in the current handover guide?,True,True,True,True,False,False,False,3,3,3,3,0,Unchanged
+dev,v2_wallet_disputes_cross_document,cross_document,Which appendix decides the fee for a merchant evidence retrieval rather than the case-handling manual?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+dev,v2_audit_evidence_version_conflict,version_conflict,How long is the standard evidence access extension under the current audit procedure?,True,True,True,True,False,False,False,3,2,3,2,1,Improved
+dev,v2_water_sampling_exact_term,exact_term,Which test panel is requested by LAB-357?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+dev,v2_water_sampling_numeric_date,numeric_date,At what temperature should the microbiological sample be transported?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+dev,v2_privileged_access_numeric_date,numeric_date,How many days can an overdue owner attestation remain unresolved before access suspension?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+dev,v2_clinic_booking_cross_document,cross_document,Which schedule tells the clinic how long to keep a signed visit-consent form?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+dev,v2_clinic_booking_hard_negative,hard_negative,Is the lead time for a hearing screening identical to a return-to-work review?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+dev,v2_clinic_booking_exact_term,exact_term,Which visit is booked with MED-824?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+dev,v2_accessible_events_cross_document,cross_document,Where is the interpreter booking cancellation fee listed?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+dev,v2_router_replacement_version_conflict,version_conflict,How long should a replaced-router diagnostic image be retained under the live network procedure?,True,True,True,True,False,False,False,3,3,3,3,0,Unchanged
+dev,v2_wallet_disputes_hard_negative,hard_negative,"Which review deadline applies to a duplicate capture, not a refund-status enquiry?",True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+dev,v2_router_replacement_numeric_date,numeric_date,What is the retention window for the replaced router's diagnostic image?,True,True,True,True,False,False,False,2,1,2,1,1,Improved
+dev,v2_clinic_booking_numeric_date,numeric_date,When must a worker cancel a routine slot to avoid recording a late cancellation?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+dev,v2_accessible_events_hard_negative,hard_negative,Are captions for an external public event arranged by the same team as captions for an internal training session?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+dev,v2_privacy_requests_numeric_date,numeric_date,How many working days does intake have to acknowledge a verified request?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+dev,v2_audit_evidence_semantic,semantic,An auditor asks for a spreadsheet over ordinary email; how should its owner share the evidence without sending an uncontrolled attachment?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+dev,v2_support_handover_cross_document,cross_document,Which schedule decides when a handover transcript can be erased?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+dev,v2_privileged_access_cross_document,cross_document,Which schedule sets the archive period for privileged-access attestations?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+dev,v2_support_handover_numeric_date,numeric_date,How many unsuccessful owner contacts are allowed before the handover is escalated?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+dev,v2_privacy_requests_version_conflict,version_conflict,What acknowledgement period does the active privacy intake standard use?,True,True,True,True,False,False,False,2,2,2,2,0,Unchanged
+dev,v2_privileged_access_hard_negative,hard_negative,Are emergency break-glass accounts reviewed on the same cadence as routine admin accounts?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+dev,v2_audit_evidence_numeric_date,numeric_date,How long can an evidence-room access extension last?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+dev,v2_water_sampling_version_conflict,version_conflict,How often is the water loop sampled under the active utilities plan?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+dev,v2_software_licensing_version_conflict,version_conflict,How long is the reclaim inactivity window in the current seat policy?,True,True,True,True,False,False,False,2,2,2,2,0,Unchanged
+dev,v2_software_licensing_exact_term,exact_term,Which entitlement is attached to SKU NOVA-458?,True,True,True,True,False,False,False,2,2,2,2,0,Unchanged
+dev,v2_privacy_requests_exact_term,exact_term,Which request type uses DSR-671?,True,True,True,True,False,False,False,2,1,2,1,1,Improved
+dev,v2_wallet_disputes_numeric_date,numeric_date,How many calendar days does a customer have to submit duplicate-capture evidence?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+dev,v2_support_handover_semantic,semantic,A support shift is ending with a customer still waiting; what must happen so the case is not abandoned overnight?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+dev,v2_water_sampling_hard_negative,hard_negative,Which holding time applies to a microbiological sample rather than a conductivity sample?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+dev,v2_water_sampling_cross_document,cross_document,"For a failed release sample, which reference specifies the container-disposal route?",True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+dev,v2_wallet_disputes_exact_term,exact_term,What does PAY-814 classify in the dispute queue?,True,True,True,True,False,False,False,2,1,2,1,1,Improved
+dev,v2_privileged_access_semantic,semantic,Who must confirm that an administrator still needs elevated rights when their manager is away?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+dev,v2_router_replacement_cross_document,cross_document,Which appendix defines the courier insurance limit for a replacement router?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+dev,v2_privileged_access_version_conflict,version_conflict,What review cadence is in force for emergency break-glass credentials?,True,True,True,True,False,False,False,3,1,3,1,2,Improved
+dev,v2_privacy_requests_semantic,semantic,Someone asks for personal records from an address the company has never seen; what must be established before records are sent?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+dev,v2_audit_evidence_exact_term,exact_term,What is approved on AUD-246?,True,True,True,True,False,False,False,2,1,2,1,1,Improved
+dev,v2_wallet_disputes_semantic,semantic,A customer says a wallet purchase is unfamiliar; what should the operator preserve before changing the account?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+dev,v2_software_licensing_cross_document,cross_document,Which document specifies the currency on a NOVA renewal invoice?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+dev,v2_support_handover_exact_term,exact_term,Which unresolved state is tracked with SUP-925?,True,True,True,True,False,False,False,10,2,10,2,8,Improved
+dev,v2_water_sampling_semantic,semantic,A bottle has reached the lab with no reliable trail of who handled it; may the result be used to release a production batch?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+dev,v2_accessible_events_numeric_date,numeric_date,How many working days before a public event should a live-captioning request be received?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+dev,v2_clinic_booking_semantic,semantic,Someone feels unwell during a shift and cannot wait for next month's appointment; where should the booking request go?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+dev,v2_audit_evidence_cross_document,cross_document,Which document determines retention of a signed management response to an audit finding?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+dev,v2_accessible_events_version_conflict,version_conflict,Which captioning notice period is specified by the current accessible-events policy?,True,True,True,True,False,False,False,3,2,3,2,1,Improved
+dev,v2_privileged_access_exact_term,exact_term,What evidence is requested by CTRL-468?,True,True,True,True,False,False,False,4,1,4,1,3,Improved
+dev,v2_accessible_events_semantic,semantic,"If a participant cannot use the printed agenda, who should arrange an alternative rather than asking the participant to improvise?",True,True,True,True,False,False,False,2,1,2,1,1,Improved
+test,v2_backup_restore_semantic,semantic,"After an operator accidentally removes a tenant folder, who is allowed to put the saved copy back?",True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_research_data_numeric_date,numeric_date,How long may a collaborator retain a time-limited analysis extract after issue?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_incident_paging_cross_document,cross_document,Which record defines the recovery target after acknowledgement: paging instructions or the service restoration appendix?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_incident_paging_hard_negative,hard_negative,"How quickly must the team acknowledge a live production P1, rather than a rehearsal P1?",True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_parental_requests_hard_negative,hard_negative,"Which paid allowance belongs to an adoption placement, not to a birth-partner case?",True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_warehouse_spills_version_conflict,version_conflict,How wide should the solvent cordon be under the operative spill procedure?,True,True,True,True,False,False,False,2,2,2,2,0,Unchanged
+test,v2_rail_booking_cross_document,cross_document,Which guide supplies the reimbursement deadline for a rail receipt?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_backup_restore_version_conflict,version_conflict,What retention applies to tenant snapshots under today's recovery schedule?,True,True,True,True,False,False,False,3,2,3,2,1,Improved
+test,v2_laser_training_hard_negative,hard_negative,Is observation-only access sufficient for a technician who aligns the beam?,True,True,True,True,False,False,False,2,1,2,1,1,Improved
+test,v2_customs_returns_version_conflict,version_conflict,What broker lead time is required by the current return shipping instruction?,True,True,True,True,False,False,False,2,2,2,2,0,Unchanged
+test,v2_hotel_travel_exact_term,exact_term,What request is routed through TRV-406 when the conference hotel exceeds the normal cap?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_invoice_controls_numeric_date,numeric_date,What invoice variance can be cleared without a supervisor if all quantity checks pass?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_retail_warranty_numeric_date,numeric_date,How long can the store hold a cable during warranty inspection before giving the customer an update?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_warehouse_spills_numeric_date,numeric_date,Within how many minutes must the shift safety lead receive the spill notification?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_device_exit_version_conflict,version_conflict,"Under the current equipment recovery rule, how many days can the custodian keep a returned disk before erasure?",True,True,True,True,False,False,False,2,2,2,2,0,Unchanged
+test,v2_customs_returns_numeric_date,numeric_date,How early must the broker receive the repair-return evidence before collection?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_supplier_quotes_semantic,semantic,"Before buying from a new seller, what independent check prevents the request owner from choosing their own preferred bid?",True,True,True,True,False,False,False,5,1,5,1,4,Improved
+test,v2_hotel_travel_hard_negative,hard_negative,"Which nightly ceiling applies to a domestic employee room, as opposed to a visiting consultant's room?",True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_parental_requests_semantic,semantic,"When a new parent cannot predict the exact delivery date, what can they lodge without waiting for confirmation?",True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_supplier_quotes_exact_term,exact_term,What does RFQ-714 initiate in the sourcing workflow?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_visitor_facilities_hard_negative,hard_negative,Do courier drivers need the same building access as scheduled meeting visitors?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_deployment_windows_cross_document,cross_document,Which runbook owns the notification interval while a rollback is underway?,True,True,True,True,False,False,False,2,1,2,1,1,Improved
+test,v2_device_exit_cross_document,cross_document,A courier label is needed for a home-based leaver; should the exit checklist or the carrier annex determine the pickup charge?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_access_keys_version_conflict,version_conflict,What rotation interval is mandated by the active API credential standard?,True,True,True,True,False,False,False,3,2,3,2,1,Improved
+test,v2_volunteer_time_exact_term,exact_term,Which activity can be requested through VOL-125?,True,True,True,True,False,False,False,4,1,4,1,3,Improved
+test,v2_field_repairs_semantic,semantic,A technician arrives to find the site unattended; can they bypass the customer's gate to meet the repair target?,True,True,True,True,False,False,False,7,2,7,2,5,Improved
+test,v2_retail_warranty_exact_term,exact_term,What fault category belongs to RET-367?,True,True,True,True,False,False,False,1,2,1,2,-1,Degraded
+test,v2_device_exit_hard_negative,hard_negative,Does a fixed-term contractor get the same return window as a permanent employee?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_factory_inspection_exact_term,exact_term,What condition does QC-793 flag at incoming inspection?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_factory_inspection_semantic,semantic,A delivery looks usable but the lot papers are missing; can the warehouse put its components onto the line?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_supplier_quotes_cross_document,cross_document,Which appendix defines how long sealed bids remain usable after opening?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_volunteer_time_cross_document,cross_document,Which annex determines the mileage payment for an approved mentoring visit?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_field_repairs_version_conflict,version_conflict,What removed-part holding period is in force for current seal repairs?,True,True,True,True,False,False,False,3,3,3,3,0,Unchanged
+test,v2_field_repairs_cross_document,cross_document,Which document states the customer's charge for a cancelled escorted visit?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_hotel_travel_cross_document,cross_document,"For a hotel invoice addressed to a guest-rate account, where is the settlement currency specified?",True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_backup_restore_cross_document,cross_document,"For a regional restore, which document states the network-transfer ceiling?",True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_hotel_travel_version_conflict,version_conflict,What is the current advance-booking deadline for an overnight itinerary?,True,False,True,True,False,False,False,3,7,3,7,-4,Degraded
+test,v2_parental_requests_numeric_date,numeric_date,How far before the proposed start should a confirmed adoption request reach People Operations?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_access_keys_numeric_date,numeric_date,How many active production credentials may a single integration retain during a rollover?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_invoice_controls_cross_document,cross_document,Which reference supplies the conversion basis for a foreign service invoice?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_hotel_travel_semantic,semantic,"If work keeps me away overnight, which proof shows that the room bill was actually settled?",True,True,True,True,False,False,False,4,1,4,1,3,Improved
+test,v2_backup_restore_hard_negative,hard_negative,Are tenant data snapshots kept for the same period as synthetic drill snapshots?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_volunteer_time_numeric_date,numeric_date,How many calendar days ahead should a school mentoring absence be requested?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_warehouse_spills_exact_term,exact_term,Which event must be entered on SAFE-631?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_invoice_controls_exact_term,exact_term,Which mismatch is identified by FIN-682?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_access_keys_cross_document,cross_document,Which handbook determines the retention of an emergency revocation audit entry?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_deployment_windows_version_conflict,version_conflict,What is the current weekday deployment slot?,True,True,True,True,False,False,False,2,2,2,2,0,Unchanged
+test,v2_invoice_controls_version_conflict,version_conflict,Which term currently applies to domestic goods settlement?,True,True,True,True,False,False,False,2,2,2,2,0,Unchanged
+test,v2_device_exit_numeric_date,numeric_date,What is the last day an exit recovery request can reach IT after the June cutover?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_deployment_windows_numeric_date,numeric_date,How long before a routine live deployment must the rollback package be signed?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_field_repairs_exact_term,exact_term,What component is authorised by kit code FLD-782?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_volunteer_time_version_conflict,version_conflict,What paid annual volunteering allowance is current for permanent staff?,True,True,True,True,False,False,False,3,2,3,2,1,Improved
+test,v2_hotel_travel_numeric_date,numeric_date,How much can the travel desk reimburse for breakfast when it is excluded from the room package?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_research_data_semantic,semantic,"If a collaborator asks for participant files beyond the approved study purpose, what must happen before the files leave the team?",True,True,True,True,False,False,False,2,1,2,1,1,Improved
+test,v2_customs_returns_cross_document,cross_document,Which appendix sets the courier surcharge for customs-document correction?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_access_keys_semantic,semantic,An integration token may have leaked into a public issue; what should happen before anyone starts investigating logs?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_invoice_controls_hard_negative,hard_negative,Do domestic goods invoices follow the same payment term as international service invoices?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_research_data_cross_document,cross_document,Which annex defines the storage location for the reidentification key?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_warehouse_spills_hard_negative,hard_negative,"What cordon radius is required for a solvent release, compared with a water leak?",True,True,True,True,False,False,False,2,1,2,1,1,Improved
+test,v2_rail_booking_semantic,semantic,"When an employee's trip moves to a later day, what should be checked before they discard the existing ticket?",True,True,True,True,False,False,False,2,1,2,1,1,Improved
+test,v2_workspace_access_semantic,semantic,A colleague arrives without a desk reservation; what must they do before taking a vacant station?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_incident_paging_exact_term,exact_term,"When the alert carries code PAG-083, what must the operator verify first?",True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_rail_booking_exact_term,exact_term,What fare condition belongs to RAIL-236?,True,True,True,True,False,False,False,3,1,3,1,2,Improved
+test,v2_rail_booking_version_conflict,version_conflict,How soon before departure should a rail exchange be requested under the latest travel rule?,True,True,True,True,False,False,False,2,1,2,1,1,Improved
+test,v2_volunteer_time_hard_negative,hard_negative,Do permanent staff and agency workers receive an identical paid volunteering allowance?,True,True,True,True,False,False,False,2,1,2,1,1,Improved
+test,v2_retail_warranty_version_conflict,version_conflict,What inspection update deadline applies under the active accessory service policy?,True,True,True,True,False,False,False,2,2,2,2,0,Unchanged
+test,v2_customs_returns_exact_term,exact_term,What is declared on CUS-569?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_supplier_quotes_version_conflict,version_conflict,How many equipment bids does the current sourcing standard demand?,True,True,True,True,False,False,False,3,4,3,4,-1,Degraded
+test,v2_laser_training_semantic,semantic,Can a new technician work alone beside an active beam after finishing the online course?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_workspace_access_version_conflict,version_conflict,How many recurring desk bookings per week are allowed by the current workspace rule?,True,True,True,True,False,False,False,2,2,2,2,0,Unchanged
+test,v2_visitor_facilities_cross_document,cross_document,Which schedule governs retention of the visitor sign-in log?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_incident_paging_semantic,semantic,Who should be awakened when a customer-facing service disappears outside office hours?,True,True,True,True,False,False,False,3,1,3,1,2,Improved
+test,v2_workspace_access_exact_term,exact_term,What permission is issued through FAC-146?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_field_repairs_numeric_date,numeric_date,How long after a repair must the technician retain the removed seal before disposal?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_workspace_access_cross_document,cross_document,Where is the fee for an after-hours replacement access card defined?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_rail_booking_hard_negative,hard_negative,May a trainee book the same carriage as an executive travelling on client business?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_laser_training_version_conflict,version_conflict,What renewal period applies to practical laser clearance today?,True,True,True,True,False,False,False,3,3,3,3,0,Unchanged
+test,v2_parental_requests_exact_term,exact_term,What kind of leave case enters the PAR-935 route?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_rail_booking_numeric_date,numeric_date,What amount can be approved for a reserved seat separately from the rail fare?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_supplier_quotes_hard_negative,hard_negative,Does a one-off equipment purchase need as many bids as an already-approved renewal?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_workspace_access_numeric_date,numeric_date,How long is a reserved desk held when the person has not checked in?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_customs_returns_hard_negative,hard_negative,Is a repaired return valued like a replacement item that never left the country?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_laser_training_numeric_date,numeric_date,For how many months does a passed practical clearance remain valid?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_access_keys_hard_negative,hard_negative,Are production service keys rotated as often as disposable sandbox tokens?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_retail_warranty_hard_negative,hard_negative,Is the return route for a defective cable the same as the route for an unwanted working cable?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_visitor_facilities_semantic,semantic,A visitor is waiting while their host is elsewhere; what prevents reception from letting them wander to find the meeting room?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_factory_inspection_cross_document,cross_document,Where is the rule for charging the supplier after a rejected lot stated?,True,True,True,True,False,False,False,7,1,7,1,6,Improved
+test,v2_retail_warranty_cross_document,cross_document,Where is the refundable delivery charge for a confirmed defect specified?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_workspace_access_hard_negative,hard_negative,Do hosted guests and staff have the same unaccompanied entry rights?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_parental_requests_cross_document,cross_document,"For an adoption case, which separate document determines the evidence retention period?",True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_research_data_hard_negative,hard_negative,May pseudonymised extracts be shared as freely as aggregate publication tables?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_backup_restore_numeric_date,numeric_date,What is the allowable lag between successful application backups?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_parental_requests_version_conflict,version_conflict,What is the currently approved paid adoption allowance?,True,True,True,True,False,False,False,3,3,3,3,0,Unchanged
+test,v2_volunteer_time_semantic,semantic,"If staff want to help a charity during a scheduled shift, what turns the absence into approved community service rather than personal leave?",True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_visitor_facilities_exact_term,exact_term,What visitor permission is attached to VIS-478?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_factory_inspection_hard_negative,hard_negative,Is the inspection sample the same size for critical and cosmetic components?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_warehouse_spills_semantic,semantic,A drum has started leaking beside a loading lane; how do staff stop foot traffic reaching it?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_incident_paging_version_conflict,version_conflict,How long is the acknowledgement window in the paging standard currently in force?,True,True,True,True,False,False,False,3,2,3,2,1,Improved
+test,v2_retail_warranty_semantic,semantic,A shopper brings back an accessory that stopped working normally; what should staff establish before treating it as a change-of-mind return?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_supplier_quotes_numeric_date,numeric_date,What spend level triggers independent review of an equipment quotation?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_research_data_exact_term,exact_term,What export type is labelled RES-589?,True,True,True,True,False,False,False,7,3,7,3,4,Improved
+test,v2_deployment_windows_semantic,semantic,"If a release candidate breaks the rehearsal, may the team push it live by calling it an urgent patch?",True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_deployment_windows_exact_term,exact_term,What decision is recorded by REL-579?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_visitor_facilities_numeric_date,numeric_date,How long does a temporary meeting badge remain usable after reception issues it?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_access_keys_exact_term,exact_term,What state does IAM-552 identify in the key-management console?,True,True,True,True,False,False,False,3,1,3,1,2,Improved
+test,v2_deployment_windows_hard_negative,hard_negative,Which sign-off is needed for a customer-visible deployment instead of an internal-only tool update?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_warehouse_spills_cross_document,cross_document,Where should an operator find the disposal container code after the lane is made safe?,True,True,True,True,False,False,False,3,1,3,1,2,Improved
+test,v2_visitor_facilities_version_conflict,version_conflict,How many hours of validity does the current visitor badge rule allow?,True,True,True,True,False,False,False,2,2,2,2,0,Unchanged
+test,v2_research_data_version_conflict,version_conflict,What collaborator retention term applies under the current research custody instruction?,True,True,True,True,False,False,False,2,2,2,2,0,Unchanged
+test,v2_laser_training_exact_term,exact_term,Which clearance is recorded under LAS-347?,True,True,True,True,False,False,False,2,2,2,2,0,Unchanged
+test,v2_laser_training_cross_document,cross_document,Where can the technician find the inspection interval for protective eyewear?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_incident_paging_numeric_date,numeric_date,At what interval are customers updated during a confirmed production outage?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_backup_restore_exact_term,exact_term,What action follows BAK-298 in the restore job log?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_customs_returns_semantic,semantic,What lets a shipping clerk show that a returned item is the same one that was previously exported?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_factory_inspection_version_conflict,version_conflict,What sample size does the current quality instruction require for a critical component lot?,True,True,True,True,False,False,False,2,2,2,2,0,Unchanged
+test,v2_factory_inspection_numeric_date,numeric_date,By which day must an inspector escalate a quarantine that has no disposition?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_device_exit_exact_term,exact_term,Which asset problem should be filed on OFF-217 rather than a payroll ticket?,True,True,True,True,False,False,False,6,1,6,1,5,Improved
+test,v2_field_repairs_hard_negative,hard_negative,Do seal replacements need the same shutdown sign-off as sensor calibration?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged
+test,v2_device_exit_semantic,semantic,"Once someone leaves the payroll, how long may they keep corporate equipment before handing it back?",True,False,True,True,False,False,False,1,4,1,4,-3,Degraded
+test,v2_invoice_controls_semantic,semantic,A bill arrives before the receiving team confirms the goods; can Accounts Payable send the money anyway?,True,True,True,True,False,False,False,1,1,1,1,0,Unchanged

@@ -1,0 +1,240 @@
+{
+  "verified_phase": "all",
+  "v2_complete": true,
+  "v1_unchanged": true,
+  "v1_protected_files": 220,
+  "core_algorithm_files": 21,
+  "v2_dataset_hashes_match": true,
+  "prediction_counts_and_ids_match": true,
+  "metrics_recomputed_exactly": true,
+  "retrieval_runs": [
+    {
+      "split": "dev",
+      "method": "dense",
+      "count": 80,
+      "metrics_match": true
+    },
+    {
+      "split": "dev",
+      "method": "bm25",
+      "count": 80,
+      "metrics_match": true
+    },
+    {
+      "split": "dev",
+      "method": "dense_reranker",
+      "count": 80,
+      "metrics_match": true
+    },
+    {
+      "split": "dev",
+      "method": "hybrid",
+      "count": 80,
+      "metrics_match": true
+    },
+    {
+      "split": "dev",
+      "method": "hybrid_reranker",
+      "count": 80,
+      "metrics_match": true
+    },
+    {
+      "split": "test",
+      "method": "dense",
+      "count": 160,
+      "metrics_match": true
+    },
+    {
+      "split": "test",
+      "method": "bm25",
+      "count": 160,
+      "metrics_match": true
+    },
+    {
+      "split": "test",
+      "method": "dense_reranker",
+      "count": 160,
+      "metrics_match": true
+    },
+    {
+      "split": "test",
+      "method": "hybrid",
+      "count": 160,
+      "metrics_match": true
+    },
+    {
+      "split": "test",
+      "method": "hybrid_reranker",
+      "count": 160,
+      "metrics_match": true
+    }
+  ],
+  "generation_runs": [
+    {
+      "split": "dev",
+      "condition": "G0_prompt_only",
+      "count": 80,
+      "metrics_match": true
+    },
+    {
+      "split": "dev",
+      "condition": "G1_current_v1_gate",
+      "count": 80,
+      "metrics_match": true
+    },
+    {
+      "split": "test",
+      "condition": "G0_prompt_only",
+      "count": 160,
+      "metrics_match": true
+    },
+    {
+      "split": "test",
+      "condition": "G1_current_v1_gate",
+      "count": 160,
+      "metrics_match": true
+    }
+  ],
+  "experiment_file_sha256": {
+    "experiments/v2/dev/bm25/benchmark_aligned.jsonl": "7543cfc7fa97501b37cda327610dc68cc9c18f4fd2974dd78a37bcce0ad2e8f8",
+    "experiments/v2/dev/bm25/chunks.jsonl": "717320d35e75492c41010b33798e001a08174fd9317f9328e1de34d896428718",
+    "experiments/v2/dev/bm25/config.json": "d795e55316a0a7ce93e50cc0da97c9db24e622cb8cddb0194315bd2d49069bc2",
+    "experiments/v2/dev/bm25/resolved_config.json": "68ed3d8a1bac793a55f1f23f105603f9a3a191224f7427c1c5fbcf17cc791d0b",
+    "experiments/v2/dev/bm25/retrieval_metrics.json": "f1f407257cc2ab5977c1569ee73059916eec39d1bf66030f40058a63cff9efef",
+    "experiments/v2/dev/bm25/retrieval_predictions.jsonl": "c95425a1f338021958db29880bde4a883de847ccc8e7247faa23a9558fd54f5a",
+    "experiments/v2/dev/bm25/run.log": "a6b32f406ffd6a4090470fa137598d45e0470ce06178669eee792acf574fea04",
+    "experiments/v2/dev/bm25/run_state.json": "cd304e33925820a8745d574bc313b65c34450850323e7627998e67f601ef6f61",
+    "experiments/v2/dev/dense/benchmark_aligned.jsonl": "7543cfc7fa97501b37cda327610dc68cc9c18f4fd2974dd78a37bcce0ad2e8f8",
+    "experiments/v2/dev/dense/chunks.jsonl": "717320d35e75492c41010b33798e001a08174fd9317f9328e1de34d896428718",
+    "experiments/v2/dev/dense/config.json": "fe26dfe9180296625bdb2ea16825e4f43835fc2c6f336e7d9166f5d9ff45605f",
+    "experiments/v2/dev/dense/resolved_config.json": "f5784216c28bcf9a766c3b95d18b1f836b6be4937e828a8757ed91b8941504c0",
+    "experiments/v2/dev/dense/retrieval_metrics.json": "d322d72509bc10adfedd40d9634ddc315cde8c30fad109e96436c1f0853ff470",
+    "experiments/v2/dev/dense/retrieval_predictions.jsonl": "004f13f9a2ba4f217c8c48849a64148372493f9bdb09f6e086a302cd856e5f10",
+    "experiments/v2/dev/dense/run.log": "a6b32f406ffd6a4090470fa137598d45e0470ce06178669eee792acf574fea04",
+    "experiments/v2/dev/dense/run_state.json": "952469e8a825577fd91b56b36344f6673063fbce6a729148e55826f6655b7b18",
+    "experiments/v2/dev/dense_reranker/benchmark_aligned.jsonl": "7543cfc7fa97501b37cda327610dc68cc9c18f4fd2974dd78a37bcce0ad2e8f8",
+    "experiments/v2/dev/dense_reranker/chunks.jsonl": "717320d35e75492c41010b33798e001a08174fd9317f9328e1de34d896428718",
+    "experiments/v2/dev/dense_reranker/config.json": "a4d75e191d332bdb19a4f280861561b8c04a045c47da34cd23090fe5e564c987",
+    "experiments/v2/dev/dense_reranker/resolved_config.json": "7dd06c0ed9d38935bc29f6829ae3840b8c26234d8690e6a8f03a8a9c78e82f5f",
+    "experiments/v2/dev/dense_reranker/retrieval_metrics.json": "2b6481b3a282e1ee9a37d58bc762d60d778000ed1fe35444be7428503b5a4554",
+    "experiments/v2/dev/dense_reranker/retrieval_predictions.jsonl": "e33c4977838f139936bca90f768cbca9fb579ebb5be5278f7d32778de92a9679",
+    "experiments/v2/dev/dense_reranker/run.log": "a6b32f406ffd6a4090470fa137598d45e0470ce06178669eee792acf574fea04",
+    "experiments/v2/dev/dense_reranker/run_state.json": "83eedcd61acbcf02377f70adbb82d87a4a2355dcf6cd5fa4d1953160e6f52111",
+    "experiments/v2/dev/G0_prompt_only/config.json": "98542c3542686fc5212b56785cbe0a9820fd7b13fc161cd1fa6ac5cff7cc6045",
+    "experiments/v2/dev/G0_prompt_only/generation_metrics.json": "b7a7ab7860a2fdc1e62ad20df92cf6397883fd56f2f963053172d63baf6a4102",
+    "experiments/v2/dev/G0_prompt_only/generation_predictions.jsonl": "5b5183ca65fb6c46975f2b6c76461da1fcbb8e0e9f0a1872755e71bdf2790ce1",
+    "experiments/v2/dev/G0_prompt_only/judge_results.jsonl": "b21885b6eb6370e85bbb9227cc273b0df753dc9a87e8dde214432be59f29d2fc",
+    "experiments/v2/dev/G0_prompt_only/resolved_config.json": "4c0843f18979d3c2c41d0bcb49340fde8702c742f02025cc7fb7fc69cdf8d5c5",
+    "experiments/v2/dev/G0_prompt_only/run.log": "3cb28813ea069066870052e0ea3075e455f61d3bd82b8464d702047b5d1c9b14",
+    "experiments/v2/dev/G0_prompt_only/run_state.json": "eb2fd4a738c885cede02098e95481a985d40b8a69877fc7d9ca4dd86c0093b15",
+    "experiments/v2/dev/G1_current_v1_gate/config.json": "066430abe1d4b4d555133527f87606452ce18466e17f2b03e57c15b9bffe3297",
+    "experiments/v2/dev/G1_current_v1_gate/generation_metrics.json": "72e85f19caeb9627860c95f18ce90b20e9e9d86c0424ecefdde9e930de8ab620",
+    "experiments/v2/dev/G1_current_v1_gate/generation_predictions.jsonl": "ae77c0e02436f9dfe5c51a4fecb77d4ce2208b6d55a3e4e0e2d894414bb35078",
+    "experiments/v2/dev/G1_current_v1_gate/judge_results.jsonl": "dd583015aa9d2ab754c6c3e8377c38117380d9772beab5c3ce95e72c295abe51",
+    "experiments/v2/dev/G1_current_v1_gate/resolved_config.json": "d8fb34f4e481777fb8ada46e71776737c25df1f9713b328b067849b4e2627c27",
+    "experiments/v2/dev/G1_current_v1_gate/run.log": "967ae8ee16f56fa8731a93a2a3fe28855fa52a5d30fac3589c92bbf215223f2b",
+    "experiments/v2/dev/G1_current_v1_gate/run_state.json": "32cd2cfb94b96abb4a08dfb9043417a3ee2155be2d6bae6dcd862120d9331766",
+    "experiments/v2/dev/hybrid/benchmark_aligned.jsonl": "7543cfc7fa97501b37cda327610dc68cc9c18f4fd2974dd78a37bcce0ad2e8f8",
+    "experiments/v2/dev/hybrid/chunks.jsonl": "717320d35e75492c41010b33798e001a08174fd9317f9328e1de34d896428718",
+    "experiments/v2/dev/hybrid/config.json": "0d1fea92e7b70c46c49b5927292d478bcd34fc0e36c690350da54b7caa976390",
+    "experiments/v2/dev/hybrid/resolved_config.json": "9e15c260837dcb720fb6ef95ba417f644857c1adf46d38b522838f9a174b169e",
+    "experiments/v2/dev/hybrid/retrieval_metrics.json": "ef8d45fbab49d60699fab22f8e31f2bc18382e92404f2dda6694189e58f0f6f6",
+    "experiments/v2/dev/hybrid/retrieval_predictions.jsonl": "88bf78d8e75b41834a9daeca991035793525a82496c8622da8c6f46d53388970",
+    "experiments/v2/dev/hybrid/run.log": "a6b32f406ffd6a4090470fa137598d45e0470ce06178669eee792acf574fea04",
+    "experiments/v2/dev/hybrid/run_state.json": "d36672db43c8cf9c5d77c1179bb5c7e42b3ae3bc77dfba32daf8e7d50825e173",
+    "experiments/v2/dev/hybrid_reranker/benchmark_aligned.jsonl": "7543cfc7fa97501b37cda327610dc68cc9c18f4fd2974dd78a37bcce0ad2e8f8",
+    "experiments/v2/dev/hybrid_reranker/chunks.jsonl": "717320d35e75492c41010b33798e001a08174fd9317f9328e1de34d896428718",
+    "experiments/v2/dev/hybrid_reranker/config.json": "e1c2c07859919e926b503119c4363f8ba2b5b1af6442801d77c5c8a5720d1a2d",
+    "experiments/v2/dev/hybrid_reranker/resolved_config.json": "4394e6c9dde53424cdb7922bd4762f22c463d6f9ffba048e71d2eb03ae616672",
+    "experiments/v2/dev/hybrid_reranker/retrieval_metrics.json": "a3613671993ea4b3c0bbe964b3327e1493beb7ee46b809b40f8b5bfaeee8565f",
+    "experiments/v2/dev/hybrid_reranker/retrieval_predictions.jsonl": "06583d1e63039f42f30a6368f09502b2979ddda9dc8b5c9d8f184310234c723f",
+    "experiments/v2/dev/hybrid_reranker/run.log": "a6b32f406ffd6a4090470fa137598d45e0470ce06178669eee792acf574fea04",
+    "experiments/v2/dev/hybrid_reranker/run_state.json": "d18c5ec45216fdde5ed56280e262771b024b8819fb4eacf4382c63032c383f11",
+    "experiments/v2/formal_v2_freeze.json": "f7393280c147f98b348c1613ef1a9c916bf8214a95f070db49a4b0d6ec422e02",
+    "experiments/v2/test/bm25/benchmark_aligned.jsonl": "88d3b5d28e374101c5bafa47e5608dfd443bde716f3d000d14a016882924fe36",
+    "experiments/v2/test/bm25/chunks.jsonl": "717320d35e75492c41010b33798e001a08174fd9317f9328e1de34d896428718",
+    "experiments/v2/test/bm25/config.json": "d795e55316a0a7ce93e50cc0da97c9db24e622cb8cddb0194315bd2d49069bc2",
+    "experiments/v2/test/bm25/resolved_config.json": "153900a44f918181ca357d529e2d4a5e585747ffef70a6fd4ecde2303fa8b1cd",
+    "experiments/v2/test/bm25/retrieval_metrics.json": "efdb5a1bba7fd4d39b0a58db0f8866db965d7870df6d41220ff2799df34384fb",
+    "experiments/v2/test/bm25/retrieval_predictions.jsonl": "17fbc8ccc6e989e1b65e82f95c94a4cc04f2733e52c7c532c182e5c8684600bb",
+    "experiments/v2/test/bm25/run.log": "fbf5b732119507af7faf8c41d4a63581400c351bd3f997ae773e343cc5df0c4c",
+    "experiments/v2/test/bm25/run_state.json": "7eeec83c92ecfa1ba041cd8e470c366810c068d552bbd85d3a5e4624b51b9e18",
+    "experiments/v2/test/dense/benchmark_aligned.jsonl": "88d3b5d28e374101c5bafa47e5608dfd443bde716f3d000d14a016882924fe36",
+    "experiments/v2/test/dense/chunks.jsonl": "717320d35e75492c41010b33798e001a08174fd9317f9328e1de34d896428718",
+    "experiments/v2/test/dense/config.json": "fe26dfe9180296625bdb2ea16825e4f43835fc2c6f336e7d9166f5d9ff45605f",
+    "experiments/v2/test/dense/resolved_config.json": "56cac170f25ce02c72c0bd37bbaefd5aff005030cbb29ffea33f513c34a84cfc",
+    "experiments/v2/test/dense/retrieval_metrics.json": "f271fa1b07345f48bca409cbe06949ece42a2bb8c6f035960db366a05aa46310",
+    "experiments/v2/test/dense/retrieval_predictions.jsonl": "dc31190e46121baa74e6501ad400ac13671c817aa19c091b881bccda372fb0f7",
+    "experiments/v2/test/dense/run.log": "fbf5b732119507af7faf8c41d4a63581400c351bd3f997ae773e343cc5df0c4c",
+    "experiments/v2/test/dense/run_state.json": "32a2c5732225de06b56e4d23824407235f866663bea4e7e6726aaec12c3dbcdb",
+    "experiments/v2/test/dense_reranker/benchmark_aligned.jsonl": "88d3b5d28e374101c5bafa47e5608dfd443bde716f3d000d14a016882924fe36",
+    "experiments/v2/test/dense_reranker/chunks.jsonl": "717320d35e75492c41010b33798e001a08174fd9317f9328e1de34d896428718",
+    "experiments/v2/test/dense_reranker/config.json": "a4d75e191d332bdb19a4f280861561b8c04a045c47da34cd23090fe5e564c987",
+    "experiments/v2/test/dense_reranker/resolved_config.json": "059adeee13c35bfdabd86013ee8c8e8279dbc3fca7a274202360b0e32dd2b762",
+    "experiments/v2/test/dense_reranker/retrieval_metrics.json": "38e03a61ae957b097ed3d64da18e419abd3f91c6344c5886b7406fd4bce9b1ee",
+    "experiments/v2/test/dense_reranker/retrieval_predictions.jsonl": "42b0d56e679b34f3369f4778949af4598a02cc59e4634577a7a4ff47b507d7dc",
+    "experiments/v2/test/dense_reranker/run.log": "fbf5b732119507af7faf8c41d4a63581400c351bd3f997ae773e343cc5df0c4c",
+    "experiments/v2/test/dense_reranker/run_state.json": "97541c28ce766c5417cf1d6ad9a19650acf9e97e1fca4c88116986a6c344d5fd",
+    "experiments/v2/test/G0_prompt_only/config.json": "98542c3542686fc5212b56785cbe0a9820fd7b13fc161cd1fa6ac5cff7cc6045",
+    "experiments/v2/test/G0_prompt_only/generation_metrics.json": "138f737b6a82dd22152dc45cff64055cee66314d76fae87c67b9320d65c1b580",
+    "experiments/v2/test/G0_prompt_only/generation_predictions.jsonl": "6fbd8a587ac948dc50f654dacb92f85ba866466aadfbb0181069c0a70d677728",
+    "experiments/v2/test/G0_prompt_only/judge_results.jsonl": "580191466a236afbc723f95972772f1c32ecd0b084bb90b5959b4e9da19b973c",
+    "experiments/v2/test/G0_prompt_only/resolved_config.json": "2ed6c21c3c2febd3dd6cce936e4a7c2fb60694dfd474a0570e89657bdd6768a6",
+    "experiments/v2/test/G0_prompt_only/run.log": "0443499a2aae1d2c6a9cf7106b9469479deeeb7c0302e3249880be2e23c710ec",
+    "experiments/v2/test/G0_prompt_only/run_state.json": "17172de7f6c40aa65f92a240f9456abcf7906ed7042b06ca8132cc6642ae4c33",
+    "experiments/v2/test/G1_current_v1_gate/config.json": "066430abe1d4b4d555133527f87606452ce18466e17f2b03e57c15b9bffe3297",
+    "experiments/v2/test/G1_current_v1_gate/generation_metrics.json": "9f39091ae93487f44f1a650163fded35678a82f6bd24c725b570a1474901f99b",
+    "experiments/v2/test/G1_current_v1_gate/generation_predictions.jsonl": "4332427df9620567ef7a492fe51cb96b0d5fa4475e6e9d6ffd42e9345b3df229",
+    "experiments/v2/test/G1_current_v1_gate/judge_results.jsonl": "eccabbe9fbc57c2432fc2376b7f293149c12311da7646274f894ec5214772b36",
+    "experiments/v2/test/G1_current_v1_gate/resolved_config.json": "87b8b9855d6b31bd663b09a548f2222fe5d2ce0d3e3a511cb98b17231309e042",
+    "experiments/v2/test/G1_current_v1_gate/run.log": "d214c46e006c07df0b72867dd8c276eb4b0d784e30c824180110032af22566f3",
+    "experiments/v2/test/G1_current_v1_gate/run_state.json": "2e4925e876394767088d267f8b081f4f7c6eef4e4ef4a15a1bd66404a52ed889",
+    "experiments/v2/test/hybrid/benchmark_aligned.jsonl": "88d3b5d28e374101c5bafa47e5608dfd443bde716f3d000d14a016882924fe36",
+    "experiments/v2/test/hybrid/chunks.jsonl": "717320d35e75492c41010b33798e001a08174fd9317f9328e1de34d896428718",
+    "experiments/v2/test/hybrid/config.json": "0d1fea92e7b70c46c49b5927292d478bcd34fc0e36c690350da54b7caa976390",
+    "experiments/v2/test/hybrid/resolved_config.json": "fb7dcb5d6d7de3534612f8e85d40f225b27508671505626af78f36912dc154f3",
+    "experiments/v2/test/hybrid/retrieval_metrics.json": "2770ab5b360b557fbe23e230e64ec456809be19f381dc1f8d0e61891c4d6ef63",
+    "experiments/v2/test/hybrid/retrieval_predictions.jsonl": "ec54f7b38ef616d2001f38860471f5cfc4f35f547df0f15d2d773158eaa39280",
+    "experiments/v2/test/hybrid/run.log": "fbf5b732119507af7faf8c41d4a63581400c351bd3f997ae773e343cc5df0c4c",
+    "experiments/v2/test/hybrid/run_state.json": "4215ccfcc6384da91a69cc802e8bb575a4b8deb4736187ff1402e238661513ca",
+    "experiments/v2/test/hybrid_reranker/benchmark_aligned.jsonl": "88d3b5d28e374101c5bafa47e5608dfd443bde716f3d000d14a016882924fe36",
+    "experiments/v2/test/hybrid_reranker/chunks.jsonl": "717320d35e75492c41010b33798e001a08174fd9317f9328e1de34d896428718",
+    "experiments/v2/test/hybrid_reranker/config.json": "e1c2c07859919e926b503119c4363f8ba2b5b1af6442801d77c5c8a5720d1a2d",
+    "experiments/v2/test/hybrid_reranker/resolved_config.json": "90cea0e58e0114db261232f309cf3c8ba5ce79f6a73ac878f3c276c277e71331",
+    "experiments/v2/test/hybrid_reranker/retrieval_metrics.json": "b258172dec902aac8da6ebb8ff79c392fdc768286300d85e5726f48301c7b8c6",
+    "experiments/v2/test/hybrid_reranker/retrieval_predictions.jsonl": "79a52165dd000ddd51cf66f78b6e750737bf206dfd3a30b90a23cb831ce5a795",
+    "experiments/v2/test/hybrid_reranker/run.log": "fbf5b732119507af7faf8c41d4a63581400c351bd3f997ae773e343cc5df0c4c",
+    "experiments/v2/test/hybrid_reranker/run_state.json": "ebd6667c09ebeff1406ac4e0547d12e3ee72a724ccb92880fb0a19395c5c7509",
+    "experiments/v2/v1_byte_snapshot.zip": "abfb546072b14adfeae67e84eccfd50b3d34a42bbe25e10515807b1345e3c1ef"
+  },
+  "human_review": "PENDING_HUMAN_REVIEW",
+  "no_v2_calibration": true,
+  "diagnostic_source_sha256": {
+    "scripts/v2/analyze.py": "703032028834a34493c7f74c05061549b3332bf26c55914735c35077c3179e71",
+    "scripts/v2/diagnostics.py": "735eb2345cea63f96a32611b7215d62103b757034a7b42331959aa553b0d3c87",
+    "scripts/v2/render_report.py": "bc2a8521a93e109df295ea1320c7e2be2f9d071a3080098ea12cfcab50d841b6"
+  },
+  "human_review_template": {
+    "sample_count": 20,
+    "sha256": "e486c9a168e5f9c1b42475891a83a8f11f933993fbc63e38664a3de7d8f00961",
+    "all_human_fields_blank": true
+  },
+  "runtime_environment_sha256": "398fb8bec40652c9d5b2598f63ae94476a5e3f4c002f05d465f16edc4d91f7dc",
+  "v1_byte_snapshot": {
+    "archive_sha256": "abfb546072b14adfeae67e84eccfd50b3d34a42bbe25e10515807b1345e3c1ef",
+    "metadata_sha256": "fe9412b39a13a7884ef918e1766be8ab75c5b46938204b08e89ad1d74b5319fd",
+    "verified_files": 262,
+    "all_frozen_bytes_match": true
+  },
+  "demo_browser_checks": {
+    "status": "passed",
+    "cases": 4,
+    "url": "http://127.0.0.1:8502",
+    "ui_results_sha256": "791eceaf79bb8024e8d32543f6e8d9ea75ce75c3f3dac88e657bad8d11f0a5d7",
+    "screenshot_sha256": {
+      "gate_off_cited_answer.png": "7405045da8e8ffb536be0471080aacbaeaec3027fd2a2a846cf60272f9ca7efa",
+      "gate_off_refusal.png": "9a6328d8294606df22873776ebe5a0439077a77b4a5e7638b3f49a0c3c63198b",
+      "gate_off_uploaded_answer.png": "7408277a74f564a64e3b58cd6b49824b5fa42720be36ef181e39792044859075"
+    }
+  }
+}

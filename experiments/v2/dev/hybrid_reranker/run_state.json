@@ -1,0 +1,51 @@
+{
+  "state": "complete",
+  "fingerprint": {
+    "config": {
+      "name": "hybrid_reranker",
+      "embedding_model": "BAAI/bge-base-en-v1.5",
+      "reranker_model": "ms-marco-MiniLM-L-12-v2",
+      "llm_model": "gemma2:9b",
+      "embedding_threads": 4,
+      "chunking": {
+        "strategy": "recursive",
+        "chunk_size": 2048,
+        "overlap": 128
+      },
+      "retrieval": {
+        "mode": "hybrid",
+        "rerank": true,
+        "dense_top_k": 10,
+        "sparse_top_k": 10,
+        "fusion_top_k": 10,
+        "final_top_k": 10,
+        "context_top_k": 5,
+        "rrf_k": 60,
+        "bm25_k1": 1.5,
+        "bm25_b": 0.75
+      },
+      "answerability": {
+        "enabled": false,
+        "threshold": 0.03984235227108002,
+        "feature": "top1",
+        "calibration_file": "experiments/hybrid_reranker/dev/calibration.json"
+      },
+      "generation": {
+        "temperature": 0.0,
+        "max_tokens": 192,
+        "context_size": 4096,
+        "seed": 42,
+        "provider": "ollama",
+        "base_url": "http://127.0.0.1:11434",
+        "context_chars_per_source": 1024,
+        "judge_model": "gemma2:9b",
+        "judge_max_tokens": 128,
+        "input_cost_per_million": null,
+        "output_cost_per_million": null
+      }
+    },
+    "index_id": "f6b261dbc09dc4e859503fd1",
+    "questions_sha256": "e3966efc8184292589f5be49b4d311cf07216dee91e207c774faf21fd6b39f55"
+  },
+  "count": 80
+}

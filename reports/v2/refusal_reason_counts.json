@@ -1,0 +1,25 @@
+{
+  "dev": {
+    "G0_prompt_only": {
+      "published": 58,
+      "model_refusal": 21,
+      "invalid_citation": 1
+    },
+    "G1_current_v1_gate": {
+      "published": 58,
+      "insufficient_evidence": 12,
+      "model_refusal": 10
+    }
+  },
+  "test": {
+    "G0_prompt_only": {
+      "published": 120,
+      "model_refusal": 40
+    },
+    "G1_current_v1_gate": {
+      "published": 117,
+      "model_refusal": 15,
+      "insufficient_evidence": 28
+    }
+  }
+}

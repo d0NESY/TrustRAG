@@ -1,0 +1,15 @@
+﻿split,category,count,Dense Miss / BM25 Hit,BM25 Miss / Dense Hit,Both Hit,Both Miss,hybrid_rescue_vs_dense,hybrid_only_hit_vs_both_branches,raw_union_max_depth,raw_union_candidate_recall,raw_union_hit_rate
+dev,all,60,0,0,60,0,0,0,20,1.0,1.0
+dev,cross_document,10,0,0,10,0,0,0,20,1.0,1.0
+dev,exact_term,10,0,0,10,0,0,0,20,1.0,1.0
+dev,hard_negative,10,0,0,10,0,0,0,20,1.0,1.0
+dev,numeric_date,10,0,0,10,0,0,0,20,1.0,1.0
+dev,semantic,10,0,0,10,0,0,0,20,1.0,1.0
+dev,version_conflict,10,0,0,10,0,0,0,20,1.0,1.0
+test,all,120,0,2,118,0,0,0,20,1.0,1.0
+test,cross_document,20,0,0,20,0,0,0,20,1.0,1.0
+test,exact_term,20,0,0,20,0,0,0,20,1.0,1.0
+test,hard_negative,20,0,0,20,0,0,0,20,1.0,1.0
+test,numeric_date,20,0,0,20,0,0,0,20,1.0,1.0
+test,semantic,20,0,1,19,0,0,0,20,1.0,1.0
+test,version_conflict,20,0,1,19,0,0,0,20,1.0,1.0

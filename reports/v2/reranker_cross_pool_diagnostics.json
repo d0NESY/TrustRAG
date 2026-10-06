@@ -1,0 +1,41 @@
+{
+  "summary": [
+    {
+      "split": "dev",
+      "count": 60,
+      "mean_rank_improvement": 0.016666666666666666,
+      "median_rank_improvement": 0.0,
+      "improved_percent": 1.6666666666666667,
+      "degraded_percent": 0.0,
+      "counts": {
+        "Unchanged": 59,
+        "Improved": 1
+      },
+      "definition": "Positive delta=rank improvement. Missing gold is censored at K+1, not an observed rank.",
+      "shared_passage_comparisons": 558,
+      "shared_score_delta_abs_mean": 0.0037814155629100786,
+      "shared_score_delta_abs_max": 0.10963033139705658,
+      "shared_score_delta_above_1e_6_count": 426,
+      "degraded_cases_with_top_already_in_dense_pool": 0
+    },
+    {
+      "split": "test",
+      "count": 120,
+      "mean_rank_improvement": -0.016666666666666666,
+      "median_rank_improvement": 0.0,
+      "improved_percent": 0.0,
+      "degraded_percent": 1.6666666666666667,
+      "counts": {
+        "Unchanged": 118,
+        "Degraded": 2
+      },
+      "definition": "Positive delta=rank improvement. Missing gold is censored at K+1, not an observed rank.",
+      "shared_passage_comparisons": 1144,
+      "shared_score_delta_abs_mean": 0.0034283730226728425,
+      "shared_score_delta_abs_max": 0.11543446779251099,
+      "shared_score_delta_above_1e_6_count": 843,
+      "degraded_cases_with_top_already_in_dense_pool": 2
+    }
+  ],
+  "definition": "Saved predictions only; score drift across different candidate batches is observed, not a verified causal mechanism."
+}

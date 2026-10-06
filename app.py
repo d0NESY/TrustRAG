@@ -20,7 +20,7 @@ from ragbase.model import create_embeddings  # noqa: E402
 from ragbase.retrieval.hybrid import RetrievalPipeline  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent
-MODES = {"混合检索 + 重排": "hybrid_reranker", "Dense": "baseline", "Dense + 重排": "dense_reranker", "BM25": "bm25", "混合检索": "hybrid"}
+MODES = {"Dense + 重排": "dense_reranker", "Dense": "baseline", "BM25": "bm25", "混合检索": "hybrid", "混合检索 + 重排": "hybrid_reranker"}
 
 st.set_page_config(page_title="TrustRAG", page_icon="📚", layout="wide")
 st.title("TrustRAG")
@@ -35,9 +35,9 @@ with st.sidebar:
     selected_mode = st.selectbox("检索方式", list(MODES))
     uploaded = st.file_uploader("选择 PDF 文档", type=["pdf"], accept_multiple_files=True) if knowledge_mode == "上传 PDF" else []
     if knowledge_mode == "企业演示知识库":
-        st.caption("10 份虚构企业政策，120 页。评分门限由独立 dev 问题校准。")
+        st.caption("10 份虚构企业政策，120 页。证据门限默认关闭。")
     else:
-        st.caption("上传文档只保存在当前本地会话目录。新语料需单独校准评分门限。")
+        st.caption("上传文档只保存在当前本地会话目录。使用提示词拒答与引用核验。")
     if st.button("清空聊天记录"):
         st.session_state.messages = []
         st.rerun()

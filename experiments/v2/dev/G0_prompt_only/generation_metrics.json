@@ -1,0 +1,83 @@
+{
+  "answer_correctness": 0.9666666666666667,
+  "answer_correctness_count": 60,
+  "groundedness": 1.0,
+  "groundedness_count": 58,
+  "citation_support_judge": 1.0,
+  "citation_accuracy": 0.9152542372881356,
+  "correct_gold_source_citations": 54,
+  "total_citations": 59,
+  "answerability": {
+    "precision": 1.0,
+    "recall": 0.9666666666666667,
+    "f1": 0.983050847457627,
+    "false_answer_rate": 0.0,
+    "false_refusal_rate": 0.03333333333333333,
+    "tp": 58,
+    "fp": 0,
+    "fn": 2,
+    "tn": 20,
+    "count": 80
+  },
+  "retrieval_gate_answerability": {
+    "precision": 0.75,
+    "recall": 1.0,
+    "f1": 0.8571428571428571,
+    "false_answer_rate": 1.0,
+    "false_refusal_rate": 0.0,
+    "tp": 60,
+    "fp": 20,
+    "fn": 0,
+    "tn": 0,
+    "count": 80
+  },
+  "answer_token_f1": 0.4743113102840186,
+  "judge_failure_count": 0,
+  "raw_invalid_citation_count": 0,
+  "input_tokens": 92283,
+  "output_tokens": 1754,
+  "judge_input_tokens": 35911,
+  "judge_output_tokens": 3025,
+  "estimated_cost_usd": null,
+  "model": "See resolved_config.json for fixed generator/judge and hardware.",
+  "definitions": {
+    "answer_correctness": "LLM judge on answerable questions; refusals count 0; judge errors excluded and counted.",
+    "groundedness": "LLM judge on published answers using only cited source excerpts; fallible.",
+    "citation_accuracy": "Deterministic gold-source citation precision across unique references in published answers; source relevance proxy, not claim entailment.",
+    "citation_support_judge": "Separate semantic claim/source support judgment; fallible.",
+    "answerability": "Positive=published non-abstaining answer; FAR=FP/negative gold, FRR=FN/positive gold.",
+    "input_tokens": "API-reported counts; local Ollama prompt_eval_count can reflect prompt-cache computation.",
+    "estimated_cost_usd": "Configured API token prices only; local compute/electricity is not priced."
+  },
+  "retrieval_latency_ms": {
+    "mean_ms": 235.7988387502246,
+    "p50_ms": 234.88350000116043,
+    "p95_ms": 271.4796250002109,
+    "count": 80
+  },
+  "reranking_latency_ms": {
+    "mean_ms": 2059.147276249996,
+    "p50_ms": 2023.4715000005963,
+    "p95_ms": 2467.5470600002877,
+    "count": 80
+  },
+  "generation_latency_ms": {
+    "mean_ms": 2310.2158362499267,
+    "p50_ms": 2063.8279500017234,
+    "p95_ms": 2624.215119999644,
+    "count": 80
+  },
+  "total_latency_ms": {
+    "mean_ms": 4606.209898750103,
+    "p50_ms": 4309.277000000293,
+    "p95_ms": 5171.930120000434,
+    "count": 80
+  },
+  "judge_latency_ms": {
+    "mean_ms": 2148.5708512501787,
+    "p50_ms": 2630.728900001486,
+    "p95_ms": 3766.0167349989933,
+    "count": 80
+  },
+  "coverage": 0.725
+}

@@ -1,0 +1,7 @@
+{
+  "chosen_retrieval": "dense_reranker",
+  "chosen_architecture": "Dense + Reranker",
+  "gate_default": false,
+  "human_review": "PENDING_HUMAN_REVIEW",
+  "decision_basis": "Dense + Reranker 的 test Recall@1 与 MRR 均更好，Hybrid 没有提供候选补回；额外词法索引与 RRF 的复杂度没有获得本轮质量收益支持。"
+}

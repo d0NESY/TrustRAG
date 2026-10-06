@@ -5,3 +5,14 @@
 *.jpeg binary
 *.onnx binary
 *.gguf binary
+
+# Preserve bytes of new frozen V2 data/results across Git checkouts.
+*.zip -text
+data/benchmark_v2/** -text
+experiments/v2/** -text
+reports/v2/** -text
+reports/human_review_template.csv -text
+configs/v2/** -text
+configs/demo/** -text
+scripts/v2/** -text
+tests/test_v2.py -text

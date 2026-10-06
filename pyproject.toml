@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "ragbase"
-version = "0.1.0"
-description = ""
+version = "0.2.0"
+description = "TrustRAG: hybrid retrieval, cited evidence and calibrated abstention on RagBase"
 authors = ["Venelin Valkov <venelin@curiousily.com>"]
 license = "MIT"
 readme = "README.md"
@@ -18,12 +18,18 @@ langchain-qdrant = "^0.1.1"
 streamlit = "^1.36.0"
 python-dotenv = "^1.0.1"
 langchain-groq = "^0.1.6"
+pyyaml = "6.0.1"
+pystemmer = "2.2.0.3"
 
 
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.5.1"
 jupyterlab = "^4.2.3"
 watchdog = "^4.0.1"
+pytest = "8.3.5"
+reportlab = "4.2.5"
+playwright = "1.51.0"
+chardet = "5.2.0"
 
 [build-system]
 requires = ["poetry-core"]

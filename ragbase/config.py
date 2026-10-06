@@ -22,7 +22,7 @@ class Config:
         REMOTE_LLM = "llama-3.1-70b-versatile"
         TEMPERATURE = 0.0
         MAX_TOKENS = 8000
-        USE_LOCAL = False
+        USE_LOCAL = True
 
     class Retriever:
         USE_RERANKER = True
@@ -69,6 +69,9 @@ class GenerationConfig:
     seed: int = 42
     provider: str = "ollama"
     base_url: str = "http://127.0.0.1:11434"
+    context_chars_per_source: int = 1024
+    judge_model: str = "gemma2:9b"
+    judge_max_tokens: int = 128
     input_cost_per_million: float | None = None
     output_cost_per_million: float | None = None
 

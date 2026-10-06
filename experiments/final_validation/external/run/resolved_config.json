@@ -1,0 +1,161 @@
+{
+  "config": {
+    "name": "dense_reranker",
+    "embedding_model": "BAAI/bge-base-en-v1.5",
+    "reranker_model": "ms-marco-MiniLM-L-12-v2",
+    "llm_model": "gemma2:9b",
+    "embedding_threads": 4,
+    "chunking": {
+      "strategy": "recursive",
+      "chunk_size": 2048,
+      "overlap": 128
+    },
+    "retrieval": {
+      "mode": "dense",
+      "rerank": true,
+      "dense_top_k": 10,
+      "sparse_top_k": 10,
+      "fusion_top_k": 10,
+      "final_top_k": 10,
+      "context_top_k": 5,
+      "rrf_k": 60,
+      "bm25_k1": 1.5,
+      "bm25_b": 0.75
+    },
+    "answerability": {
+      "enabled": false,
+      "threshold": 0.06037675961852074,
+      "feature": "top1",
+      "calibration_file": "experiments/dense_reranker/dev/calibration.json"
+    },
+    "generation": {
+      "temperature": 0.0,
+      "max_tokens": 192,
+      "context_size": 4096,
+      "seed": 42,
+      "provider": "ollama",
+      "base_url": "http://127.0.0.1:11434",
+      "context_chars_per_source": 1024,
+      "judge_model": "gemma2:9b",
+      "judge_max_tokens": 128,
+      "input_cost_per_million": null,
+      "output_cost_per_million": null
+    }
+  },
+  "runtime": {
+    "embedding": {
+      "name": "BAAI/bge-base-en-v1.5",
+      "repo": "qdrant/bge-base-en-v1.5-onnx-q",
+      "revision": "199291fdd1aa89faf9c20b722dc72ad5e17aa0d0",
+      "files": {
+        "config.json": "86f84a5285de7f1ee673f712387219ef1e261ec27dcd870e793a80f9da1aaa3b",
+        "model_optimized.onnx": "4e556722bc4f65716c544c8a931f1e90fb3f866e5741fd93a96f051d673339c7",
+        "special_tokens_map.json": "5d5b662e421ea9fac075174bb0688ee0d9431699900b90662acd44b2a350503a",
+        "tokenizer.json": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66",
+        "tokenizer_config.json": "0b29c7bfc889e53b36d9dd3e686dd4300f6525110eaa98c76a5dafceb2029f53"
+      }
+    },
+    "reranker": {
+      "name": "ms-marco-MiniLM-L-12-v2",
+      "files": {
+        ".DS_Store": "d65165279105ca6773180500688df4bdc69a2c7b771752f0a46ef120b7fd8ec3",
+        "config.json": "2144195e107cd7ea61556478e7add12986ebfbc3085f924fc0b90c2410604879",
+        "flashrank-MiniLM-L-12-v2_Q.onnx": "d3dd7b09fcf06b0c070081d6819b5effbb40b667bcad78b2d7543400271141d1",
+        "special_tokens_map.json": "303df45a03609e4ead04bc3dc1536d0ab19b5358db685b6f3da123d05ec200e3",
+        "tokenizer.json": "ce64fce797c24f68df90b40a3f74f579b336a493db14bd583fd520ea0d8c9a98",
+        "tokenizer_config.json": "eaf913a687e8eed3010b6479d0d84631038212aa50c14d9b812e08cbc891d925"
+      }
+    },
+    "llm": {
+      "name": "gemma2:9b",
+      "digest": "ff02c3702f322b9e075e9568332d96c0a7028002f1a5a056e0a6784320a4db0b",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "gemma2",
+        "families": [
+          "gemma2"
+        ],
+        "parameter_size": "9.2B",
+        "quantization_level": "Q4_0",
+        "context_length": 8192,
+        "embedding_length": 3584
+      }
+    },
+    "ollama": {
+      "version": "0.35.1",
+      "asset_digest": "sha256:dc50b9ca7f9023c86525012632cd1615b093d0407987444a7f62ecab617e8e93",
+      "asset_url": "https://github.com/ollama/ollama/releases/download/v0.35.1/ollama-windows-amd64.zip"
+    },
+    "hardware": {
+      "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU, 8188 MiB",
+      "physical_cpu_cores": 24,
+      "logical_cpu_cores": 32,
+      "ram_bytes": 16978403328,
+      "platform": "Windows-11-10.0.26200-SP0",
+      "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel"
+    }
+  },
+  "index": {
+    "corpus": {
+      "1973_oil_crisis_squad2_excerpt.pdf": "5305d631f6adef111dd8cba58378a367fe06e5e4c39b2d2c4ef6c2a6f530d6f6",
+      "amazon_rainforest_squad2_excerpt.pdf": "a645ca64619b4dbaf786796ed483da752dccb8581518c3dc9fb4976f2336ce5e",
+      "black_death_squad2_excerpt.pdf": "9198ba87a239ac9902b81b1a1dce80ef70df0c8b6c95e2e9cff453f400ef4a4b",
+      "computational_complexity_theory_squad2_excerpt.pdf": "a54649adfce0377bd125fad8d22121a6d10c670dd2f324d8b33b8d984dd55f16",
+      "ctenophora_squad2_excerpt.pdf": "5bef7257af51a671378186e90ad7790ad68f35b5320346772a7de22a4f8e9b8f",
+      "european_union_law_squad2_excerpt.pdf": "b86493edd78bef3c2628628a02239f4833dca2206c1b6e7bf0b6a490604c589e",
+      "fresno_california_squad2_excerpt.pdf": "7f375fc69145e551ab7a5c0475b22a7d7fd7495ca84c37d2a04c4334558d6bfd",
+      "huguenot_squad2_excerpt.pdf": "97068d4661d1361b59cb21fa5750e8280e7f43175c9160009804ed8ecb958a6c",
+      "normans_squad2_excerpt.pdf": "fcad428a6d80533a42b4926ea7cbbad7c48f5dd2001468dabf7e2e39d1c2e0ba",
+      "oxygen_squad2_excerpt.pdf": "9a34684f48ef336e74fb9b88ecef54de5a200fe5f2c689dd1155199127719bcf",
+      "packet_switching_squad2_excerpt.pdf": "4add71c6e3ae9b293976451296749cb54b40fa79385ce55c58c303a94bc500bb",
+      "sky_united_kingdom_squad2_excerpt.pdf": "15193413e8ae190dcdb757a78c80f60d9a713a97c6d678c09fcf8de1da6e62cc",
+      "southern_california_squad2_excerpt.pdf": "88a3e04062cef33b03214558a4ddd5743116a3d57817c25e22e4eed3aa125d42",
+      "steam_engine_squad2_excerpt.pdf": "b27bd6dc9b514de13df50c10acfd79824e378b7aef21557ec32b866dd34aa9b0",
+      "victoria_australia_squad2_excerpt.pdf": "38fd5fcf8539abe8aa3739d5af31a888c0e061cc3ad7a1c2c8570c039488709c"
+    },
+    "embedding_model": "BAAI/bge-base-en-v1.5",
+    "chunking": {
+      "strategy": "recursive",
+      "chunk_size": 2048,
+      "overlap": 128
+    },
+    "parser": "pdfium-page-normalized-v1",
+    "index_id": "c1821492605cd3b2acae8728",
+    "chunk_count": 15,
+    "page_count": 15,
+    "chunks_sha256": "42ab1a5235c6a5971b89c0547002f86e8b2d437a25834c0baf720ff128bb3dcb",
+    "parsing_ms": 789.1042999981437,
+    "chunking_ms": 8.193200003006496,
+    "indexing_ms": 16130.40130000445,
+    "ingestion_ms": 16927.6988000056
+  },
+  "dataset_manifest_sha256": "9f99efeed425129ef14fbfdda84551f2f36036a9123704550a5f55f2ef159a24",
+  "core_sha256": {
+    "ragbase/config.py": "ad7fd7ec318cd60a7ee6d13c8c657ad2b086913a730f47d7e66118558b5bb088",
+    "ragbase/model.py": "63ffdb732927a940301b2166f7ebef07cc66192b044aec72d84312291ac9226e",
+    "ragbase/schema.py": "ad4e5b9657270e2097d8b65db634eda54a54ab9a1cc783056e44915ad39a2a1c",
+    "ragbase/ingestion/__init__.py": "c0d4a3781b1453a54cce553129424a4eff3857cc2f51a1a02b9bc44f2b09f74f",
+    "ragbase/ingestion/chunker.py": "46a9faea844581907846f138043716a239956497785002331ac469e9601de86c",
+    "ragbase/ingestion/indexer.py": "dda694846fcc6c3d9557a0783e337e8dd7f6766bf5f55e13b2b334cc74164057",
+    "ragbase/ingestion/parser.py": "3fa10d394f69066cf0855c376f6219fdb579abc574fadb301eed659298b9b7ac",
+    "ragbase/retrieval/__init__.py": "f1198c84384433df1591714d368cd12071322913810046d3671b8df67124bb6a",
+    "ragbase/retrieval/bm25.py": "dce38d3388d3ff1712bd66260bf73f7829a9653a538530b16f4e0136ea0b5c51",
+    "ragbase/retrieval/dense.py": "c68e2a8e22b25cde8b1340541a8a695029f637149744e9daf42deabdf5be06aa",
+    "ragbase/retrieval/fusion.py": "2d02a1a0d3d2ddf3299b7f0b505b2b509a120491b786466fe685c4e5df6b9f8c",
+    "ragbase/retrieval/hybrid.py": "25e8a84c65b6cc016e5adee79443c23154df75cf743136a4661b8b5ac505cb3b",
+    "ragbase/retrieval/reranker.py": "6ffec35e96d560fd12de90146e16a7d85adc65b1c9bc5f365e030bd9959297be",
+    "ragbase/generation/__init__.py": "6c16d32dc9114135d298be6cbcaba70bda80066ef3865ddeddcc4256ae7ef05d",
+    "ragbase/generation/answerability.py": "9fa3c7d5388bf6511176b7b0ce86f77d5e94e2496a8c4b64e2d2907ebd4c889b",
+    "ragbase/generation/citation.py": "d4a3cf1c7a3a531a5c823292405277e32d03e3f7bea7f325051a8346e9588d96",
+    "ragbase/generation/generator.py": "8869304b5e143bcf33785d8b9be7bbe73336f58bbd9f71f66930728b054b9481",
+    "ragbase/generation/prompt.py": "1c279cad58bfc6acb6a7334896a1ffb1d8549081986c949dfe02554f030dc961",
+    "ragbase/evaluation/retrieval_metrics.py": "bae435f5cb1287fc17cefe3dba216bc0cfcbd0b2907f794eb176063484458b65",
+    "ragbase/evaluation/generation_metrics.py": "ada4b11c7db98b0de456b52bbe10808657a65d7b016193675f47c2786ce4738a",
+    "ragbase/evaluation/judge.py": "e4edc4d7b17f9fe9ebf5588f9c46de07ceef40f067c75653cba0dd92c76c6b09"
+  },
+  "natural_document_source": "https://rajpurkar.github.io/SQuAD-explorer/dataset/dev-v2.0.json",
+  "no_retuning": true,
+  "gold_source": "SQuAD2 native crowd annotations; not this project's independent human audit",
+  "natural_qa_scope_caveat": "Excerpts rather than full Wikipedia articles; impossible labels originally paragraph-scoped; global multi-document validity remains unreviewed. Public set may be in model pretraining."
+}

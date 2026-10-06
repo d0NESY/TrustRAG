@@ -1,0 +1,122 @@
+[
+  {
+    "title": "Normans",
+    "filename": "normans_squad2_excerpt.pdf",
+    "paragraph_index": 0,
+    "context": "The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse (\"Norman\" comes from \"Norseman\") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.",
+    "source_context_sha256": "dd5c8526091ce0e937a062da23833808b4e54d9ce41cdc101173265b6a718bbd",
+    "pages": 1
+  },
+  {
+    "title": "Computational_complexity_theory",
+    "filename": "computational_complexity_theory_squad2_excerpt.pdf",
+    "paragraph_index": 0,
+    "context": "Computational complexity theory is a branch of the theory of computation in theoretical computer science that focuses on classifying computational problems according to their inherent difficulty, and relating those classes to each other. A computational problem is understood to be a task that is in principle amenable to being solved by a computer, which is equivalent to stating that the problem may be solved by mechanical application of mathematical steps, such as an algorithm.",
+    "source_context_sha256": "4d3f905eee7981da9b9da72fa2e46d6de1701497204d573cd2b11c15b077ad99",
+    "pages": 1
+  },
+  {
+    "title": "Southern_California",
+    "filename": "southern_california_squad2_excerpt.pdf",
+    "paragraph_index": 0,
+    "context": "Southern California, often abbreviated SoCal, is a geographic and cultural region that generally comprises California's southernmost 10 counties. The region is traditionally described as \"eight counties\", based on demographics and economic ties: Imperial, Los Angeles, Orange, Riverside, San Bernardino, San Diego, Santa Barbara, and Ventura. The more extensive 10-county definition, including Kern and San Luis Obispo counties, is also used based on historical political divisions. Southern California is a major economic center for the state of California and the United States.",
+    "source_context_sha256": "443784f71b85ab6f58648fe4eb266a7020505d78a8661774accc6a72ddeac883",
+    "pages": 1
+  },
+  {
+    "title": "Sky_(United_Kingdom)",
+    "filename": "sky_united_kingdom_squad2_excerpt.pdf",
+    "paragraph_index": 0,
+    "context": "Formed in November 1990 by the equal merger of Sky Television and British Satellite Broadcasting, BSkyB became the UK's largest digital subscription television company. Following BSkyB's 2014 acquisition of Sky Italia and a majority 90.04% interest in Sky Deutschland in November 2014, its holding company British Sky Broadcasting Group plc changed its name to Sky plc. The United Kingdom operations also changed the company name from British Sky Broadcasting Limited to Sky UK Limited, still trading as Sky.",
+    "source_context_sha256": "bc5f1c2743b9de3bbf84078611d839665374c71f9f5ce23ea41ca3d84c8793ba",
+    "pages": 1
+  },
+  {
+    "title": "Victoria_(Australia)",
+    "filename": "victoria_australia_squad2_excerpt.pdf",
+    "paragraph_index": 0,
+    "context": "The economy of Victoria is highly diversified: service sectors including financial and property services, health, education, wholesale, retail, hospitality and manufacturing constitute the majority of employment. Victoria's total gross state product (GSP) is ranked second in Australia, although Victoria is ranked fourth in terms of GSP per capita because of its limited mining activity. Culturally, Melbourne is home to a number of museums, art galleries and theatres and is also described as the \"sporting capital of Australia\". The Melbourne Cricket Ground is the largest stadium in Australia, and the host of the 1956 Summer Olympics and the 2006 Commonwealth Games. The ground is also considered the \"spiritual home\" of Australian cricket and Australian rules football, and hosts the grand final of the Australian Football League (AFL) each year, usually drawing crowds of over 95,000 people. Victoria includes eight public universities, with the oldest, the University of Melbourne, having been founded in 1853.",
+    "source_context_sha256": "3548c9026a06bf244b562a301cf08d02a4d7cc064187ea4773284ab64ab44ef3",
+    "pages": 1
+  },
+  {
+    "title": "Huguenot",
+    "filename": "huguenot_squad2_excerpt.pdf",
+    "paragraph_index": 0,
+    "context": "Huguenot numbers peaked near an estimated two million by 1562, concentrated mainly in the southern and central parts of France, about one-eighth the number of French Catholics. As Huguenots gained influence and more openly displayed their faith, Catholic hostility grew, in spite of increasingly liberal political concessions and edicts of toleration from the French crown. A series of religious conflicts followed, known as the Wars of Religion, fought intermittently from 1562 to 1598. The wars finally ended with the granting of the Edict of Nantes, which granted the Huguenots substantial religious, political and military autonomy.",
+    "source_context_sha256": "f20bb42b5e294e6d2d01963844230d83bfdf35592386b5cad0545b14a5462b4c",
+    "pages": 1
+  },
+  {
+    "title": "Steam_engine",
+    "filename": "steam_engine_squad2_excerpt.pdf",
+    "paragraph_index": 0,
+    "context": "Steam engines are external combustion engines, where the working fluid is separate from the combustion products. Non-combustion heat sources such as solar power, nuclear power or geothermal energy may be used. The ideal thermodynamic cycle used to analyze this process is called the Rankine cycle. In the cycle, water is heated and transforms into steam within a boiler operating at a high pressure. When expanded through pistons or turbines, mechanical work is done. The reduced-pressure steam is then condensed and pumped back into the boiler.",
+    "source_context_sha256": "43d98e0a6026101ae60c61b15713fa0e50a69eebbbe6afa3fabf9e4d3146d377",
+    "pages": 1
+  },
+  {
+    "title": "Oxygen",
+    "filename": "oxygen_squad2_excerpt.pdf",
+    "paragraph_index": 0,
+    "context": "Oxygen is a chemical element with symbol O and atomic number 8. It is a member of the chalcogen group on the periodic table and is a highly reactive nonmetal and oxidizing agent that readily forms compounds (notably oxides) with most elements. By mass, oxygen is the third-most abundant element in the universe, after hydrogen and helium. At standard temperature and pressure, two atoms of the element bind to form dioxygen, a colorless and odorless diatomic gas with the formula O\n2. Diatomic oxygen gas constitutes 20.8% of the Earth's atmosphere. However, monitoring of atmospheric oxygen levels show a global downward trend, because of fossil-fuel burning. Oxygen is the most abundant element by mass in the Earth's crust as part of oxide compounds such as silicon dioxide, making up almost half of the crust's mass.",
+    "source_context_sha256": "e1e68b90e348d860a1f3c0cfe6e1367d9c8c8a57ad577d564b36e00900222682",
+    "pages": 1
+  },
+  {
+    "title": "1973_oil_crisis",
+    "filename": "1973_oil_crisis_squad2_excerpt.pdf",
+    "paragraph_index": 0,
+    "context": "The 1973 oil crisis began in October 1973 when the members of the Organization of Arab Petroleum Exporting Countries (OAPEC, consisting of the Arab members of OPEC plus Egypt and Syria) proclaimed an oil embargo. By the end of the embargo in March 1974, the price of oil had risen from US$3 per barrel to nearly $12 globally; US prices were significantly higher. The embargo caused an oil crisis, or \"shock\", with many short- and long-term effects on global politics and the global economy. It was later called the \"first oil shock\", followed by the 1979 oil crisis, termed the \"second oil shock.\"",
+    "source_context_sha256": "1970e37a8bbfd87eb674dceafe71d721c7fa198f09f5c79a0335ff6d3ddce0dc",
+    "pages": 1
+  },
+  {
+    "title": "European_Union_law",
+    "filename": "european_union_law_squad2_excerpt.pdf",
+    "paragraph_index": 0,
+    "context": "European Union law is a body of treaties and legislation, such as Regulations and Directives, which have direct effect or indirect effect on the laws of European Union member states. The three sources of European Union law are primary law, secondary law and supplementary law. The main sources of primary law are the Treaties establishing the European Union. Secondary sources include regulations and directives which are based on the Treaties. The legislature of the European Union is principally composed of the European Parliament and the Council of the European Union, which under the Treaties may establish secondary law to pursue the objective set out in the Treaties.",
+    "source_context_sha256": "0b1769dcd4b05af8e663c9fb941ba1d9c5ce34cd2639f1abfef5b71e0bcc146c",
+    "pages": 1
+  },
+  {
+    "title": "Amazon_rainforest",
+    "filename": "amazon_rainforest_squad2_excerpt.pdf",
+    "paragraph_index": 0,
+    "context": "The Amazon rainforest (Portuguese: Floresta Amazônica or Amazônia; Spanish: Selva Amazónica, Amazonía or usually Amazonia; French: Forêt amazonienne; Dutch: Amazoneregenwoud), also known in English as Amazonia or the Amazon Jungle, is a moist broadleaf forest that covers most of the Amazon basin of South America. This basin encompasses 7,000,000 square kilometres (2,700,000 sq mi), of which 5,500,000 square kilometres (2,100,000 sq mi) are covered by the rainforest. This region includes territory belonging to nine nations. The majority of the forest is contained within Brazil, with 60% of the rainforest, followed by Peru with 13%, Colombia with 10%, and with minor amounts in Venezuela, Ecuador, Bolivia, Guyana, Suriname and French Guiana. States or departments in four nations contain \"Amazonas\" in their names. The Amazon represents over half of the planet's remaining rainforests, and comprises the largest and most biodiverse tract of tropical rainforest in the world, with an estimated 390 billion individual trees divided into 16,000 species.",
+    "source_context_sha256": "c7c7ec362f0439a4c9ad1edead0e0f7505b22fd24ce7be23b8711356cdcda6a3",
+    "pages": 1
+  },
+  {
+    "title": "Ctenophora",
+    "filename": "ctenophora_squad2_excerpt.pdf",
+    "paragraph_index": 0,
+    "context": "Ctenophora (/tᵻˈnɒfərə/; singular ctenophore, /ˈtɛnəfɔːr/ or /ˈtiːnəfɔːr/; from the Greek κτείς kteis 'comb' and φέρω pherō 'carry'; commonly known as comb jellies) is a phylum of animals that live in marine waters worldwide. Their most distinctive feature is the ‘combs’ – groups of cilia which they use for swimming – they are the largest animals that swim by means of cilia. Adults of various species range from a few millimeters to 1.5 m (4 ft 11 in) in size. Like cnidarians, their bodies consist of a mass of jelly, with one layer of cells on the outside and another lining the internal cavity. In ctenophores, these layers are two cells deep, while those in cnidarians are only one cell deep. Some authors combined ctenophores and cnidarians in one phylum, Coelenterata, as both groups rely on water flow through the body cavity for both digestion and respiration. Increasing awareness of the differences persuaded more recent authors to classify them as separate phyla.",
+    "source_context_sha256": "f1fd21822238bc914acc770ffbb65f55d8c7f833cb4d0a1c420d323ecdd137dd",
+    "pages": 1
+  },
+  {
+    "title": "Fresno,_California",
+    "filename": "fresno_california_squad2_excerpt.pdf",
+    "paragraph_index": 0,
+    "context": "Fresno (/ˈfrɛznoʊ/ FREZ-noh), the county seat of Fresno County, is a city in the U.S. state of California. As of 2015, the city's population was 520,159, making it the fifth-largest city in California, the largest inland city in California and the 34th-largest in the nation. Fresno is in the center of the San Joaquin Valley and is the largest city in the Central Valley, which contains the San Joaquin Valley. It is approximately 220 miles (350 km) northwest of Los Angeles, 170 miles (270 km) south of the state capital, Sacramento, or 185 miles (300 km) south of San Francisco. The name Fresno means \"ash tree\" in Spanish, and an ash leaf is featured on the city's flag.",
+    "source_context_sha256": "d619b23bf7b93c1267c56dec97767d7a43f0b1d60b5a2d4b27068ccf50232fbf",
+    "pages": 1
+  },
+  {
+    "title": "Packet_switching",
+    "filename": "packet_switching_squad2_excerpt.pdf",
+    "paragraph_index": 0,
+    "context": "Starting in the late 1950s, American computer scientist Paul Baran developed the concept Distributed Adaptive Message Block Switching with the goal to provide a fault-tolerant, efficient routing method for telecommunication messages as part of a research program at the RAND Corporation, funded by the US Department of Defense. This concept contrasted and contradicted the theretofore established principles of pre-allocation of network bandwidth, largely fortified by the development of telecommunications in the Bell System. The new concept found little resonance among network implementers until the independent work of Donald Davies at the National Physical Laboratory (United Kingdom) (NPL) in the late 1960s. Davies is credited with coining the modern name packet switching and inspiring numerous packet switching networks in Europe in the decade following, including the incorporation of the concept in the early ARPANET in the United States.",
+    "source_context_sha256": "dfc62fde23936e1ea3cab0f6a04aa5f4eb4ce3a3a1c3c79813ebfd4a6fbee7b8",
+    "pages": 1
+  },
+  {
+    "title": "Black_Death",
+    "filename": "black_death_squad2_excerpt.pdf",
+    "paragraph_index": 0,
+    "context": "The Black Death is thought to have originated in the arid plains of Central Asia, where it then travelled along the Silk Road, reaching Crimea by 1343. From there, it was most likely carried by Oriental rat fleas living on the black rats that were regular passengers on merchant ships. Spreading throughout the Mediterranean and Europe, the Black Death is estimated to have killed 30–60% of Europe's total population. In total, the plague reduced the world population from an estimated 450 million down to 350–375 million in the 14th century. The world population as a whole did not recover to pre-plague levels until the 17th century. The plague recurred occasionally in Europe until the 19th century.",
+    "source_context_sha256": "0d50de71a8220db34991fd3710e965ad95973a5e898da92d2e09819ee0ff21b8",
+    "pages": 1
+  }
+]

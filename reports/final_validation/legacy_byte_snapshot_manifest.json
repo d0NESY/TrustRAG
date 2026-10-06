@@ -1,0 +1,12 @@
+{
+  "original_workspace": "E:\\实习\\agent学习\\ragbase",
+  "files": {
+    "ragbase/chain.py": "149620e4457eeba57e96f8a3cb900d187196d91a3ce96fcff529cd0218edd222",
+    "ragbase/ingestor.py": "f06036a26d7eb62e6c9521eb45413745def90a826a7948fca07b952147548a73",
+    "ragbase/retriever.py": "4db03017541671e674082e786c601bb2f0093894f3152c515fa2556ee40b7c29",
+    "ragbase/session_history.py": "a91c83a7c98df6ce87387377b81821c9f6d7e09d607b556ba48a2f02ad9ff8a1",
+    "ragbase/uploader.py": "4218397d36dbc28891ce4bf957c5186f4977edb6911839dd9a877a71f94a5467"
+  },
+  "archive_sha256": "78d4552528896b7bfd1f2ec88d719e1aa75cb7c6dae2661ae19125ccc016ae55",
+  "purpose": "Unchanged legacy V1 code exact-byte backup; EOL-only restoration in a separate clone."
+}

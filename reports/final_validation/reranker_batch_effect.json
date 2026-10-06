@@ -1,0 +1,602 @@
+{
+  "cases": [
+    {
+      "id": "v2_parental_requests_version_conflict",
+      "question": "What is the currently approved paid adoption allowance?",
+      "category": "version_conflict",
+      "target": "d7536662feda190a90cc7040b63bc6a530c544158659eddfebe31b217b6b1ea2",
+      "fixed_competitor": "b59219856cc8347fd603ff27cf0276fe49cf4a81028e58ceac824c19149c7a27",
+      "query_target_sha256": "b08015f57a157df6dcae03242b346adcc96582554cd74801b548e75a57d08930",
+      "candidate_sets": {
+        "A_dense": [
+          "d7536662feda190a90cc7040b63bc6a530c544158659eddfebe31b217b6b1ea2",
+          "b59219856cc8347fd603ff27cf0276fe49cf4a81028e58ceac824c19149c7a27",
+          "28161c5ff9703fad37390113e28945c4bf020b26e092e13ca0312104c80fb9f2",
+          "b05043dbb4a51843ef33e8bc089e9da4f8ddb3b2e2375a34e6353fd7ebc4414e",
+          "22fe475fbb82b523e3ed20aa24c413481ea38b136a12ccb6b232768ee164c164",
+          "cffabd1d14169f95d890463af135c7b6a0c8717b72a7598ac50bd1c0ff369c15",
+          "d681826be9fb3e470b2229c13837c8ddecc460dc5305ad034073d765dbee3a44",
+          "1cebd21638a0aa9639a82b4c1816ad004d0376cb357245b2fbfa51e763a7ffd0",
+          "4b4ad9039b8cdb70eb5beacf31c74840f589571d094556c294450176d0d18284",
+          "b8667f7b9bdce38bb68a104ec4e7a2c843d8456f5a91c7f90c7088cb7d5daf7a"
+        ],
+        "B_hybrid": [
+          "d7536662feda190a90cc7040b63bc6a530c544158659eddfebe31b217b6b1ea2",
+          "b59219856cc8347fd603ff27cf0276fe49cf4a81028e58ceac824c19149c7a27",
+          "28161c5ff9703fad37390113e28945c4bf020b26e092e13ca0312104c80fb9f2",
+          "1cebd21638a0aa9639a82b4c1816ad004d0376cb357245b2fbfa51e763a7ffd0",
+          "966eb0c7cf582de51d1229655acfc9d3fb27a7b02c95937dd107f18cb8b4c0a8",
+          "b05043dbb4a51843ef33e8bc089e9da4f8ddb3b2e2375a34e6353fd7ebc4414e",
+          "22fe475fbb82b523e3ed20aa24c413481ea38b136a12ccb6b232768ee164c164",
+          "bf04e0ecf30e5bc28208ee9497bdb304324ac5eddf0f6a6af7f25b2ad83c103d",
+          "cffabd1d14169f95d890463af135c7b6a0c8717b72a7598ac50bd1c0ff369c15",
+          "7e3f9f2ad10a8f68f989e51a9345420f541b9c812b5c0e2657d36c39e44c84db"
+        ],
+        "C_long_distractors": [
+          "d7536662feda190a90cc7040b63bc6a530c544158659eddfebe31b217b6b1ea2",
+          "b59219856cc8347fd603ff27cf0276fe49cf4a81028e58ceac824c19149c7a27",
+          "b0b20c2b1c77d79d958bcac3a04f3e1876f75c40ae82405cb97e28bdddb3e70a",
+          "17d1f71ae125370a2b3722665a9ac6fea6a010401ce01d138c06f1c223219a43",
+          "9985989fef8872683896d054aa766c2ae8ceafd3e468a6cc85444dcb1dce6ce1",
+          "3c8a50651681170ae208fe8fd4af256ef76e0fdd45f44f73890bc0e8d67c3d4c",
+          "7a2dfc17084c7fb267b5fc54cd76d1826c404a84a10f3a7163df629241728b6a",
+          "cea7228c9d6d72b4c06944ab94df0ee9d8dcbdd069cbd06146850ef295207878",
+          "da985068f66a203c1daf531373887bf1c30c66feff86831526f83d6a86bd0b38",
+          "77cfcb6a26724d87a1fe8a7a2b9443f2b766de0f747df2206dbc521b5c3b6796"
+        ],
+        "single_pair": [
+          "d7536662feda190a90cc7040b63bc6a530c544158659eddfebe31b217b6b1ea2"
+        ]
+      },
+      "score_range_across_conditions": 0.009017467498779297,
+      "fixed_pair_order_reversed": true
+    },
+    {
+      "id": "v2_research_data_version_conflict",
+      "question": "What collaborator retention term applies under the current research custody instruction?",
+      "category": "version_conflict",
+      "target": "f2fec6c35324ca0d5cb9994c2844b42b2ac47dad9155f92dc0abffa0798058be",
+      "fixed_competitor": "04fc6a9aaedb7d2b5274104aa060aa1a70a5ebb7514d58a6556a62d45600a106",
+      "query_target_sha256": "66ce0037013d8c90fb69888f09b1a30a6a26087078d095e67cd11c41eeee1f81",
+      "candidate_sets": {
+        "A_dense": [
+          "f2fec6c35324ca0d5cb9994c2844b42b2ac47dad9155f92dc0abffa0798058be",
+          "04fc6a9aaedb7d2b5274104aa060aa1a70a5ebb7514d58a6556a62d45600a106",
+          "6d7da7269ecead4bbad384f83824369f3aadf21e6cf21c600b405e8018b51360",
+          "c222394611dc7727985ce1d84a70db6d53069f020c4989a361ef839d2ead0a5f",
+          "b00ec4f9db8f09741053f471d2617e042a6b432c722ccd7409f19c0a8abc5d49",
+          "919309853d978b35b416d0e1b4354842727c4207629b0c9f59d73cff3a041520",
+          "514510e20d57a3aa863cc5353c93fc7e4c5904ebba59017e5e472155dcfedbaa",
+          "57009bb763f79fd9d2074942e2cf31158867b9be2d3f99294dba0e4d99f4d477",
+          "dd38345cc03413cdb5baee2a0bc160cec68a7bca2df975f71f662f00cba0a4ff",
+          "dc6cbac1694d7f3a19a272b3d9c16480d593e9d53b7753e67535c703b23fda10"
+        ],
+        "B_hybrid": [
+          "f2fec6c35324ca0d5cb9994c2844b42b2ac47dad9155f92dc0abffa0798058be",
+          "04fc6a9aaedb7d2b5274104aa060aa1a70a5ebb7514d58a6556a62d45600a106",
+          "6d7da7269ecead4bbad384f83824369f3aadf21e6cf21c600b405e8018b51360",
+          "c222394611dc7727985ce1d84a70db6d53069f020c4989a361ef839d2ead0a5f",
+          "514510e20d57a3aa863cc5353c93fc7e4c5904ebba59017e5e472155dcfedbaa",
+          "b00ec4f9db8f09741053f471d2617e042a6b432c722ccd7409f19c0a8abc5d49",
+          "919309853d978b35b416d0e1b4354842727c4207629b0c9f59d73cff3a041520",
+          "b104ad3523a16846f29794b42295c884bb0a11ce90c4335884c84ac693b70c5e",
+          "48f2527675ce8c9b4d1506e25eaa49fc4d6b3627213ff3dc72cdcb7b38d576e1",
+          "57009bb763f79fd9d2074942e2cf31158867b9be2d3f99294dba0e4d99f4d477"
+        ],
+        "C_long_distractors": [
+          "f2fec6c35324ca0d5cb9994c2844b42b2ac47dad9155f92dc0abffa0798058be",
+          "04fc6a9aaedb7d2b5274104aa060aa1a70a5ebb7514d58a6556a62d45600a106",
+          "b0b20c2b1c77d79d958bcac3a04f3e1876f75c40ae82405cb97e28bdddb3e70a",
+          "17d1f71ae125370a2b3722665a9ac6fea6a010401ce01d138c06f1c223219a43",
+          "9985989fef8872683896d054aa766c2ae8ceafd3e468a6cc85444dcb1dce6ce1",
+          "3c8a50651681170ae208fe8fd4af256ef76e0fdd45f44f73890bc0e8d67c3d4c",
+          "7a2dfc17084c7fb267b5fc54cd76d1826c404a84a10f3a7163df629241728b6a",
+          "cea7228c9d6d72b4c06944ab94df0ee9d8dcbdd069cbd06146850ef295207878",
+          "da985068f66a203c1daf531373887bf1c30c66feff86831526f83d6a86bd0b38",
+          "77cfcb6a26724d87a1fe8a7a2b9443f2b766de0f747df2206dbc521b5c3b6796"
+        ],
+        "single_pair": [
+          "f2fec6c35324ca0d5cb9994c2844b42b2ac47dad9155f92dc0abffa0798058be"
+        ]
+      },
+      "score_range_across_conditions": 0.00022011995315551758,
+      "fixed_pair_order_reversed": true
+    },
+    {
+      "id": "v2_device_exit_semantic",
+      "question": "Once someone leaves the payroll, how long may they keep corporate equipment before handing it back?",
+      "category": "semantic",
+      "target": "996a31ca70668f2ef66cce003e477aee69295f44ef32e18716bd6b531b8f3c3c",
+      "fixed_competitor": "c589bdc8507717f8567e92be3cdb4afaf11496255f28d7ec42efd7bb13ac6ac2",
+      "query_target_sha256": "a973f05f5d2cdd8fc9fe2b2643b51baac062735f706c743c56d8b6aa4fc39fd3",
+      "candidate_sets": {
+        "A_dense": [
+          "996a31ca70668f2ef66cce003e477aee69295f44ef32e18716bd6b531b8f3c3c",
+          "c589bdc8507717f8567e92be3cdb4afaf11496255f28d7ec42efd7bb13ac6ac2",
+          "ccc78840fadc4438073a41f7d5d7baf9c50f8d82d16349714f7ec8fcadfb41d7",
+          "49174b35a6083b7ff6aa5ca40bf9ad638f3230781676013ad3eeffee114ab17d",
+          "a60da63326c931db0d6ccacb1ebf3d0d4a2d282b65a038d59734f5112d19bfdc",
+          "ef7fc21f687c280100b5548ba65e53d9b644e4af9e55aef06f80298db9056b2d",
+          "5724206761e2b738b73ac48805c88428cd14110c96f073a19c2f3258cd282ae3",
+          "dc6cbac1694d7f3a19a272b3d9c16480d593e9d53b7753e67535c703b23fda10",
+          "66dad1305126ca230e27db21824acce8eb4d4647974c1c065603c65c150e5ab4",
+          "8f6ee09d5d67bc7aa1f898b49b5b2e09eb7da7d8e61fba9dae99638221a71a11"
+        ],
+        "B_hybrid": [
+          "996a31ca70668f2ef66cce003e477aee69295f44ef32e18716bd6b531b8f3c3c",
+          "c589bdc8507717f8567e92be3cdb4afaf11496255f28d7ec42efd7bb13ac6ac2",
+          "49174b35a6083b7ff6aa5ca40bf9ad638f3230781676013ad3eeffee114ab17d",
+          "a60da63326c931db0d6ccacb1ebf3d0d4a2d282b65a038d59734f5112d19bfdc",
+          "8c66972bee3aed610fd3c09b48ae976f8bf8c6a0d43e7b946fd943f2cc7ae576",
+          "ccc78840fadc4438073a41f7d5d7baf9c50f8d82d16349714f7ec8fcadfb41d7",
+          "cffabd1d14169f95d890463af135c7b6a0c8717b72a7598ac50bd1c0ff369c15",
+          "6d7da7269ecead4bbad384f83824369f3aadf21e6cf21c600b405e8018b51360",
+          "4b77c9f1362e4a58076f3bfc18502dbf2f2fea28648ea4d523c380ac0e8ee6d6",
+          "ef7fc21f687c280100b5548ba65e53d9b644e4af9e55aef06f80298db9056b2d"
+        ],
+        "C_long_distractors": [
+          "996a31ca70668f2ef66cce003e477aee69295f44ef32e18716bd6b531b8f3c3c",
+          "c589bdc8507717f8567e92be3cdb4afaf11496255f28d7ec42efd7bb13ac6ac2",
+          "b0b20c2b1c77d79d958bcac3a04f3e1876f75c40ae82405cb97e28bdddb3e70a",
+          "17d1f71ae125370a2b3722665a9ac6fea6a010401ce01d138c06f1c223219a43",
+          "9985989fef8872683896d054aa766c2ae8ceafd3e468a6cc85444dcb1dce6ce1",
+          "3c8a50651681170ae208fe8fd4af256ef76e0fdd45f44f73890bc0e8d67c3d4c",
+          "7a2dfc17084c7fb267b5fc54cd76d1826c404a84a10f3a7163df629241728b6a",
+          "cea7228c9d6d72b4c06944ab94df0ee9d8dcbdd069cbd06146850ef295207878",
+          "da985068f66a203c1daf531373887bf1c30c66feff86831526f83d6a86bd0b38",
+          "77cfcb6a26724d87a1fe8a7a2b9443f2b766de0f747df2206dbc521b5c3b6796"
+        ],
+        "single_pair": [
+          "996a31ca70668f2ef66cce003e477aee69295f44ef32e18716bd6b531b8f3c3c"
+        ]
+      },
+      "score_range_across_conditions": 0.04619389772415161,
+      "fixed_pair_order_reversed": false
+    },
+    {
+      "id": "v2_device_exit_version_conflict",
+      "question": "Under the current equipment recovery rule, how many days can the custodian keep a returned disk before erasure?",
+      "category": "version_conflict",
+      "target": "a60da63326c931db0d6ccacb1ebf3d0d4a2d282b65a038d59734f5112d19bfdc",
+      "fixed_competitor": "49174b35a6083b7ff6aa5ca40bf9ad638f3230781676013ad3eeffee114ab17d",
+      "query_target_sha256": "58f83f042e92b81ae497edd081906f5d283d6b442661af09cad511b13832b451",
+      "candidate_sets": {
+        "A_dense": [
+          "a60da63326c931db0d6ccacb1ebf3d0d4a2d282b65a038d59734f5112d19bfdc",
+          "49174b35a6083b7ff6aa5ca40bf9ad638f3230781676013ad3eeffee114ab17d",
+          "c589bdc8507717f8567e92be3cdb4afaf11496255f28d7ec42efd7bb13ac6ac2",
+          "ab32319e509cf321c083915f27c049800df7ee18689e14d57a1049f57b4b6c36",
+          "9f4fe1ddccba928ec3aed0990a86e62db04481881f48d8201f755bafb5175ddf",
+          "66dad1305126ca230e27db21824acce8eb4d4647974c1c065603c65c150e5ab4",
+          "5417d2c499156aef77ce864ba698161f3357932c8000e98a871ef711e3fb9bf1",
+          "996a31ca70668f2ef66cce003e477aee69295f44ef32e18716bd6b531b8f3c3c",
+          "651d054d3d1d150f736ca84345bdf0274cde8d063e573f91196e97003d802dee",
+          "9f38473c7acaa23a72247ae63f2078af6ae86f157622e530f15834343824b760"
+        ],
+        "B_hybrid": [
+          "a60da63326c931db0d6ccacb1ebf3d0d4a2d282b65a038d59734f5112d19bfdc",
+          "49174b35a6083b7ff6aa5ca40bf9ad638f3230781676013ad3eeffee114ab17d",
+          "c589bdc8507717f8567e92be3cdb4afaf11496255f28d7ec42efd7bb13ac6ac2",
+          "996a31ca70668f2ef66cce003e477aee69295f44ef32e18716bd6b531b8f3c3c",
+          "9f4fe1ddccba928ec3aed0990a86e62db04481881f48d8201f755bafb5175ddf",
+          "5417d2c499156aef77ce864ba698161f3357932c8000e98a871ef711e3fb9bf1",
+          "ab32319e509cf321c083915f27c049800df7ee18689e14d57a1049f57b4b6c36",
+          "66dad1305126ca230e27db21824acce8eb4d4647974c1c065603c65c150e5ab4",
+          "ccc78840fadc4438073a41f7d5d7baf9c50f8d82d16349714f7ec8fcadfb41d7",
+          "cf7dd14cf1f3fc8ed81039ddbc2300608f5c292e6b0a84ed6186a51a226c718c"
+        ],
+        "C_long_distractors": [
+          "a60da63326c931db0d6ccacb1ebf3d0d4a2d282b65a038d59734f5112d19bfdc",
+          "49174b35a6083b7ff6aa5ca40bf9ad638f3230781676013ad3eeffee114ab17d",
+          "b0b20c2b1c77d79d958bcac3a04f3e1876f75c40ae82405cb97e28bdddb3e70a",
+          "17d1f71ae125370a2b3722665a9ac6fea6a010401ce01d138c06f1c223219a43",
+          "9985989fef8872683896d054aa766c2ae8ceafd3e468a6cc85444dcb1dce6ce1",
+          "3c8a50651681170ae208fe8fd4af256ef76e0fdd45f44f73890bc0e8d67c3d4c",
+          "7a2dfc17084c7fb267b5fc54cd76d1826c404a84a10f3a7163df629241728b6a",
+          "cea7228c9d6d72b4c06944ab94df0ee9d8dcbdd069cbd06146850ef295207878",
+          "da985068f66a203c1daf531373887bf1c30c66feff86831526f83d6a86bd0b38",
+          "77cfcb6a26724d87a1fe8a7a2b9443f2b766de0f747df2206dbc521b5c3b6796"
+        ],
+        "single_pair": [
+          "a60da63326c931db0d6ccacb1ebf3d0d4a2d282b65a038d59734f5112d19bfdc"
+        ]
+      },
+      "score_range_across_conditions": 1.1205673217773438e-05,
+      "fixed_pair_order_reversed": false
+    },
+    {
+      "id": "v2_visitor_facilities_version_conflict",
+      "question": "How many hours of validity does the current visitor badge rule allow?",
+      "category": "version_conflict",
+      "target": "4e892aa37a095ca40fd47c3d76a6dd2c8ec3328ca98d29fa4c5424935ce98e76",
+      "fixed_competitor": "d49eda14c291274c2328cca9adb5c2e4e8409a3a6b4044f11c39a2ce1bc0327d",
+      "query_target_sha256": "530b330008b0b6a4bf31724f083f5355099101e5b455f66990166936ebcdafe2",
+      "candidate_sets": {
+        "A_dense": [
+          "4e892aa37a095ca40fd47c3d76a6dd2c8ec3328ca98d29fa4c5424935ce98e76",
+          "d49eda14c291274c2328cca9adb5c2e4e8409a3a6b4044f11c39a2ce1bc0327d",
+          "aeb80294572c0c7f454184b49f9dd47b9a4ea6e4e4902636fb970f01c8b35107",
+          "7e3f9f2ad10a8f68f989e51a9345420f541b9c812b5c0e2657d36c39e44c84db",
+          "7f47af11faf073f3bbbe957ae0f32f7f4379ed6727b61c0b51d0917065ac0c4a",
+          "640fdbb9193fb27a6561fa5448ef9455eee2841db31ad6a30e6d371321266de7",
+          "424dc741135c5cac9ae0919d9f0f3b65b1f95f6de2a8ec5fdc7787342d6fbcd6",
+          "4fc8c7c6e317720d4a28a3b6482fd57508d2c8cd11c3bb5cba01f8964949e277",
+          "6d7da7269ecead4bbad384f83824369f3aadf21e6cf21c600b405e8018b51360",
+          "966eb0c7cf582de51d1229655acfc9d3fb27a7b02c95937dd107f18cb8b4c0a8"
+        ],
+        "B_hybrid": [
+          "4e892aa37a095ca40fd47c3d76a6dd2c8ec3328ca98d29fa4c5424935ce98e76",
+          "d49eda14c291274c2328cca9adb5c2e4e8409a3a6b4044f11c39a2ce1bc0327d",
+          "aeb80294572c0c7f454184b49f9dd47b9a4ea6e4e4902636fb970f01c8b35107",
+          "7f47af11faf073f3bbbe957ae0f32f7f4379ed6727b61c0b51d0917065ac0c4a",
+          "7e3f9f2ad10a8f68f989e51a9345420f541b9c812b5c0e2657d36c39e44c84db",
+          "eed2555d546efe92b77dd6e1c51104713f81820fd4b9debe9a41548483e4ed7b",
+          "640fdbb9193fb27a6561fa5448ef9455eee2841db31ad6a30e6d371321266de7",
+          "74fa1ab60798a96ac0c598e25819525c8b131fd176d7045bd75ccdfda2881d4d",
+          "325f2b054aa1740e0e2f74affb573e647acad66eb32759ed045381c22c5044ee",
+          "424dc741135c5cac9ae0919d9f0f3b65b1f95f6de2a8ec5fdc7787342d6fbcd6"
+        ],
+        "C_long_distractors": [
+          "4e892aa37a095ca40fd47c3d76a6dd2c8ec3328ca98d29fa4c5424935ce98e76",
+          "d49eda14c291274c2328cca9adb5c2e4e8409a3a6b4044f11c39a2ce1bc0327d",
+          "b0b20c2b1c77d79d958bcac3a04f3e1876f75c40ae82405cb97e28bdddb3e70a",
+          "17d1f71ae125370a2b3722665a9ac6fea6a010401ce01d138c06f1c223219a43",
+          "9985989fef8872683896d054aa766c2ae8ceafd3e468a6cc85444dcb1dce6ce1",
+          "3c8a50651681170ae208fe8fd4af256ef76e0fdd45f44f73890bc0e8d67c3d4c",
+          "7a2dfc17084c7fb267b5fc54cd76d1826c404a84a10f3a7163df629241728b6a",
+          "cea7228c9d6d72b4c06944ab94df0ee9d8dcbdd069cbd06146850ef295207878",
+          "da985068f66a203c1daf531373887bf1c30c66feff86831526f83d6a86bd0b38",
+          "77cfcb6a26724d87a1fe8a7a2b9443f2b766de0f747df2206dbc521b5c3b6796"
+        ],
+        "single_pair": [
+          "4e892aa37a095ca40fd47c3d76a6dd2c8ec3328ca98d29fa4c5424935ce98e76"
+        ]
+      },
+      "score_range_across_conditions": 3.123283386230469e-05,
+      "fixed_pair_order_reversed": false
+    },
+    {
+      "id": "v2_incident_paging_version_conflict",
+      "question": "How long is the acknowledgement window in the paging standard currently in force?",
+      "category": "version_conflict",
+      "target": "7bb058e85dbe93915f823162453693e1a044aa8fb2ae9de59a37ed2298c57bea",
+      "fixed_competitor": "35b9430daab60812350bc399e5c40e3feafcbad82414e4a3f201c24be0474722",
+      "query_target_sha256": "b8335a6663a7c85981e4a3f4624f7c3ee4d494cb3cf5bea51d9c2994dfce2ce2",
+      "candidate_sets": {
+        "A_dense": [
+          "7bb058e85dbe93915f823162453693e1a044aa8fb2ae9de59a37ed2298c57bea",
+          "35b9430daab60812350bc399e5c40e3feafcbad82414e4a3f201c24be0474722",
+          "377789dae17e401f9b600d94780710f5176ea6a3799c31f048b62e25895bca93",
+          "fc544a0947bc860ac58c52dcbd29b19febd123e282e0f395728c15317306e7f2",
+          "b8667f7b9bdce38bb68a104ec4e7a2c843d8456f5a91c7f90c7088cb7d5daf7a",
+          "9f38473c7acaa23a72247ae63f2078af6ae86f157622e530f15834343824b760",
+          "640fdbb9193fb27a6561fa5448ef9455eee2841db31ad6a30e6d371321266de7",
+          "aeb80294572c0c7f454184b49f9dd47b9a4ea6e4e4902636fb970f01c8b35107",
+          "b05043dbb4a51843ef33e8bc089e9da4f8ddb3b2e2375a34e6353fd7ebc4414e",
+          "651d054d3d1d150f736ca84345bdf0274cde8d063e573f91196e97003d802dee"
+        ],
+        "B_hybrid": [
+          "7bb058e85dbe93915f823162453693e1a044aa8fb2ae9de59a37ed2298c57bea",
+          "35b9430daab60812350bc399e5c40e3feafcbad82414e4a3f201c24be0474722",
+          "fc544a0947bc860ac58c52dcbd29b19febd123e282e0f395728c15317306e7f2",
+          "377789dae17e401f9b600d94780710f5176ea6a3799c31f048b62e25895bca93",
+          "b8667f7b9bdce38bb68a104ec4e7a2c843d8456f5a91c7f90c7088cb7d5daf7a",
+          "b05043dbb4a51843ef33e8bc089e9da4f8ddb3b2e2375a34e6353fd7ebc4414e",
+          "311281013f0b289d9010419e43d7da559ae94c32840245ddb31d2b9e0425d483",
+          "6e8eaacc5866807d8aae9c7ab48b1e9e9f4e9f6af8f386ca4f38fa7e113ef3c1",
+          "9f38473c7acaa23a72247ae63f2078af6ae86f157622e530f15834343824b760",
+          "640fdbb9193fb27a6561fa5448ef9455eee2841db31ad6a30e6d371321266de7"
+        ],
+        "C_long_distractors": [
+          "7bb058e85dbe93915f823162453693e1a044aa8fb2ae9de59a37ed2298c57bea",
+          "35b9430daab60812350bc399e5c40e3feafcbad82414e4a3f201c24be0474722",
+          "b0b20c2b1c77d79d958bcac3a04f3e1876f75c40ae82405cb97e28bdddb3e70a",
+          "17d1f71ae125370a2b3722665a9ac6fea6a010401ce01d138c06f1c223219a43",
+          "9985989fef8872683896d054aa766c2ae8ceafd3e468a6cc85444dcb1dce6ce1",
+          "3c8a50651681170ae208fe8fd4af256ef76e0fdd45f44f73890bc0e8d67c3d4c",
+          "7a2dfc17084c7fb267b5fc54cd76d1826c404a84a10f3a7163df629241728b6a",
+          "cea7228c9d6d72b4c06944ab94df0ee9d8dcbdd069cbd06146850ef295207878",
+          "da985068f66a203c1daf531373887bf1c30c66feff86831526f83d6a86bd0b38",
+          "77cfcb6a26724d87a1fe8a7a2b9443f2b766de0f747df2206dbc521b5c3b6796"
+        ],
+        "single_pair": [
+          "7bb058e85dbe93915f823162453693e1a044aa8fb2ae9de59a37ed2298c57bea"
+        ]
+      },
+      "score_range_across_conditions": 2.5093555450439453e-05,
+      "fixed_pair_order_reversed": false
+    }
+  ],
+  "condition_summary": [
+    {
+      "id": "v2_parental_requests_version_conflict",
+      "condition": "A_dense",
+      "mean_target_score": 0.9188538193702698,
+      "std_target_score": 0.0,
+      "target_score_range": 0.0,
+      "min_rank": 1,
+      "max_rank": 1,
+      "target_top1_rate": 1.0,
+      "target_top5_rate": 1.0,
+      "target_competitor_margin": 0.019063830375671387
+    },
+    {
+      "id": "v2_parental_requests_version_conflict",
+      "condition": "B_hybrid",
+      "mean_target_score": 0.9278712868690491,
+      "std_target_score": 0.0,
+      "target_score_range": 0.0,
+      "min_rank": 2,
+      "max_rank": 2,
+      "target_top1_rate": 0.0,
+      "target_top5_rate": 1.0,
+      "target_competitor_margin": -0.011525332927703857
+    },
+    {
+      "id": "v2_parental_requests_version_conflict",
+      "condition": "C_long_distractors",
+      "mean_target_score": 0.9244046807289124,
+      "std_target_score": 0.0,
+      "target_score_range": 0.0,
+      "min_rank": 2,
+      "max_rank": 2,
+      "target_top1_rate": 0.0,
+      "target_top5_rate": 1.0,
+      "target_competitor_margin": -0.0034766793251037598
+    },
+    {
+      "id": "v2_parental_requests_version_conflict",
+      "condition": "single_pair",
+      "mean_target_score": 0.9208272099494934,
+      "std_target_score": 0.0,
+      "target_score_range": 0.0,
+      "min_rank": 1,
+      "max_rank": 1,
+      "target_top1_rate": 1.0,
+      "target_top5_rate": 1.0,
+      "target_competitor_margin": null
+    },
+    {
+      "id": "v2_research_data_version_conflict",
+      "condition": "A_dense",
+      "mean_target_score": 0.9982786178588867,
+      "std_target_score": 0.0,
+      "target_score_range": 0.0,
+      "min_rank": 1,
+      "max_rank": 1,
+      "target_top1_rate": 1.0,
+      "target_top5_rate": 1.0,
+      "target_competitor_margin": 0.0001525282859802246
+    },
+    {
+      "id": "v2_research_data_version_conflict",
+      "condition": "B_hybrid",
+      "mean_target_score": 0.9981443881988525,
+      "std_target_score": 0.0,
+      "target_score_range": 0.0,
+      "min_rank": 2,
+      "max_rank": 2,
+      "target_top1_rate": 0.0,
+      "target_top5_rate": 1.0,
+      "target_competitor_margin": -0.00011402368545532227
+    },
+    {
+      "id": "v2_research_data_version_conflict",
+      "condition": "C_long_distractors",
+      "mean_target_score": 0.9980584979057312,
+      "std_target_score": 0.0,
+      "target_score_range": 0.0,
+      "min_rank": 1,
+      "max_rank": 1,
+      "target_top1_rate": 1.0,
+      "target_top5_rate": 1.0,
+      "target_competitor_margin": 8.893013000488281e-05
+    },
+    {
+      "id": "v2_research_data_version_conflict",
+      "condition": "single_pair",
+      "mean_target_score": 0.9981765747070312,
+      "std_target_score": 0.0,
+      "target_score_range": 0.0,
+      "min_rank": 1,
+      "max_rank": 1,
+      "target_top1_rate": 1.0,
+      "target_top5_rate": 1.0,
+      "target_competitor_margin": null
+    },
+    {
+      "id": "v2_device_exit_semantic",
+      "condition": "A_dense",
+      "mean_target_score": 0.9315125942230225,
+      "std_target_score": 0.0,
+      "target_score_range": 0.0,
+      "min_rank": 1,
+      "max_rank": 1,
+      "target_top1_rate": 1.0,
+      "target_top5_rate": 1.0,
+      "target_competitor_margin": 0.6198329627513885
+    },
+    {
+      "id": "v2_device_exit_semantic",
+      "condition": "B_hybrid",
+      "mean_target_score": 0.8927538394927979,
+      "std_target_score": 0.0,
+      "target_score_range": 0.0,
+      "min_rank": 1,
+      "max_rank": 1,
+      "target_top1_rate": 1.0,
+      "target_top5_rate": 1.0,
+      "target_competitor_margin": 0.5081043541431427
+    },
+    {
+      "id": "v2_device_exit_semantic",
+      "condition": "C_long_distractors",
+      "mean_target_score": 0.9333141446113586,
+      "std_target_score": 0.0,
+      "target_score_range": 0.0,
+      "min_rank": 1,
+      "max_rank": 1,
+      "target_top1_rate": 1.0,
+      "target_top5_rate": 1.0,
+      "target_competitor_margin": 0.6823472678661346
+    },
+    {
+      "id": "v2_device_exit_semantic",
+      "condition": "single_pair",
+      "mean_target_score": 0.9389477372169495,
+      "std_target_score": 0.0,
+      "target_score_range": 0.0,
+      "min_rank": 1,
+      "max_rank": 1,
+      "target_top1_rate": 1.0,
+      "target_top5_rate": 1.0,
+      "target_competitor_margin": null
+    },
+    {
+      "id": "v2_device_exit_version_conflict",
+      "condition": "A_dense",
+      "mean_target_score": 0.9998854398727417,
+      "std_target_score": 0.0,
+      "target_score_range": 0.0,
+      "min_rank": 1,
+      "max_rank": 1,
+      "target_top1_rate": 1.0,
+      "target_top5_rate": 1.0,
+      "target_competitor_margin": 0.0007000565528869629
+    },
+    {
+      "id": "v2_device_exit_version_conflict",
+      "condition": "B_hybrid",
+      "mean_target_score": 0.9998819828033447,
+      "std_target_score": 0.0,
+      "target_score_range": 0.0,
+      "min_rank": 1,
+      "max_rank": 1,
+      "target_top1_rate": 1.0,
+      "target_top5_rate": 1.0,
+      "target_competitor_margin": 0.0006438493728637695
+    },
+    {
+      "id": "v2_device_exit_version_conflict",
+      "condition": "C_long_distractors",
+      "mean_target_score": 0.9998742341995239,
+      "std_target_score": 0.0,
+      "target_score_range": 0.0,
+      "min_rank": 1,
+      "max_rank": 1,
+      "target_top1_rate": 1.0,
+      "target_top5_rate": 1.0,
+      "target_competitor_margin": 0.0006940960884094238
+    },
+    {
+      "id": "v2_device_exit_version_conflict",
+      "condition": "single_pair",
+      "mean_target_score": 0.9998801946640015,
+      "std_target_score": 0.0,
+      "target_score_range": 0.0,
+      "min_rank": 1,
+      "max_rank": 1,
+      "target_top1_rate": 1.0,
+      "target_top5_rate": 1.0,
+      "target_competitor_margin": null
+    },
+    {
+      "id": "v2_visitor_facilities_version_conflict",
+      "condition": "A_dense",
+      "mean_target_score": 0.9997825026512146,
+      "std_target_score": 0.0,
+      "target_score_range": 0.0,
+      "min_rank": 1,
+      "max_rank": 1,
+      "target_top1_rate": 1.0,
+      "target_top5_rate": 1.0,
+      "target_competitor_margin": 6.9141387939453125e-06
+    },
+    {
+      "id": "v2_visitor_facilities_version_conflict",
+      "condition": "B_hybrid",
+      "mean_target_score": 0.9998096823692322,
+      "std_target_score": 0.0,
+      "target_score_range": 0.0,
+      "min_rank": 1,
+      "max_rank": 1,
+      "target_top1_rate": 1.0,
+      "target_top5_rate": 1.0,
+      "target_competitor_margin": 3.123283386230469e-05
+    },
+    {
+      "id": "v2_visitor_facilities_version_conflict",
+      "condition": "C_long_distractors",
+      "mean_target_score": 0.9997784495353699,
+      "std_target_score": 0.0,
+      "target_score_range": 0.0,
+      "min_rank": 1,
+      "max_rank": 1,
+      "target_top1_rate": 1.0,
+      "target_top5_rate": 1.0,
+      "target_competitor_margin": 1.9311904907226562e-05
+    },
+    {
+      "id": "v2_visitor_facilities_version_conflict",
+      "condition": "single_pair",
+      "mean_target_score": 0.9997788071632385,
+      "std_target_score": 0.0,
+      "target_score_range": 0.0,
+      "min_rank": 1,
+      "max_rank": 1,
+      "target_top1_rate": 1.0,
+      "target_top5_rate": 1.0,
+      "target_competitor_margin": null
+    },
+    {
+      "id": "v2_incident_paging_version_conflict",
+      "condition": "A_dense",
+      "mean_target_score": 0.9996281862258911,
+      "std_target_score": 0.0,
+      "target_score_range": 0.0,
+      "min_rank": 1,
+      "max_rank": 1,
+      "target_top1_rate": 1.0,
+      "target_top5_rate": 1.0,
+      "target_competitor_margin": 0.0007680654525756836
+    },
+    {
+      "id": "v2_incident_paging_version_conflict",
+      "condition": "B_hybrid",
+      "mean_target_score": 0.9996206760406494,
+      "std_target_score": 0.0,
+      "target_score_range": 0.0,
+      "min_rank": 1,
+      "max_rank": 1,
+      "target_top1_rate": 1.0,
+      "target_top5_rate": 1.0,
+      "target_competitor_margin": 0.000740349292755127
+    },
+    {
+      "id": "v2_incident_paging_version_conflict",
+      "condition": "C_long_distractors",
+      "mean_target_score": 0.9996030926704407,
+      "std_target_score": 0.0,
+      "target_score_range": 0.0,
+      "min_rank": 1,
+      "max_rank": 1,
+      "target_top1_rate": 1.0,
+      "target_top5_rate": 1.0,
+      "target_competitor_margin": 0.0007078051567077637
+    },
+    {
+      "id": "v2_incident_paging_version_conflict",
+      "condition": "single_pair",
+      "mean_target_score": 0.9996145963668823,
+      "std_target_score": 0.0,
+      "target_score_range": 0.0,
+      "min_rank": 1,
+      "max_rank": 1,
+      "target_top1_rate": 1.0,
+      "target_top5_rate": 1.0,
+      "target_competitor_margin": null
+    }
+  ],
+  "pair_order_reversal_count": 2,
+  "mechanism": "Composition effect is directly probed; padding/quantization causal contribution remains a mechanism hypothesis; no ablation changes model/code."
+}

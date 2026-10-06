@@ -1,0 +1,115 @@
+{
+  "config": {
+    "name": "dense_reranker",
+    "embedding_model": "BAAI/bge-base-en-v1.5",
+    "reranker_model": "ms-marco-MiniLM-L-12-v2",
+    "llm_model": "gemma2:9b",
+    "embedding_threads": 4,
+    "chunking": {
+      "strategy": "recursive",
+      "chunk_size": 2048,
+      "overlap": 128
+    },
+    "retrieval": {
+      "mode": "dense",
+      "rerank": true,
+      "dense_top_k": 10,
+      "sparse_top_k": 10,
+      "fusion_top_k": 10,
+      "final_top_k": 10,
+      "context_top_k": 5,
+      "rrf_k": 60,
+      "bm25_k1": 1.5,
+      "bm25_b": 0.75
+    },
+    "answerability": {
+      "enabled": false,
+      "threshold": 0.06037675961852074,
+      "feature": "top1",
+      "calibration_file": "experiments/dense_reranker/dev/calibration.json"
+    },
+    "generation": {
+      "temperature": 0.0,
+      "max_tokens": 192,
+      "context_size": 4096,
+      "seed": 42,
+      "provider": "ollama",
+      "base_url": "http://127.0.0.1:11434",
+      "context_chars_per_source": 1024,
+      "judge_model": "gemma2:9b",
+      "judge_max_tokens": 128,
+      "input_cost_per_million": null,
+      "output_cost_per_million": null
+    }
+  },
+  "index": {
+    "corpus": {
+      "1973_oil_crisis_squad2_excerpt.pdf": "5305d631f6adef111dd8cba58378a367fe06e5e4c39b2d2c4ef6c2a6f530d6f6",
+      "amazon_rainforest_squad2_excerpt.pdf": "a645ca64619b4dbaf786796ed483da752dccb8581518c3dc9fb4976f2336ce5e",
+      "black_death_squad2_excerpt.pdf": "9198ba87a239ac9902b81b1a1dce80ef70df0c8b6c95e2e9cff453f400ef4a4b",
+      "computational_complexity_theory_squad2_excerpt.pdf": "a54649adfce0377bd125fad8d22121a6d10c670dd2f324d8b33b8d984dd55f16",
+      "ctenophora_squad2_excerpt.pdf": "5bef7257af51a671378186e90ad7790ad68f35b5320346772a7de22a4f8e9b8f",
+      "european_union_law_squad2_excerpt.pdf": "b86493edd78bef3c2628628a02239f4833dca2206c1b6e7bf0b6a490604c589e",
+      "fresno_california_squad2_excerpt.pdf": "7f375fc69145e551ab7a5c0475b22a7d7fd7495ca84c37d2a04c4334558d6bfd",
+      "huguenot_squad2_excerpt.pdf": "97068d4661d1361b59cb21fa5750e8280e7f43175c9160009804ed8ecb958a6c",
+      "normans_squad2_excerpt.pdf": "fcad428a6d80533a42b4926ea7cbbad7c48f5dd2001468dabf7e2e39d1c2e0ba",
+      "oxygen_squad2_excerpt.pdf": "9a34684f48ef336e74fb9b88ecef54de5a200fe5f2c689dd1155199127719bcf",
+      "packet_switching_squad2_excerpt.pdf": "4add71c6e3ae9b293976451296749cb54b40fa79385ce55c58c303a94bc500bb",
+      "sky_united_kingdom_squad2_excerpt.pdf": "15193413e8ae190dcdb757a78c80f60d9a713a97c6d678c09fcf8de1da6e62cc",
+      "southern_california_squad2_excerpt.pdf": "88a3e04062cef33b03214558a4ddd5743116a3d57817c25e22e4eed3aa125d42",
+      "steam_engine_squad2_excerpt.pdf": "b27bd6dc9b514de13df50c10acfd79824e378b7aef21557ec32b866dd34aa9b0",
+      "victoria_australia_squad2_excerpt.pdf": "38fd5fcf8539abe8aa3739d5af31a888c0e061cc3ad7a1c2c8570c039488709c"
+    },
+    "embedding_model": "BAAI/bge-base-en-v1.5",
+    "chunking": {
+      "strategy": "recursive",
+      "chunk_size": 2048,
+      "overlap": 128
+    },
+    "parser": "pdfium-page-normalized-v1",
+    "index_id": "c1821492605cd3b2acae8728",
+    "chunk_count": 15,
+    "page_count": 15,
+    "chunks_sha256": "42ab1a5235c6a5971b89c0547002f86e8b2d437a25834c0baf720ff128bb3dcb",
+    "parsing_ms": 789.1042999981437,
+    "chunking_ms": 8.193200003006496,
+    "indexing_ms": 16130.40130000445,
+    "ingestion_ms": 16927.6988000056
+  },
+  "manifest": {
+    "source_url": "https://rajpurkar.github.io/SQuAD-explorer/dataset/dev-v2.0.json",
+    "source_sha256": "80a5225e94905956a6446d296ca1093975c4d3b3260f1d6c8f68bc2ab77182d8",
+    "documents": 15,
+    "questions": 75,
+    "answerable": 45,
+    "unanswerable": 30,
+    "natural_source_text": true,
+    "synthetic_qa": false,
+    "human_gold_source": "SQuAD2 native crowd annotations; not this project's independent human audit",
+    "selection": "First 15 native-order articles; first paragraph per article with >=3 answerable and >=2 impossible; first 3 positive and 2 negative QA in native order. No length/score/performance filter.",
+    "scope_caveat": "Excerpts rather than full Wikipedia articles; impossible labels originally paragraph-scoped; global multi-document validity remains unreviewed. Public set may be in model pretraining.",
+    "zero_retuning": true,
+    "config_sha256": "ad3d3f3abcbbb616fe3a9b9f7d9a029d6c52a8011987404428a069b6c1b2fd9b",
+    "files": {
+      "documents/1973_oil_crisis_squad2_excerpt.pdf": "5305d631f6adef111dd8cba58378a367fe06e5e4c39b2d2c4ef6c2a6f530d6f6",
+      "documents/amazon_rainforest_squad2_excerpt.pdf": "a645ca64619b4dbaf786796ed483da752dccb8581518c3dc9fb4976f2336ce5e",
+      "documents/black_death_squad2_excerpt.pdf": "9198ba87a239ac9902b81b1a1dce80ef70df0c8b6c95e2e9cff453f400ef4a4b",
+      "documents/computational_complexity_theory_squad2_excerpt.pdf": "a54649adfce0377bd125fad8d22121a6d10c670dd2f324d8b33b8d984dd55f16",
+      "documents/ctenophora_squad2_excerpt.pdf": "5bef7257af51a671378186e90ad7790ad68f35b5320346772a7de22a4f8e9b8f",
+      "documents/european_union_law_squad2_excerpt.pdf": "b86493edd78bef3c2628628a02239f4833dca2206c1b6e7bf0b6a490604c589e",
+      "documents/fresno_california_squad2_excerpt.pdf": "7f375fc69145e551ab7a5c0475b22a7d7fd7495ca84c37d2a04c4334558d6bfd",
+      "documents/huguenot_squad2_excerpt.pdf": "97068d4661d1361b59cb21fa5750e8280e7f43175c9160009804ed8ecb958a6c",
+      "documents/normans_squad2_excerpt.pdf": "fcad428a6d80533a42b4926ea7cbbad7c48f5dd2001468dabf7e2e39d1c2e0ba",
+      "documents/oxygen_squad2_excerpt.pdf": "9a34684f48ef336e74fb9b88ecef54de5a200fe5f2c689dd1155199127719bcf",
+      "documents/packet_switching_squad2_excerpt.pdf": "4add71c6e3ae9b293976451296749cb54b40fa79385ce55c58c303a94bc500bb",
+      "documents/sky_united_kingdom_squad2_excerpt.pdf": "15193413e8ae190dcdb757a78c80f60d9a713a97c6d678c09fcf8de1da6e62cc",
+      "documents/southern_california_squad2_excerpt.pdf": "88a3e04062cef33b03214558a4ddd5743116a3d57817c25e22e4eed3aa125d42",
+      "documents/steam_engine_squad2_excerpt.pdf": "b27bd6dc9b514de13df50c10acfd79824e378b7aef21557ec32b866dd34aa9b0",
+      "documents/victoria_australia_squad2_excerpt.pdf": "38fd5fcf8539abe8aa3739d5af31a888c0e061cc3ad7a1c2c8570c039488709c"
+    },
+    "questions_sha256": "1f616b172c65f6c80ede13f8c2c94783bf1ff52ddbee949ef6b7f99b80e22fd6",
+    "contexts_sha256": "eac11d185c2611c870272a93e9cfac23922c17cbd68da88ca08b60c6e8a400d8"
+  },
+  "status": "retrieval complete; generation blocked by same-version CUDA runtime",
+  "dataset_manifest_sha256": "9f99efeed425129ef14fbfdda84551f2f36036a9123704550a5f55f2ef159a24"
+}

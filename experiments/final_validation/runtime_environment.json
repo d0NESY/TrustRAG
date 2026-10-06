@@ -1,0 +1,17 @@
+{
+  "python": "3.12.7",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+  "logical_cpu_count": 32,
+  "packages": {
+    "FlashRank": "0.2.8",
+    "onnxruntime": "1.18.1",
+    "fastembed": "0.3.3",
+    "numpy": "1.26.4",
+    "langchain-community": "0.2.6",
+    "qdrant-client": "1.10.1",
+    "pypdfium2": "4.30.0"
+  },
+  "gpu_observed": "NVIDIA GeForce RTX 4060 Laptop GPU, driver 616.92, 8188 MiB",
+  "execution_notes": "Reranker and embedding original CPU runtime; local Ollama 0.35.1 restarted after logged CUDA initialization failure; no model or algorithm parameter changed."
+}

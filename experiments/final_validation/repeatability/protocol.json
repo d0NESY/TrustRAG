@@ -1,0 +1,154 @@
+{
+  "seed": 7102026,
+  "rounds": 5,
+  "question_ids": [
+    "v2_access_keys_version_conflict",
+    "v2_backup_restore_semantic",
+    "v2_deployment_windows_exact_term",
+    "v2_deployment_windows_semantic",
+    "v2_device_exit_semantic",
+    "v2_device_exit_version_conflict",
+    "v2_factory_inspection_exact_term",
+    "v2_factory_inspection_semantic",
+    "v2_hotel_travel_version_conflict",
+    "v2_incident_paging_exact_term",
+    "v2_incident_paging_semantic",
+    "v2_incident_paging_version_conflict",
+    "v2_invoice_controls_exact_term",
+    "v2_invoice_controls_semantic",
+    "v2_invoice_controls_version_conflict",
+    "v2_laser_training_exact_term",
+    "v2_laser_training_version_conflict",
+    "v2_parental_requests_exact_term",
+    "v2_parental_requests_version_conflict",
+    "v2_rail_booking_semantic",
+    "v2_rail_booking_version_conflict",
+    "v2_research_data_exact_term",
+    "v2_research_data_version_conflict",
+    "v2_retail_warranty_exact_term",
+    "v2_supplier_quotes_semantic",
+    "v2_visitor_facilities_exact_term",
+    "v2_visitor_facilities_semantic",
+    "v2_visitor_facilities_version_conflict",
+    "v2_volunteer_time_exact_term",
+    "v2_volunteer_time_semantic"
+  ],
+  "orders": [
+    [
+      "dense_reranker",
+      "hybrid_reranker"
+    ],
+    [
+      "hybrid_reranker",
+      "dense_reranker"
+    ],
+    [
+      "dense_reranker",
+      "hybrid_reranker"
+    ],
+    [
+      "dense_reranker",
+      "hybrid_reranker"
+    ],
+    [
+      "hybrid_reranker",
+      "dense_reranker"
+    ]
+  ],
+  "configs": {
+    "dense_reranker": {
+      "name": "dense_reranker",
+      "embedding_model": "BAAI/bge-base-en-v1.5",
+      "reranker_model": "ms-marco-MiniLM-L-12-v2",
+      "llm_model": "gemma2:9b",
+      "embedding_threads": 4,
+      "chunking": {
+        "strategy": "recursive",
+        "chunk_size": 2048,
+        "overlap": 128
+      },
+      "retrieval": {
+        "mode": "dense",
+        "rerank": true,
+        "dense_top_k": 10,
+        "sparse_top_k": 10,
+        "fusion_top_k": 10,
+        "final_top_k": 10,
+        "context_top_k": 5,
+        "rrf_k": 60,
+        "bm25_k1": 1.5,
+        "bm25_b": 0.75
+      },
+      "answerability": {
+        "enabled": false,
+        "threshold": 0.06037675961852074,
+        "feature": "top1",
+        "calibration_file": "experiments/dense_reranker/dev/calibration.json"
+      },
+      "generation": {
+        "temperature": 0.0,
+        "max_tokens": 192,
+        "context_size": 4096,
+        "seed": 42,
+        "provider": "ollama",
+        "base_url": "http://127.0.0.1:11434",
+        "context_chars_per_source": 1024,
+        "judge_model": "gemma2:9b",
+        "judge_max_tokens": 128,
+        "input_cost_per_million": null,
+        "output_cost_per_million": null
+      }
+    },
+    "hybrid_reranker": {
+      "name": "hybrid_reranker",
+      "embedding_model": "BAAI/bge-base-en-v1.5",
+      "reranker_model": "ms-marco-MiniLM-L-12-v2",
+      "llm_model": "gemma2:9b",
+      "embedding_threads": 4,
+      "chunking": {
+        "strategy": "recursive",
+        "chunk_size": 2048,
+        "overlap": 128
+      },
+      "retrieval": {
+        "mode": "hybrid",
+        "rerank": true,
+        "dense_top_k": 10,
+        "sparse_top_k": 10,
+        "fusion_top_k": 10,
+        "final_top_k": 10,
+        "context_top_k": 5,
+        "rrf_k": 60,
+        "bm25_k1": 1.5,
+        "bm25_b": 0.75
+      },
+      "answerability": {
+        "enabled": false,
+        "threshold": 0.03984235227108002,
+        "feature": "top1",
+        "calibration_file": "experiments/hybrid_reranker/dev/calibration.json"
+      },
+      "generation": {
+        "temperature": 0.0,
+        "max_tokens": 192,
+        "context_size": 4096,
+        "seed": 42,
+        "provider": "ollama",
+        "base_url": "http://127.0.0.1:11434",
+        "context_chars_per_source": 1024,
+        "judge_model": "gemma2:9b",
+        "judge_max_tokens": 128,
+        "input_cost_per_million": null,
+        "output_cost_per_million": null
+      }
+    }
+  },
+  "source_prediction_sha256": {
+    "dense_reranker": "42b0d56e679b34f3369f4778949af4598a02cc59e4634577a7a4ff47b507d7dc",
+    "hybrid_reranker": "79a52165dd000ddd51cf66f78b6e750737bf206dfd3a30b90a23cb831ce5a795"
+  },
+  "model_artifacts_sha256": "824a9a1545d00714e581a0c9ae486392dd2da51249a2e8b53e9cd03a582f8b09",
+  "selection": "30 answerable diagnostic queries: 10 version, 10 exact-term, 10 semantic; largest saved score drifts, including both observed top1 reversals. Not a random quality sample.",
+  "reuse": "Same actual retrieval+rereanking invocations supply both five-repeat stability and randomized-order latency; no cached query embeddings.",
+  "warmup": "Two full retrieve calls per method before each timed method block."
+}

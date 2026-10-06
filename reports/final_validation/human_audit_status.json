@@ -1,0 +1,50 @@
+{
+  "status": "PENDING_HUMAN_REVIEW",
+  "rows": 28,
+  "filled_label_cells": 0,
+  "uncertain_rows": 0,
+  "metrics": [
+    {
+      "metric": "Human Answer Accuracy",
+      "value": null,
+      "certain_count": 0,
+      "uncertain_count": 0
+    },
+    {
+      "metric": "Human Gold Agreement",
+      "value": null,
+      "certain_count": 0,
+      "uncertain_count": 0
+    },
+    {
+      "metric": "Human Groundedness",
+      "value": null,
+      "certain_count": 0,
+      "uncertain_count": 0
+    },
+    {
+      "metric": "Human Citation Validity",
+      "value": null,
+      "certain_count": 0,
+      "uncertain_count": 0
+    }
+  ],
+  "human_vs_judge": [
+    {
+      "field": "human_answer_correct",
+      "agreement_rate": null,
+      "comparable_count": 0
+    },
+    {
+      "field": "human_grounded",
+      "agreement_rate": null,
+      "comparable_count": 0
+    },
+    {
+      "field": "human_citation_valid",
+      "agreement_rate": null,
+      "comparable_count": 0
+    }
+  ],
+  "independence": "Reviewer identity/declaration required; code does not create or infer human judgments."
+}

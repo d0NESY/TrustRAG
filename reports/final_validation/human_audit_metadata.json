@@ -1,0 +1,929 @@
+{
+  "status": "PENDING_HUMAN_REVIEW",
+  "samples": [
+    {
+      "sample_key": "audit_01",
+      "question_id": "v2_rail_booking_near_miss_2",
+      "condition": "G0_prompt_only",
+      "selection_reason": "automatic False Answer",
+      "judge": {
+        "model": "gemma2:9b",
+        "temperature": 0.0,
+        "seed": 42,
+        "prompt_sha256": "46d62428a5ce8a2c82223ba90af5f141248fa4186d0fe5636c46ec24cdba5f9c",
+        "raw_output": "{\"answer_correct\": true, \"grounded\": true, \"citations_supported\": true, \"reason\": \"The answer correctly states that executives travelling on client business may book first class, and this claim is supported by the provided source [S1]\"}",
+        "latency_ms": 2920.558300000266,
+        "input_tokens": 614,
+        "output_tokens": 53,
+        "model_metadata": {
+          "model": "gemma2:9b",
+          "created_at": "2026-10-06T12:25:17.6512597Z",
+          "message": {
+            "role": "assistant",
+            "content": ""
+          },
+          "done": true,
+          "done_reason": "stop",
+          "total_duration": 2911522100,
+          "load_duration": 18226800,
+          "prompt_eval_count": 614,
+          "prompt_eval_cached_count": 125,
+          "prompt_eval_duration": 487958000,
+          "eval_count": 53,
+          "eval_duration": 2015354000
+        },
+        "method": "LLM-as-a-Judge, same model family as generator; not absolute ground truth",
+        "status": "ok",
+        "answer_correct": true,
+        "grounded": true,
+        "citations_supported": true,
+        "reason": "The answer correctly states that executives travelling on client business may book first class, and this claim is supported by the provided source [S1]"
+      },
+      "abstained": false,
+      "refusal_reason": null
+    },
+    {
+      "sample_key": "audit_02",
+      "question_id": "v2_backup_restore_exact_term",
+      "condition": "G0_prompt_only",
+      "selection_reason": "LLM judge flags incorrect; not a human conclusion",
+      "judge": {
+        "model": "gemma2:9b",
+        "temperature": 0.0,
+        "seed": 42,
+        "prompt_sha256": "6f0d1cc12f1e4487c6035185866e2548946032606c8893f8e1058c15fe1cbfaf",
+        "raw_output": "{\"answer_correct\": false, \"grounded\": true, \"citations_supported\": true, \"reason\": \"The answer mentions BAK-289, but the question asks about the action following BAK-298.\"}",
+        "latency_ms": 2998.7700000019686,
+        "input_tokens": 619,
+        "output_tokens": 48,
+        "model_metadata": {
+          "model": "gemma2:9b",
+          "created_at": "2026-10-06T12:31:20.7616116Z",
+          "message": {
+            "role": "assistant",
+            "content": ""
+          },
+          "done": true,
+          "done_reason": "stop",
+          "total_duration": 2989971900,
+          "load_duration": 21151600,
+          "prompt_eval_count": 619,
+          "prompt_eval_cached_count": 127,
+          "prompt_eval_duration": 509191000,
+          "eval_count": 48,
+          "eval_duration": 1900186000
+        },
+        "method": "LLM-as-a-Judge, same model family as generator; not absolute ground truth",
+        "status": "ok",
+        "answer_correct": false,
+        "grounded": true,
+        "citations_supported": true,
+        "reason": "The answer mentions BAK-289, but the question asks about the action following BAK-298."
+      },
+      "abstained": false,
+      "refusal_reason": null
+    },
+    {
+      "sample_key": "audit_03",
+      "question_id": "v2_device_exit_exact_term",
+      "condition": "G1_current_v1_gate",
+      "selection_reason": "automatic False Refusal",
+      "judge": {
+        "status": "not_applicable",
+        "reason": "System abstained; gold answerability evaluates this decision."
+      },
+      "abstained": true,
+      "refusal_reason": "insufficient_evidence"
+    },
+    {
+      "sample_key": "audit_04",
+      "question_id": "v2_factory_inspection_cross_document",
+      "condition": "G1_current_v1_gate",
+      "selection_reason": "automatic False Refusal",
+      "judge": {
+        "status": "not_applicable",
+        "reason": "System abstained; gold answerability evaluates this decision."
+      },
+      "abstained": true,
+      "refusal_reason": "model_refusal"
+    },
+    {
+      "sample_key": "audit_05",
+      "question_id": "v2_hotel_travel_semantic",
+      "condition": "G1_current_v1_gate",
+      "selection_reason": "automatic False Refusal",
+      "judge": {
+        "status": "not_applicable",
+        "reason": "System abstained; gold answerability evaluates this decision."
+      },
+      "abstained": true,
+      "refusal_reason": "insufficient_evidence"
+    },
+    {
+      "sample_key": "audit_06",
+      "question_id": "v2_warehouse_spills_cross_document",
+      "condition": "G1_current_v1_gate",
+      "selection_reason": "automatic False Refusal",
+      "judge": {
+        "status": "not_applicable",
+        "reason": "System abstained; gold answerability evaluates this decision."
+      },
+      "abstained": true,
+      "refusal_reason": "insufficient_evidence"
+    },
+    {
+      "sample_key": "audit_07",
+      "question_id": "v2_access_keys_near_miss_1",
+      "condition": "G0_prompt_only",
+      "selection_reason": "correct refusal under frozen gold",
+      "judge": {
+        "status": "not_applicable",
+        "reason": "System abstained; gold answerability evaluates this decision."
+      },
+      "abstained": true,
+      "refusal_reason": "model_refusal"
+    },
+    {
+      "sample_key": "audit_08",
+      "question_id": "v2_access_keys_near_miss_2",
+      "condition": "G0_prompt_only",
+      "selection_reason": "correct refusal under frozen gold",
+      "judge": {
+        "status": "not_applicable",
+        "reason": "System abstained; gold answerability evaluates this decision."
+      },
+      "abstained": true,
+      "refusal_reason": "model_refusal"
+    },
+    {
+      "sample_key": "audit_09",
+      "question_id": "v2_backup_restore_near_miss_1",
+      "condition": "G0_prompt_only",
+      "selection_reason": "correct refusal under frozen gold",
+      "judge": {
+        "status": "not_applicable",
+        "reason": "System abstained; gold answerability evaluates this decision."
+      },
+      "abstained": true,
+      "refusal_reason": "model_refusal"
+    },
+    {
+      "sample_key": "audit_10",
+      "question_id": "v2_backup_restore_near_miss_2",
+      "condition": "G0_prompt_only",
+      "selection_reason": "correct refusal under frozen gold",
+      "judge": {
+        "status": "not_applicable",
+        "reason": "System abstained; gold answerability evaluates this decision."
+      },
+      "abstained": true,
+      "refusal_reason": "model_refusal"
+    },
+    {
+      "sample_key": "audit_11",
+      "question_id": "v2_backup_restore_version_conflict",
+      "condition": "G0_prompt_only",
+      "selection_reason": "citation boundary: cited source outside gold IDs",
+      "judge": {
+        "model": "gemma2:9b",
+        "temperature": 0.0,
+        "seed": 42,
+        "prompt_sha256": "228cfd4ef655aa71e216bc4e619d0c38a80a4ca5dacf49b82f6360e49bf1a2b0",
+        "raw_output": "{\"answer_correct\": true, \"grounded\": true, \"citations_supported\": true, \"reason\": \"The answer correctly states the retention period for tenant snapshots and cites the source that supports this claim.\"}",
+        "latency_ms": 2574.621299998398,
+        "input_tokens": 621,
+        "output_tokens": 44,
+        "model_metadata": {
+          "model": "gemma2:9b",
+          "created_at": "2026-10-06T12:21:08.2908288Z",
+          "message": {
+            "role": "assistant",
+            "content": ""
+          },
+          "done": true,
+          "done_reason": "stop",
+          "total_duration": 2566731900,
+          "load_duration": 18811200,
+          "prompt_eval_count": 621,
+          "prompt_eval_cached_count": 129,
+          "prompt_eval_duration": 474668000,
+          "eval_count": 44,
+          "eval_duration": 1660312000
+        },
+        "method": "LLM-as-a-Judge, same model family as generator; not absolute ground truth",
+        "status": "ok",
+        "answer_correct": true,
+        "grounded": true,
+        "citations_supported": true,
+        "reason": "The answer correctly states the retention period for tenant snapshots and cites the source that supports this claim."
+      },
+      "abstained": false,
+      "refusal_reason": null
+    },
+    {
+      "sample_key": "audit_12",
+      "question_id": "v2_device_exit_semantic",
+      "condition": "G0_prompt_only",
+      "selection_reason": "citation boundary: cited source outside gold IDs",
+      "judge": {
+        "model": "gemma2:9b",
+        "temperature": 0.0,
+        "seed": 42,
+        "prompt_sha256": "01368df0a36917ba894a935902c60615b707811c56d72142e495d2b06b285909",
+        "raw_output": "{\"answer_correct\": true, \"grounded\": true, \"citations_supported\": true, \"reason\": \"The answer correctly states the timeframe for returning equipment for both fixed-term contractors and permanent employees, and cites the source that supports this information.\"}",
+        "latency_ms": 2913.577199997235,
+        "input_tokens": 632,
+        "output_tokens": 53,
+        "model_metadata": {
+          "model": "gemma2:9b",
+          "created_at": "2026-10-06T12:31:57.6202021Z",
+          "message": {
+            "role": "assistant",
+            "content": ""
+          },
+          "done": true,
+          "done_reason": "stop",
+          "total_duration": 2905576700,
+          "load_duration": 19120000,
+          "prompt_eval_count": 632,
+          "prompt_eval_cached_count": 134,
+          "prompt_eval_duration": 481533000,
+          "eval_count": 53,
+          "eval_duration": 2065947999
+        },
+        "method": "LLM-as-a-Judge, same model family as generator; not absolute ground truth",
+        "status": "ok",
+        "answer_correct": true,
+        "grounded": true,
+        "citations_supported": true,
+        "reason": "The answer correctly states the timeframe for returning equipment for both fixed-term contractors and permanent employees, and cites the source that supports this information."
+      },
+      "abstained": false,
+      "refusal_reason": null
+    },
+    {
+      "sample_key": "audit_13",
+      "question_id": "v2_field_repairs_numeric_date",
+      "condition": "G0_prompt_only",
+      "selection_reason": "citation boundary: cited source outside gold IDs",
+      "judge": {
+        "model": "gemma2:9b",
+        "temperature": 0.0,
+        "seed": 42,
+        "prompt_sha256": "b5582f8f9b8d6530a432cd040723a674ae87fa84e56e6a69c01666479012c331",
+        "raw_output": "{\"answer_correct\": true, \"grounded\": true, \"citations_supported\": true, \"reason\": \"The answer correctly states the retention period and cites the source that supports this claim.\"}",
+        "latency_ms": 2399.4578999991063,
+        "input_tokens": 631,
+        "output_tokens": 41,
+        "model_metadata": {
+          "model": "gemma2:9b",
+          "created_at": "2026-10-06T12:27:37.8004858Z",
+          "message": {
+            "role": "assistant",
+            "content": ""
+          },
+          "done": true,
+          "done_reason": "stop",
+          "total_duration": 2391188700,
+          "load_duration": 18612600,
+          "prompt_eval_count": 631,
+          "prompt_eval_cached_count": 120,
+          "prompt_eval_duration": 496260000,
+          "eval_count": 41,
+          "eval_duration": 1539725000
+        },
+        "method": "LLM-as-a-Judge, same model family as generator; not absolute ground truth",
+        "status": "ok",
+        "answer_correct": true,
+        "grounded": true,
+        "citations_supported": true,
+        "reason": "The answer correctly states the retention period and cites the source that supports this claim."
+      },
+      "abstained": false,
+      "refusal_reason": null
+    },
+    {
+      "sample_key": "audit_14",
+      "question_id": "v2_access_keys_version_conflict",
+      "condition": "G0_prompt_only",
+      "selection_reason": "category coverage / published answer",
+      "judge": {
+        "model": "gemma2:9b",
+        "temperature": 0.0,
+        "seed": 42,
+        "prompt_sha256": "357bc250c0b7c17c210a6803d96a33995b548d2d87ed471f1f6da8c6d4150fc9",
+        "raw_output": "{\"answer_correct\": true, \"grounded\": true, \"citations_supported\": true, \"reason\": \"The answer correctly states the 60-day rotation interval and cites the source that supports this claim.\"}",
+        "latency_ms": 2732.1663000002445,
+        "input_tokens": 618,
+        "output_tokens": 46,
+        "model_metadata": {
+          "model": "gemma2:9b",
+          "created_at": "2026-10-06T12:22:41.2093985Z",
+          "message": {
+            "role": "assistant",
+            "content": ""
+          },
+          "done": true,
+          "done_reason": "stop",
+          "total_duration": 2720870200,
+          "load_duration": 18667900,
+          "prompt_eval_count": 618,
+          "prompt_eval_cached_count": 142,
+          "prompt_eval_duration": 504538000,
+          "eval_count": 46,
+          "eval_duration": 1778500000
+        },
+        "method": "LLM-as-a-Judge, same model family as generator; not absolute ground truth",
+        "status": "ok",
+        "answer_correct": true,
+        "grounded": true,
+        "citations_supported": true,
+        "reason": "The answer correctly states the 60-day rotation interval and cites the source that supports this claim."
+      },
+      "abstained": false,
+      "refusal_reason": null
+    },
+    {
+      "sample_key": "audit_15",
+      "question_id": "v2_customs_returns_version_conflict",
+      "condition": "G0_prompt_only",
+      "selection_reason": "category coverage / published answer",
+      "judge": {
+        "model": "gemma2:9b",
+        "temperature": 0.0,
+        "seed": 42,
+        "prompt_sha256": "2946ccff33f5acf5ddc976ab5e8f6b5584bd18df71922871c254fbc04e2ba9f9",
+        "raw_output": "{\"answer_correct\": true, \"grounded\": true, \"citations_supported\": true, \"reason\": \"The answer correctly states the 72-hour broker lead time and cites the source that supports this claim.\"}",
+        "latency_ms": 2999.1759000004095,
+        "input_tokens": 625,
+        "output_tokens": 47,
+        "model_metadata": {
+          "model": "gemma2:9b",
+          "created_at": "2026-10-06T12:21:18.0507662Z",
+          "message": {
+            "role": "assistant",
+            "content": ""
+          },
+          "done": true,
+          "done_reason": "stop",
+          "total_duration": 2990365700,
+          "load_duration": 21261500,
+          "prompt_eval_count": 625,
+          "prompt_eval_cached_count": 127,
+          "prompt_eval_duration": 469929000,
+          "eval_count": 47,
+          "eval_duration": 1774716000
+        },
+        "method": "LLM-as-a-Judge, same model family as generator; not absolute ground truth",
+        "status": "ok",
+        "answer_correct": true,
+        "grounded": true,
+        "citations_supported": true,
+        "reason": "The answer correctly states the 72-hour broker lead time and cites the source that supports this claim."
+      },
+      "abstained": false,
+      "refusal_reason": null
+    },
+    {
+      "sample_key": "audit_16",
+      "question_id": "v2_access_keys_hard_negative",
+      "condition": "G0_prompt_only",
+      "selection_reason": "category coverage / published answer",
+      "judge": {
+        "model": "gemma2:9b",
+        "temperature": 0.0,
+        "seed": 42,
+        "prompt_sha256": "29bbd99d928667eca6e3881c80f61928cb0a1ca2a1aee7caedd8587de19fff7d",
+        "raw_output": "{\"answer_correct\": true, \"grounded\": true, \"citations_supported\": true, \"reason\": \"The answer correctly reflects the reference and is supported by the provided source.\"}",
+        "latency_ms": 2440.658399998938,
+        "input_tokens": 618,
+        "output_tokens": 39,
+        "model_metadata": {
+          "model": "gemma2:9b",
+          "created_at": "2026-10-06T12:28:31.4659922Z",
+          "message": {
+            "role": "assistant",
+            "content": ""
+          },
+          "done": true,
+          "done_reason": "stop",
+          "total_duration": 2431812200,
+          "load_duration": 20759200,
+          "prompt_eval_count": 618,
+          "prompt_eval_cached_count": 122,
+          "prompt_eval_duration": 493576000,
+          "eval_count": 39,
+          "eval_duration": 1476340000
+        },
+        "method": "LLM-as-a-Judge, same model family as generator; not absolute ground truth",
+        "status": "ok",
+        "answer_correct": true,
+        "grounded": true,
+        "citations_supported": true,
+        "reason": "The answer correctly reflects the reference and is supported by the provided source."
+      },
+      "abstained": false,
+      "refusal_reason": null
+    },
+    {
+      "sample_key": "audit_17",
+      "question_id": "v2_backup_restore_hard_negative",
+      "condition": "G0_prompt_only",
+      "selection_reason": "category coverage / published answer",
+      "judge": {
+        "model": "gemma2:9b",
+        "temperature": 0.0,
+        "seed": 42,
+        "prompt_sha256": "1e7e9262d29e840d50a61e1dd2b84769bf22f3c6bd029f4aa92939cc3796a3d2",
+        "raw_output": "{\n\"answer_correct\": true,\n\"grounded\": true,\n\"citations_supported\": true,\n\"reason\": \"The answer correctly states the retention periods for tenant and synthetic drill snapshots and cites a source that supports this claim.\"\n}",
+        "latency_ms": 2878.025999998499,
+        "input_tokens": 641,
+        "output_tokens": 53,
+        "model_metadata": {
+          "model": "gemma2:9b",
+          "created_at": "2026-10-06T12:24:32.024014Z",
+          "message": {
+            "role": "assistant",
+            "content": ""
+          },
+          "done": true,
+          "done_reason": "stop",
+          "total_duration": 2869152500,
+          "load_duration": 29950000,
+          "prompt_eval_count": 641,
+          "prompt_eval_cached_count": 129,
+          "prompt_eval_duration": 477639000,
+          "eval_count": 53,
+          "eval_duration": 2016050000
+        },
+        "method": "LLM-as-a-Judge, same model family as generator; not absolute ground truth",
+        "status": "ok",
+        "answer_correct": true,
+        "grounded": true,
+        "citations_supported": true,
+        "reason": "The answer correctly states the retention periods for tenant and synthetic drill snapshots and cites a source that supports this claim."
+      },
+      "abstained": false,
+      "refusal_reason": null
+    },
+    {
+      "sample_key": "audit_18",
+      "question_id": "v2_access_keys_semantic",
+      "condition": "G0_prompt_only",
+      "selection_reason": "category coverage / published answer",
+      "judge": {
+        "model": "gemma2:9b",
+        "temperature": 0.0,
+        "seed": 42,
+        "prompt_sha256": "678b96a8ac7ee2bdf8725bfbb7056acb0d8ee6199168bd5c32e9c7b69ad85360",
+        "raw_output": "{\"answer_correct\": true, \"grounded\": true, \"citations_supported\": true, \"reason\": \"The answer accurately reflects the reference answer and is supported by the provided source [S1] which states 'If an integration token is exposed in a public issue, the account owner must revoke it before beginning log investigation.'\"}",
+        "latency_ms": 3590.014199999132,
+        "input_tokens": 620,
+        "output_tokens": 68,
+        "model_metadata": {
+          "model": "gemma2:9b",
+          "created_at": "2026-10-06T12:25:52.4647413Z",
+          "message": {
+            "role": "assistant",
+            "content": ""
+          },
+          "done": true,
+          "done_reason": "stop",
+          "total_duration": 3580473000,
+          "load_duration": 20661200,
+          "prompt_eval_count": 620,
+          "prompt_eval_cached_count": 132,
+          "prompt_eval_duration": 472707000,
+          "eval_count": 68,
+          "eval_duration": 2661427000
+        },
+        "method": "LLM-as-a-Judge, same model family as generator; not absolute ground truth",
+        "status": "ok",
+        "answer_correct": true,
+        "grounded": true,
+        "citations_supported": true,
+        "reason": "The answer accurately reflects the reference answer and is supported by the provided source [S1] which states 'If an integration token is exposed in a public issue, the account owner must revoke it before beginning log investigation.'"
+      },
+      "abstained": false,
+      "refusal_reason": null
+    },
+    {
+      "sample_key": "audit_19",
+      "question_id": "v2_backup_restore_semantic",
+      "condition": "G0_prompt_only",
+      "selection_reason": "category coverage / published answer",
+      "judge": {
+        "model": "gemma2:9b",
+        "temperature": 0.0,
+        "seed": 42,
+        "prompt_sha256": "ff4cc33b7d49d4011b5d563548c5ab7d9d74e19349ccbe9fb669c056366fa524",
+        "raw_output": "{\n\"answer_correct\": true,\n\"grounded\": true,\n\"citations_supported\": true,\n\"reason\": \"The answer accurately reflects the reference answer and is directly supported by the provided source (S1).\"\n}",
+        "latency_ms": 2830.935899997712,
+        "input_tokens": 626,
+        "output_tokens": 50,
+        "model_metadata": {
+          "model": "gemma2:9b",
+          "created_at": "2026-10-06T12:20:33.0955587Z",
+          "message": {
+            "role": "assistant",
+            "content": ""
+          },
+          "done": true,
+          "done_reason": "stop",
+          "total_duration": 2822336300,
+          "load_duration": 23412700,
+          "prompt_eval_count": 626,
+          "prompt_eval_cached_count": 136,
+          "prompt_eval_duration": 510233000,
+          "eval_count": 50,
+          "eval_duration": 1881006000
+        },
+        "method": "LLM-as-a-Judge, same model family as generator; not absolute ground truth",
+        "status": "ok",
+        "answer_correct": true,
+        "grounded": true,
+        "citations_supported": true,
+        "reason": "The answer accurately reflects the reference answer and is directly supported by the provided source (S1)."
+      },
+      "abstained": false,
+      "refusal_reason": null
+    },
+    {
+      "sample_key": "audit_20",
+      "question_id": "v2_access_keys_exact_term",
+      "condition": "G0_prompt_only",
+      "selection_reason": "category coverage / published answer",
+      "judge": {
+        "model": "gemma2:9b",
+        "temperature": 0.0,
+        "seed": 42,
+        "prompt_sha256": "3d006999dd9b1972bb089cbcfb376b879dd263ad7e3cc701e2ecbc5cde6220cb",
+        "raw_output": "{\"answer_correct\": true, \"grounded\": true, \"citations_supported\": true, \"reason\": \"The answer correctly identifies the state identified by IAM-552 and cites the source that supports this claim.\"}",
+        "latency_ms": 2618.819400002394,
+        "input_tokens": 623,
+        "output_tokens": 47,
+        "model_metadata": {
+          "model": "gemma2:9b",
+          "created_at": "2026-10-06T12:30:39.7293105Z",
+          "message": {
+            "role": "assistant",
+            "content": ""
+          },
+          "done": true,
+          "done_reason": "stop",
+          "total_duration": 2610695200,
+          "load_duration": 18050400,
+          "prompt_eval_count": 623,
+          "prompt_eval_cached_count": 132,
+          "prompt_eval_duration": 467738000,
+          "eval_count": 47,
+          "eval_duration": 1814280000
+        },
+        "method": "LLM-as-a-Judge, same model family as generator; not absolute ground truth",
+        "status": "ok",
+        "answer_correct": true,
+        "grounded": true,
+        "citations_supported": true,
+        "reason": "The answer correctly identifies the state identified by IAM-552 and cites the source that supports this claim."
+      },
+      "abstained": false,
+      "refusal_reason": null
+    },
+    {
+      "sample_key": "audit_21",
+      "question_id": "v2_customs_returns_exact_term",
+      "condition": "G0_prompt_only",
+      "selection_reason": "category coverage / published answer",
+      "judge": {
+        "model": "gemma2:9b",
+        "temperature": 0.0,
+        "seed": 42,
+        "prompt_sha256": "68824b21217e8c2ddc9e29f662ca1734a354a91dc33c9e768469f72e88e49924",
+        "raw_output": "{\"answer_correct\": true, \"grounded\": true, \"citations_supported\": true, \"reason\": \"The answer correctly states that CUS-569 declares a repair-and-return shipment, and this claim is directly supported by the provided source [S1].\"}",
+        "latency_ms": 4275.758200001292,
+        "input_tokens": 631,
+        "output_tokens": 59,
+        "model_metadata": {
+          "model": "gemma2:9b",
+          "created_at": "2026-10-06T12:27:02.8697421Z",
+          "message": {
+            "role": "assistant",
+            "content": ""
+          },
+          "done": true,
+          "done_reason": "stop",
+          "total_duration": 4265645000,
+          "load_duration": 20932200,
+          "prompt_eval_count": 631,
+          "prompt_eval_cached_count": 126,
+          "prompt_eval_duration": 595838000,
+          "eval_count": 59,
+          "eval_duration": 2287708000
+        },
+        "method": "LLM-as-a-Judge, same model family as generator; not absolute ground truth",
+        "status": "ok",
+        "answer_correct": true,
+        "grounded": true,
+        "citations_supported": true,
+        "reason": "The answer correctly states that CUS-569 declares a repair-and-return shipment, and this claim is directly supported by the provided source [S1]."
+      },
+      "abstained": false,
+      "refusal_reason": null
+    },
+    {
+      "sample_key": "audit_22",
+      "question_id": "v2_access_keys_numeric_date",
+      "condition": "G0_prompt_only",
+      "selection_reason": "category coverage / published answer",
+      "judge": {
+        "model": "gemma2:9b",
+        "temperature": 0.0,
+        "seed": 42,
+        "prompt_sha256": "be1358650f24acd3b86f773406775ae54977a7b9fa7d6cb45e8b79f3cfe58fe6",
+        "raw_output": "{\"answer_correct\": true, \"grounded\": true, \"citations_supported\": true, \"reason\": \"The answer correctly states 'two' and cites S1 which supports this claim.\"}",
+        "latency_ms": 2670.8344999969995,
+        "input_tokens": 607,
+        "output_tokens": 41,
+        "model_metadata": {
+          "model": "gemma2:9b",
+          "created_at": "2026-10-06T12:24:15.4140959Z",
+          "message": {
+            "role": "assistant",
+            "content": ""
+          },
+          "done": true,
+          "done_reason": "stop",
+          "total_duration": 2662397600,
+          "load_duration": 17672500,
+          "prompt_eval_count": 607,
+          "prompt_eval_cached_count": 127,
+          "prompt_eval_duration": 480500000,
+          "eval_count": 41,
+          "eval_duration": 1608488000
+        },
+        "method": "LLM-as-a-Judge, same model family as generator; not absolute ground truth",
+        "status": "ok",
+        "answer_correct": true,
+        "grounded": true,
+        "citations_supported": true,
+        "reason": "The answer correctly states 'two' and cites S1 which supports this claim."
+      },
+      "abstained": false,
+      "refusal_reason": null
+    },
+    {
+      "sample_key": "audit_23",
+      "question_id": "v2_backup_restore_numeric_date",
+      "condition": "G0_prompt_only",
+      "selection_reason": "category coverage / published answer",
+      "judge": {
+        "model": "gemma2:9b",
+        "temperature": 0.0,
+        "seed": 42,
+        "prompt_sha256": "eff66d9d25788f9259d90d09df3b5a6d6a4cd16dae7a14462474ce170771fc73",
+        "raw_output": "{\"answer_correct\": true, \"grounded\": true, \"citations_supported\": true, \"reason\": \"The answer accurately reflects the reference answer and is supported by the provided source [S1] which states 'The backup schedule permits no more than four hours between successful application backups.'\"}",
+        "latency_ms": 3545.493300000089,
+        "input_tokens": 619,
+        "output_tokens": 60,
+        "model_metadata": {
+          "model": "gemma2:9b",
+          "created_at": "2026-10-06T12:29:12.6917938Z",
+          "message": {
+            "role": "assistant",
+            "content": ""
+          },
+          "done": true,
+          "done_reason": "stop",
+          "total_duration": 3535968500,
+          "load_duration": 20471200,
+          "prompt_eval_count": 619,
+          "prompt_eval_cached_count": 132,
+          "prompt_eval_duration": 512326000,
+          "eval_count": 60,
+          "eval_duration": 2287313000
+        },
+        "method": "LLM-as-a-Judge, same model family as generator; not absolute ground truth",
+        "status": "ok",
+        "answer_correct": true,
+        "grounded": true,
+        "citations_supported": true,
+        "reason": "The answer accurately reflects the reference answer and is supported by the provided source [S1] which states 'The backup schedule permits no more than four hours between successful application backups.'"
+      },
+      "abstained": false,
+      "refusal_reason": null
+    },
+    {
+      "sample_key": "audit_24",
+      "question_id": "v2_access_keys_cross_document",
+      "condition": "G0_prompt_only",
+      "selection_reason": "category coverage / published answer",
+      "judge": {
+        "model": "gemma2:9b",
+        "temperature": 0.0,
+        "seed": 42,
+        "prompt_sha256": "74d6ecb8e24cc45f950b2951814aa0115543def0cc3dd2ee16f3f87a77c2f653",
+        "raw_output": "{\n \"answer_correct\": true,\n \"grounded\": true,\n \"citations_supported\": true,\n \"reason\": \"The answer correctly states the retention period and cites the source that supports this claim.\"\n}",
+        "latency_ms": 2558.536300002743,
+        "input_tokens": 542,
+        "output_tokens": 47,
+        "model_metadata": {
+          "model": "gemma2:9b",
+          "created_at": "2026-10-06T12:24:50.6103191Z",
+          "message": {
+            "role": "assistant",
+            "content": ""
+          },
+          "done": true,
+          "done_reason": "stop",
+          "total_duration": 2550479700,
+          "load_duration": 20273200,
+          "prompt_eval_count": 542,
+          "prompt_eval_cached_count": 125,
+          "prompt_eval_duration": 482699000,
+          "eval_count": 47,
+          "eval_duration": 1740175000
+        },
+        "method": "LLM-as-a-Judge, same model family as generator; not absolute ground truth",
+        "status": "ok",
+        "answer_correct": true,
+        "grounded": true,
+        "citations_supported": true,
+        "reason": "The answer correctly states the retention period and cites the source that supports this claim."
+      },
+      "abstained": false,
+      "refusal_reason": null
+    },
+    {
+      "sample_key": "audit_25",
+      "question_id": "v2_backup_restore_cross_document",
+      "condition": "G0_prompt_only",
+      "selection_reason": "category coverage / published answer",
+      "judge": {
+        "model": "gemma2:9b",
+        "temperature": 0.0,
+        "seed": 42,
+        "prompt_sha256": "754c48f77c94e0e23c6e12fbb50dbc980f1b3d46c4128d4a356f2885d1a69a93",
+        "raw_output": "{\n \"answer_correct\": true,\n \"grounded\": true,\n \"citations_supported\": true,\n \"reason\": \"The answer correctly identifies the document ('recovery network annex') and the transfer ceiling (80 Mbps) as stated in the provided source.\"\n}",
+        "latency_ms": 3150.237099998776,
+        "input_tokens": 539,
+        "output_tokens": 58,
+        "model_metadata": {
+          "model": "gemma2:9b",
+          "created_at": "2026-10-06T12:23:58.8851889Z",
+          "message": {
+            "role": "assistant",
+            "content": ""
+          },
+          "done": true,
+          "done_reason": "stop",
+          "total_duration": 3141819000,
+          "load_duration": 17998000,
+          "prompt_eval_count": 539,
+          "prompt_eval_cached_count": 130,
+          "prompt_eval_duration": 449461000,
+          "eval_count": 58,
+          "eval_duration": 2186546000
+        },
+        "method": "LLM-as-a-Judge, same model family as generator; not absolute ground truth",
+        "status": "ok",
+        "answer_correct": true,
+        "grounded": true,
+        "citations_supported": true,
+        "reason": "The answer correctly identifies the document ('recovery network annex') and the transfer ceiling (80 Mbps) as stated in the provided source."
+      },
+      "abstained": false,
+      "refusal_reason": null
+    },
+    {
+      "sample_key": "audit_26",
+      "question_id": "v2_customs_returns_cross_document",
+      "condition": "G0_prompt_only",
+      "selection_reason": "LLM-judged correct candidate; requires human confirmation",
+      "judge": {
+        "model": "gemma2:9b",
+        "temperature": 0.0,
+        "seed": 42,
+        "prompt_sha256": "2530a643e3c3e2ab52e27a0b0dfe4c045bbde24ad0bf5ad66974b2cc9a81bb28",
+        "raw_output": "{\"answer_correct\": true, \"grounded\": true, \"citations_supported\": true, \"reason\": \"The answer accurately reflects the reference answer and is directly supported by the provided source.\"}",
+        "latency_ms": 2701.8416999999317,
+        "input_tokens": 538,
+        "output_tokens": 41,
+        "model_metadata": {
+          "model": "gemma2:9b",
+          "created_at": "2026-10-06T12:25:46.9587587Z",
+          "message": {
+            "role": "assistant",
+            "content": ""
+          },
+          "done": true,
+          "done_reason": "stop",
+          "total_duration": 2693695400,
+          "load_duration": 18713500,
+          "prompt_eval_count": 538,
+          "prompt_eval_cached_count": 133,
+          "prompt_eval_duration": 456181000,
+          "eval_count": 41,
+          "eval_duration": 1580506000
+        },
+        "method": "LLM-as-a-Judge, same model family as generator; not absolute ground truth",
+        "status": "ok",
+        "answer_correct": true,
+        "grounded": true,
+        "citations_supported": true,
+        "reason": "The answer accurately reflects the reference answer and is directly supported by the provided source."
+      },
+      "abstained": false,
+      "refusal_reason": null
+    },
+    {
+      "sample_key": "audit_27",
+      "question_id": "v2_customs_returns_hard_negative",
+      "condition": "G0_prompt_only",
+      "selection_reason": "LLM-judged correct candidate; requires human confirmation",
+      "judge": {
+        "model": "gemma2:9b",
+        "temperature": 0.0,
+        "seed": 42,
+        "prompt_sha256": "d3ee0499812e1e1cfaa9398dca99f14739cb24a116ff69ec4901ac19096c3da1",
+        "raw_output": "{\n \"answer_correct\": true,\n \"grounded\": true,\n \"citations_supported\": true,\n \"reason\": \"The answer accurately reflects the reference and is directly supported by the provided source.\"\n}",
+        "latency_ms": 2931.335500001296,
+        "input_tokens": 636,
+        "output_tokens": 46,
+        "model_metadata": {
+          "model": "gemma2:9b",
+          "created_at": "2026-10-06T12:28:20.2778439Z",
+          "message": {
+            "role": "assistant",
+            "content": ""
+          },
+          "done": true,
+          "done_reason": "stop",
+          "total_duration": 2922729000,
+          "load_duration": 19288600,
+          "prompt_eval_count": 636,
+          "prompt_eval_cached_count": 124,
+          "prompt_eval_duration": 487161000,
+          "eval_count": 46,
+          "eval_duration": 1782354000
+        },
+        "method": "LLM-as-a-Judge, same model family as generator; not absolute ground truth",
+        "status": "ok",
+        "answer_correct": true,
+        "grounded": true,
+        "citations_supported": true,
+        "reason": "The answer accurately reflects the reference and is directly supported by the provided source."
+      },
+      "abstained": false,
+      "refusal_reason": null
+    },
+    {
+      "sample_key": "audit_28",
+      "question_id": "v2_customs_returns_numeric_date",
+      "condition": "G0_prompt_only",
+      "selection_reason": "LLM-judged correct candidate; requires human confirmation",
+      "judge": {
+        "model": "gemma2:9b",
+        "temperature": 0.0,
+        "seed": 42,
+        "prompt_sha256": "479e2860d99221e8c142ae0adfd7418543583dd45f6697084935d7097d51123a",
+        "raw_output": "{\"answer_correct\": true, \"grounded\": true, \"citations_supported\": true, \"reason\": \"The answer correctly states the timeframe and cites the source that supports this claim.\"}",
+        "latency_ms": 2431.810800000676,
+        "input_tokens": 626,
+        "output_tokens": 40,
+        "model_metadata": {
+          "model": "gemma2:9b",
+          "created_at": "2026-10-06T12:21:55.7516984Z",
+          "message": {
+            "role": "assistant",
+            "content": ""
+          },
+          "done": true,
+          "done_reason": "stop",
+          "total_duration": 2422861100,
+          "load_duration": 21500100,
+          "prompt_eval_count": 626,
+          "prompt_eval_cached_count": 136,
+          "prompt_eval_duration": 513643000,
+          "eval_count": 40,
+          "eval_duration": 1511761000
+        },
+        "method": "LLM-as-a-Judge, same model family as generator; not absolute ground truth",
+        "status": "ok",
+        "answer_correct": true,
+        "grounded": true,
+        "citations_supported": true,
+        "reason": "The answer correctly states the timeframe and cites the source that supports this claim."
+      },
+      "abstained": false,
+      "refusal_reason": null
+    }
+  ],
+  "legacy_review_sample_count": 20,
+  "legacy_template_count": 20,
+  "legacy_filled_rows": 0,
+  "legacy_sources_sha256": {
+    "reports/review_samples.jsonl": "b256dbf72a0b80d859beef4907b11ccb61c992a2351ca80c9dd89a13082ff5ac",
+    "reports/human_review_template.csv": "e486c9a168e5f9c1b42475891a83a8f11f933993fbc63e38664a3de7d8f00961"
+  },
+  "selection": "Purposeful boundary/failure/category coverage; not a random audit for population accuracy. Judge labels hidden from reviewer CSV."
+}

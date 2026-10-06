@@ -1,0 +1,33 @@
+{
+  "recall@1": 1.0,
+  "recall@3": 1.0,
+  "recall@5": 1.0,
+  "recall@10": 1.0,
+  "hit@1": 1.0,
+  "hit@3": 1.0,
+  "hit@5": 1.0,
+  "hit@10": 1.0,
+  "mrr": 1.0,
+  "ndcg@5": 1.0,
+  "answerable_count": 45,
+  "total_count": 75,
+  "retrieval_latency_ms": {
+    "mean_ms": 220.24835199981075,
+    "p50_ms": 219.18269999878248,
+    "p95_ms": 261.3774400000693,
+    "count": 75
+  },
+  "reranking_latency_ms": {
+    "mean_ms": 1908.6866626667324,
+    "p50_ms": 1912.8201999992598,
+    "p95_ms": 2062.0791000008467,
+    "count": 75
+  },
+  "total_latency_ms": {
+    "mean_ms": 2128.9407746663587,
+    "p50_ms": 2126.8141999971704,
+    "p95_ms": 2310.4712299966195,
+    "count": 75
+  },
+  "definition": "Binary chunk relevance; answerable queries only for ranking; unique ranked IDs; latency includes all queries. MRR is truncated at saved ranking depth."
+}

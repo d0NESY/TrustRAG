@@ -1,0 +1,9 @@
+{
+  "original_task_service_pid": 35492,
+  "restarted_task_service_pid": 30064,
+  "ollama_binary_sha256": "3cc17c238b081adf2bd3a206e52a063b637af1bf283d95b4ffd73a2bdec8b027",
+  "before_log_sha256": "fbe9fd5ffee7469ba261afa0a7f3338570a077850f93631fed39999b243aefa6",
+  "after_log_sha256": "f04caedc86d7b1a6180f39a74616e86cd77671561e098e97f0ae81d6272421c6",
+  "failed_attempt_count": 2,
+  "outcome": "Same CUDA initialization failure after same-binary service restart; no parameter or model changes."
+}

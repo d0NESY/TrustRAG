@@ -1,0 +1,11 @@
+﻿tier,claim,evidence_and_limits
+Strongly Supported,现有 CE 在当前 V2 受控候选条件下大幅改善 Dense 排序,R@1 +27.5pp；MRR +0.1739，paired CI 支持正收益；限定当前合成集，非严格总体证明
+Strongly Supported,固定输入的重复排序稳定；候选构成可改变该实现分数/相对顺序,30题×2方法×5轮固定输入全一致；6题 composition probe 中2对固定 passages 翻转
+Strongly Supported,当前 gate 没有取得 V2 端到端净安全收益,冻结 test FAR 0.025→0.025、FRR 0.0083→0.0333；保持 OFF，未重调阈值
+Supported with Caveats,Dense+CE 为当前更简单的最终选型,对 Hybrid+CE 有更高点估计，差值 CI 含0，不写显著优于或普适最优
+Supported with Caveats,当前 K=10 未观察到 BM25 unique candidate rescue,正式120正例中0例；不等同于所有预算/语料上 BM25 无价值
+Supported with Caveats,两种重排方案在当前测量中延迟同量级,五轮随机方法顺序、30诊断题，不能断言约80ms为稳定算法速度差
+Supported with Caveats,公开自然原文的零调参检索外测已完成,45正例/30原生impossible，限定摘录/原生scope；生成外测尚未完成
+Not Supported,Hybrid 提供 unique recall benefit / 显著优于或劣于另一方案,当前无 unique rescue，Dense+CE-Hybrid+CE CI包含0
+Not Supported,当前 score gate 改善端到端安全,FAR无下降且误拒答增加
+Not Supported,已完成独立人工审核、自然企业端到端泛化或定位量化根因,人工pending；生成blocked；padding/quantization仅机制假说

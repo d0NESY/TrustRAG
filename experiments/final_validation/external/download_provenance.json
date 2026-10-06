@@ -1,0 +1,10 @@
+{
+  "status": "downloaded",
+  "url": "https://rajpurkar.github.io/SQuAD-explorer/dataset/dev-v2.0.json",
+  "sha256": "80a5225e94905956a6446d296ca1093975c4d3b3260f1d6c8f68bc2ab77182d8",
+  "bytes": 4370528,
+  "article_count": 35,
+  "source": "Public SQuAD2 development set; natural Wikipedia excerpts and native crowd QA/gold",
+  "prior_attempts": [],
+  "gold_generated_by_evaluated_model": false
+}

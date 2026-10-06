@@ -1,0 +1,20 @@
+{
+  "git_blob_byte_mismatches": [
+    "experiments/dense/upstream_dev_baseline/config.json",
+    "experiments/dense/upstream_dev_baseline/resolved_config.json",
+    "experiments/dense/upstream_dev_baseline/retrieval_metrics.json",
+    "experiments/dense_reranker/upstream_dev_baseline/config.json",
+    "experiments/dense_reranker/upstream_dev_baseline/resolved_config.json",
+    "experiments/dense_reranker/upstream_dev_baseline/retrieval_metrics.json",
+    "ragbase/chain.py",
+    "ragbase/config.py",
+    "ragbase/ingestor.py",
+    "ragbase/model.py",
+    "ragbase/retriever.py",
+    "ragbase/session_history.py",
+    "ragbase/uploader.py"
+  ],
+  "covered_by_archival_snapshots": true,
+  "uncovered_mismatches": [],
+  "note": "Git normalizes original mixed line endings; existing snapshot restores exact bytes in a separate clone."
+}

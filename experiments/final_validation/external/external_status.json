@@ -1,0 +1,11 @@
+{
+  "overall": "BLOCKED",
+  "retrieval": "COMPLETE",
+  "generation": "BLOCKED",
+  "judge": "BLOCKED",
+  "retrieval_questions": 75,
+  "answerable_retrieval_questions": 45,
+  "published_generation_prediction_count": 0,
+  "recorded_failed_model_attempts": 2,
+  "reason": "Pinned Ollama 0.35.1 / Gemma2:9b CUDA initialization repeatedly failed, including after task-owned service restart; same frozen parameters, no runtime/weight substitutions."
+}

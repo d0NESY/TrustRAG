@@ -1,0 +1,2 @@
+# Rebuildable local vector-store cache; preserve immutable questions/results.
+external/indexes/

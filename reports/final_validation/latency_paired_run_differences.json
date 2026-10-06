@@ -1,0 +1,14 @@
+{
+  "dense_minus_hybrid_mean_ms_by_round": [
+    -117.76824666618882,
+    -90.79425666544307,
+    40.81637000126648,
+    14.025603332750961,
+    553.7371900007806
+  ],
+  "mean_ms": 80.00333200063324,
+  "std_ms": 273.2205430184238,
+  "min_ms": -117.76824666618882,
+  "max_ms": 553.7371900007806,
+  "claim": "Five rounds only; descriptive same-scale comparison, no superiority test."
+}

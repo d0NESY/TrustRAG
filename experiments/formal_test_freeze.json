@@ -1,0 +1,230 @@
+{
+  "configs": [
+    {
+      "name": "dense",
+      "embedding_model": "BAAI/bge-base-en-v1.5",
+      "reranker_model": "ms-marco-MiniLM-L-12-v2",
+      "llm_model": "gemma2:9b",
+      "embedding_threads": 4,
+      "chunking": {
+        "strategy": "recursive",
+        "chunk_size": 2048,
+        "overlap": 128
+      },
+      "retrieval": {
+        "mode": "dense",
+        "rerank": false,
+        "dense_top_k": 10,
+        "sparse_top_k": 10,
+        "fusion_top_k": 10,
+        "final_top_k": 10,
+        "context_top_k": 5,
+        "rrf_k": 60,
+        "bm25_k1": 1.5,
+        "bm25_b": 0.75
+      },
+      "answerability": {
+        "enabled": true,
+        "threshold": 0.019337284087576623,
+        "feature": "margin",
+        "calibration_file": "experiments/dense/dev/calibration.json"
+      },
+      "generation": {
+        "temperature": 0.0,
+        "max_tokens": 192,
+        "context_size": 4096,
+        "seed": 42,
+        "provider": "ollama",
+        "base_url": "http://127.0.0.1:11434",
+        "context_chars_per_source": 1024,
+        "judge_model": "gemma2:9b",
+        "judge_max_tokens": 128,
+        "input_cost_per_million": null,
+        "output_cost_per_million": null
+      }
+    },
+    {
+      "name": "dense_reranker",
+      "embedding_model": "BAAI/bge-base-en-v1.5",
+      "reranker_model": "ms-marco-MiniLM-L-12-v2",
+      "llm_model": "gemma2:9b",
+      "embedding_threads": 4,
+      "chunking": {
+        "strategy": "recursive",
+        "chunk_size": 2048,
+        "overlap": 128
+      },
+      "retrieval": {
+        "mode": "dense",
+        "rerank": true,
+        "dense_top_k": 10,
+        "sparse_top_k": 10,
+        "fusion_top_k": 10,
+        "final_top_k": 10,
+        "context_top_k": 5,
+        "rrf_k": 60,
+        "bm25_k1": 1.5,
+        "bm25_b": 0.75
+      },
+      "answerability": {
+        "enabled": true,
+        "threshold": 0.06037675961852074,
+        "feature": "top1",
+        "calibration_file": "experiments/dense_reranker/dev/calibration.json"
+      },
+      "generation": {
+        "temperature": 0.0,
+        "max_tokens": 192,
+        "context_size": 4096,
+        "seed": 42,
+        "provider": "ollama",
+        "base_url": "http://127.0.0.1:11434",
+        "context_chars_per_source": 1024,
+        "judge_model": "gemma2:9b",
+        "judge_max_tokens": 128,
+        "input_cost_per_million": null,
+        "output_cost_per_million": null
+      }
+    },
+    {
+      "name": "bm25",
+      "embedding_model": "BAAI/bge-base-en-v1.5",
+      "reranker_model": "ms-marco-MiniLM-L-12-v2",
+      "llm_model": "gemma2:9b",
+      "embedding_threads": 4,
+      "chunking": {
+        "strategy": "recursive",
+        "chunk_size": 2048,
+        "overlap": 128
+      },
+      "retrieval": {
+        "mode": "bm25",
+        "rerank": false,
+        "dense_top_k": 10,
+        "sparse_top_k": 10,
+        "fusion_top_k": 10,
+        "final_top_k": 10,
+        "context_top_k": 5,
+        "rrf_k": 60,
+        "bm25_k1": 1.5,
+        "bm25_b": 0.75
+      },
+      "answerability": {
+        "enabled": true,
+        "threshold": 7.34258813082839,
+        "feature": "top1",
+        "calibration_file": "experiments/bm25/dev/calibration.json"
+      },
+      "generation": {
+        "temperature": 0.0,
+        "max_tokens": 192,
+        "context_size": 4096,
+        "seed": 42,
+        "provider": "ollama",
+        "base_url": "http://127.0.0.1:11434",
+        "context_chars_per_source": 1024,
+        "judge_model": "gemma2:9b",
+        "judge_max_tokens": 128,
+        "input_cost_per_million": null,
+        "output_cost_per_million": null
+      }
+    },
+    {
+      "name": "hybrid",
+      "embedding_model": "BAAI/bge-base-en-v1.5",
+      "reranker_model": "ms-marco-MiniLM-L-12-v2",
+      "llm_model": "gemma2:9b",
+      "embedding_threads": 4,
+      "chunking": {
+        "strategy": "recursive",
+        "chunk_size": 2048,
+        "overlap": 128
+      },
+      "retrieval": {
+        "mode": "hybrid",
+        "rerank": false,
+        "dense_top_k": 10,
+        "sparse_top_k": 10,
+        "fusion_top_k": 10,
+        "final_top_k": 10,
+        "context_top_k": 5,
+        "rrf_k": 60,
+        "bm25_k1": 1.5,
+        "bm25_b": 0.75
+      },
+      "answerability": {
+        "enabled": true,
+        "threshold": 0.032266458495966696,
+        "feature": "top1",
+        "calibration_file": "experiments/hybrid/dev/calibration.json"
+      },
+      "generation": {
+        "temperature": 0.0,
+        "max_tokens": 192,
+        "context_size": 4096,
+        "seed": 42,
+        "provider": "ollama",
+        "base_url": "http://127.0.0.1:11434",
+        "context_chars_per_source": 1024,
+        "judge_model": "gemma2:9b",
+        "judge_max_tokens": 128,
+        "input_cost_per_million": null,
+        "output_cost_per_million": null
+      }
+    },
+    {
+      "name": "hybrid_reranker",
+      "embedding_model": "BAAI/bge-base-en-v1.5",
+      "reranker_model": "ms-marco-MiniLM-L-12-v2",
+      "llm_model": "gemma2:9b",
+      "embedding_threads": 4,
+      "chunking": {
+        "strategy": "recursive",
+        "chunk_size": 2048,
+        "overlap": 128
+      },
+      "retrieval": {
+        "mode": "hybrid",
+        "rerank": true,
+        "dense_top_k": 10,
+        "sparse_top_k": 10,
+        "fusion_top_k": 10,
+        "final_top_k": 10,
+        "context_top_k": 5,
+        "rrf_k": 60,
+        "bm25_k1": 1.5,
+        "bm25_b": 0.75
+      },
+      "answerability": {
+        "enabled": true,
+        "threshold": 0.03984235227108002,
+        "feature": "top1",
+        "calibration_file": "experiments/hybrid_reranker/dev/calibration.json"
+      },
+      "generation": {
+        "temperature": 0.0,
+        "max_tokens": 192,
+        "context_size": 4096,
+        "seed": 42,
+        "provider": "ollama",
+        "base_url": "http://127.0.0.1:11434",
+        "context_chars_per_source": 1024,
+        "judge_model": "gemma2:9b",
+        "judge_max_tokens": 128,
+        "input_cost_per_million": null,
+        "output_cost_per_million": null
+      }
+    }
+  ],
+  "code_sha256": "cbd6975a9fa0cfe370343b51f45df46b857c06fdc909e2e585e0e80db175375b",
+  "benchmark_sha256": "9b2d989d1af419c69f1d8e831da82be15dacab376bf1be045752a0c713491a65",
+  "model_artifacts_sha256": "824a9a1545d00714e581a0c9ae486392dd2da51249a2e8b53e9cd03a582f8b09",
+  "generation_conditions": [
+    "dense",
+    "dense_reranker",
+    "bm25",
+    "hybrid",
+    "hybrid_reranker",
+    "hybrid_reranker_no_gate"
+  ]
+}

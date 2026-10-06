@@ -1,0 +1,21 @@
+id,reviewed_by,review_type,decision,notes,independent_human_review
+q0202,Codex,"semantic inspection of displayed questions, gold and source excerpts",confirmed_false_refusal,Explicit bereavement allowance of 5 working days is quoted; gate rejected valid evidence.,pending
+q0404,Codex,"semantic inspection of displayed questions, gold and source excerpts",confirmed_false_refusal,Automatic screen lock idle period is explicitly 5 minutes; low relevance score caused refusal.,pending
+q0103,Codex,"semantic inspection of displayed questions, gold and source excerpts",confirmed_false_refusal,"Source S2, handbook page 3, contains vacation carryover limit of 5 working days; S1 is annual allowance, so source ordering needs inspection.",pending
+q0305,Codex,"semantic inspection of displayed questions, gold and source excerpts",annotation_scope_ambiguous,"Review target 7 business days is present, but this page does not explicitly name Finance as reviewer. Gold question introduces an actor not stated in the fact; annotation scope is ambiguous. Original test label is preserved.",pending
+q0505,Codex,"semantic inspection of displayed questions, gold and source excerpts",confirmed_false_refusal,International remote work approval notice is explicitly 14 calendar days; gate rejected valid evidence.,pending
+q0310,Codex,"semantic inspection of displayed questions, gold and source excerpts",confirmed_false_refusal,Required receipt format explicitly says itemized receipt; low score produced unnecessary refusal.,pending
+q0607,Codex,"semantic inspection of displayed questions, gold and source excerpts",published_answer_or_refusal_supported,2 GB default workspace storage matches the cited product page.,pending
+q1004,Codex,"semantic inspection of displayed questions, gold and source excerpts",published_answer_or_refusal_supported,5 business days approval target matches procurement page 4.,pending
+u0602,Codex,"semantic inspection of displayed questions, gold and source excerpts",published_answer_or_refusal_supported,English/Spanish interface support does not specify a future French release; refusal appropriate.,pending
+q0605,Codex,"semantic inspection of displayed questions, gold and source excerpts",published_answer_or_refusal_supported,24 hour export link validity is explicit and correctly cited.,pending
+q0308,Codex,"semantic inspection of displayed questions, gold and source excerpts",published_answer_or_refusal_supported,"Not reimbursable is an actual alcohol policy answer, not an unanswerable question.",pending
+q0711,Codex,"semantic inspection of displayed questions, gold and source excerpts",published_answer_or_refusal_supported,5 percent annual subscription price increase cap is correctly cited.,pending
+u0102,Codex,"semantic inspection of displayed questions, gold and source excerpts",published_answer_or_refusal_supported,Policy applies to employees; contractor entitlements are not stated. Refusal appropriate.,pending
+q0206,Codex,"semantic inspection of displayed questions, gold and source excerpts",published_answer_or_refusal_supported,Medical certificate after 3 consecutive sick days matches quoted policy.,pending
+u0704,Codex,"semantic inspection of displayed questions, gold and source excerpts",published_answer_or_refusal_supported,Enterprise minimum seats does not reveal a negotiated 1000-seat discount. Refusal appropriate.,pending
+q0908,Codex,"semantic inspection of displayed questions, gold and source excerpts",published_answer_or_refusal_supported,14 calendar days after start is correctly supported for benefits selection.,pending
+u0203,Codex,"semantic inspection of displayed questions, gold and source excerpts",published_answer_or_refusal_supported,12 annual holidays does not provide specific 2029 holiday dates. Refusal appropriate.,pending
+q0902,Codex,"semantic inspection of displayed questions, gold and source excerpts",published_answer_or_refusal_supported,2-hour orientation duration matches cited onboarding page.,pending
+q0608,Codex,"semantic inspection of displayed questions, gold and source excerpts",published_answer_or_refusal_supported,8 simultaneous editors per project matches product manual.,pending
+q0201,Codex,"semantic inspection of displayed questions, gold and source excerpts",published_answer_or_refusal_supported,16 weeks paid parental leave matches quoted leave policy.,pending

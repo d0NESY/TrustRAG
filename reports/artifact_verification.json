@@ -1,0 +1,85 @@
+{
+  "all_formal_predictions_unchanged": true,
+  "all_metrics_recomputed_exactly": true,
+  "question_count_per_condition": 120,
+  "conditions": [
+    {
+      "name": "dense",
+      "retrieval": {
+        "count": 120,
+        "sha256": "04efe564743c81d50da2eab4e995834eef4aaea28922d73da1b67d38950e2058",
+        "metrics_match": true
+      },
+      "generation": {
+        "count": 120,
+        "sha256": "318d6d8843c7f323fc02a0780a1c21c9629566bd3e4985493c76a1eea97d8a8a",
+        "metrics_match": true
+      }
+    },
+    {
+      "name": "dense_reranker",
+      "retrieval": {
+        "count": 120,
+        "sha256": "991d081e8b569b8a940c416016d98f9899e56cfe060021d6dc6d98713a4e3229",
+        "metrics_match": true
+      },
+      "generation": {
+        "count": 120,
+        "sha256": "986e001aeff6150b591f3008c748fafd50b3714ec233424290da07616481304f",
+        "metrics_match": true
+      }
+    },
+    {
+      "name": "bm25",
+      "retrieval": {
+        "count": 120,
+        "sha256": "a2e1b783fa5484d72a2d560767552da905973fac724946bb68b01fbdb3577c44",
+        "metrics_match": true
+      },
+      "generation": {
+        "count": 120,
+        "sha256": "81059668d9437fc54914ae5b86f6786792bb268ec372b9c47d4a0860f77ef3f2",
+        "metrics_match": true
+      }
+    },
+    {
+      "name": "hybrid",
+      "retrieval": {
+        "count": 120,
+        "sha256": "f016ee8b19a5a28af6099cba9da6daf197904ea7a67557551b32bad22e6c345e",
+        "metrics_match": true
+      },
+      "generation": {
+        "count": 120,
+        "sha256": "219d03f0143540746d895f908f0c87824ef83f0cff6e1b8ddee8d4c0c4f35dbf",
+        "metrics_match": true
+      }
+    },
+    {
+      "name": "hybrid_reranker",
+      "retrieval": {
+        "count": 120,
+        "sha256": "246517888aea6c5525b48f25af673a2e6cc38f46ce2326add6cfd05c406b5ee8",
+        "metrics_match": true
+      },
+      "generation": {
+        "count": 120,
+        "sha256": "c8d49e12600c4162539acaa3f2110a80d3a8d5f65586be36ec3f3377a35681d9",
+        "metrics_match": true
+      }
+    },
+    {
+      "name": "hybrid_reranker_no_gate",
+      "retrieval": {
+        "count": 120,
+        "sha256": "246517888aea6c5525b48f25af673a2e6cc38f46ce2326add6cfd05c406b5ee8",
+        "metrics_match": true
+      },
+      "generation": {
+        "count": 120,
+        "sha256": "681c8df1caa822bc344c1ba254158127688e2557c3b5e4ca33766012867049e5",
+        "metrics_match": true
+      }
+    }
+  ]
+}

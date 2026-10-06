@@ -1,0 +1,166 @@
+{
+  "name": "hybrid",
+  "embedding_model": "BAAI/bge-base-en-v1.5",
+  "reranker_model": "ms-marco-MiniLM-L-12-v2",
+  "llm_model": "gemma2:9b",
+  "embedding_threads": 4,
+  "chunking": {
+    "strategy": "recursive",
+    "chunk_size": 2048,
+    "overlap": 128
+  },
+  "retrieval": {
+    "mode": "hybrid",
+    "rerank": false,
+    "dense_top_k": 10,
+    "sparse_top_k": 10,
+    "fusion_top_k": 10,
+    "final_top_k": 10,
+    "context_top_k": 5,
+    "rrf_k": 60,
+    "bm25_k1": 1.5,
+    "bm25_b": 0.75
+  },
+  "answerability": {
+    "enabled": true,
+    "threshold": 0.032266458495966696,
+    "feature": "top1",
+    "calibration_file": "experiments/hybrid/dev/calibration.json"
+  },
+  "generation": {
+    "temperature": 0.0,
+    "max_tokens": 192,
+    "context_size": 4096,
+    "seed": 42,
+    "provider": "ollama",
+    "base_url": "http://127.0.0.1:11434",
+    "context_chars_per_source": 1024,
+    "judge_model": "gemma2:9b",
+    "judge_max_tokens": 128,
+    "input_cost_per_million": null,
+    "output_cost_per_million": null
+  },
+  "git_commit": "eeea01fd0eb149caabef202bca1b5342128a81fd",
+  "working_tree_dirty": true,
+  "code_sha256": "cbd6975a9fa0cfe370343b51f45df46b857c06fdc909e2e585e0e80db175375b",
+  "timestamp": "2026-10-06T17:27:34.646839+08:00",
+  "split": "test",
+  "benchmark_sha256": "9b2d989d1af419c69f1d8e831da82be15dacab376bf1be045752a0c713491a65",
+  "corpus_version": "northstar-v1",
+  "index": {
+    "corpus": {
+      "customer_support_faq.pdf": "fff13985cba52d52e6a3c7cc112ad8ecb50c7515b85ffd33024e5911fcfbb349",
+      "employee_handbook.pdf": "5e28564a7c5f47d3897950cfce758ae0d3a97ad93c2970c3b8de89947374dc16",
+      "expense_policy.pdf": "44e45e032dba4e1a631683b539b9e99f7bdbdd0b68acaf0aa90a89c3d898b255",
+      "it_security_policy.pdf": "f9a94cd09c1ee2f0f5d137d6ed5e62d427e5d50c82b648e365298419f3434042",
+      "leave_policy.pdf": "00a0856e9da6c57a9f365cdc3ead6aec903d9336467d3757ecdc853b11e5d21b",
+      "onboarding_guide.pdf": "7437c2f4cf28977a537dc45836334a7a4dc79e193104de02c46a1fa6f8bda5f8",
+      "pricing_policy.pdf": "b8a6be3f042b8cb5e8053658c8f3dc3d0c67345e5b2652c7d73b18b83a049b2c",
+      "procurement_policy.pdf": "8bca58efe31ee96dfbcc00478e648eaa111fab7be8ba7835da912f3b60ab2fb1",
+      "product_manual.pdf": "bc3ab1378cd9585407da8fff3b72107de6c478af31e4518ee424a817145c40c9",
+      "remote_work_policy.pdf": "fabcb2cd568cafce10a5f7113c25c6829a3266e9c7b843c863c4632e54a610ed"
+    },
+    "embedding_model": "BAAI/bge-base-en-v1.5",
+    "chunking": {
+      "strategy": "recursive",
+      "chunk_size": 2048,
+      "overlap": 128
+    },
+    "parser": "pdfium-page-normalized-v1",
+    "index_id": "4d7f831de112c20aac2f27d1",
+    "chunk_count": 120,
+    "page_count": 120,
+    "chunks_sha256": "d23ffe9e5c1e90a1a92443063839b8b98aab9ab8233f67abbaad5bdf9fdfa47d",
+    "parsing_ms": 1345.9110999992845,
+    "chunking_ms": 95.88280000025406,
+    "indexing_ms": 105367.13840000084,
+    "ingestion_ms": 106808.93230000038
+  },
+  "python": "3.12.7",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "llm_resolved": {
+    "name": "gemma2:9b",
+    "model": "gemma2:9b",
+    "modified_at": "2026-10-06T15:45:15.5726443+08:00",
+    "size": 5443152417,
+    "digest": "ff02c3702f322b9e075e9568332d96c0a7028002f1a5a056e0a6784320a4db0b",
+    "details": {
+      "parent_model": "",
+      "format": "gguf",
+      "family": "gemma2",
+      "families": [
+        "gemma2"
+      ],
+      "parameter_size": "9.2B",
+      "quantization_level": "Q4_0",
+      "context_length": 8192,
+      "embedding_length": 3584
+    },
+    "capabilities": [
+      "completion"
+    ]
+  },
+  "model_artifacts": {
+    "embedding": {
+      "name": "BAAI/bge-base-en-v1.5",
+      "repo": "qdrant/bge-base-en-v1.5-onnx-q",
+      "revision": "199291fdd1aa89faf9c20b722dc72ad5e17aa0d0",
+      "files": {
+        "config.json": "86f84a5285de7f1ee673f712387219ef1e261ec27dcd870e793a80f9da1aaa3b",
+        "model_optimized.onnx": "4e556722bc4f65716c544c8a931f1e90fb3f866e5741fd93a96f051d673339c7",
+        "special_tokens_map.json": "5d5b662e421ea9fac075174bb0688ee0d9431699900b90662acd44b2a350503a",
+        "tokenizer.json": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66",
+        "tokenizer_config.json": "0b29c7bfc889e53b36d9dd3e686dd4300f6525110eaa98c76a5dafceb2029f53"
+      }
+    },
+    "reranker": {
+      "name": "ms-marco-MiniLM-L-12-v2",
+      "files": {
+        ".DS_Store": "d65165279105ca6773180500688df4bdc69a2c7b771752f0a46ef120b7fd8ec3",
+        "config.json": "2144195e107cd7ea61556478e7add12986ebfbc3085f924fc0b90c2410604879",
+        "flashrank-MiniLM-L-12-v2_Q.onnx": "d3dd7b09fcf06b0c070081d6819b5effbb40b667bcad78b2d7543400271141d1",
+        "special_tokens_map.json": "303df45a03609e4ead04bc3dc1536d0ab19b5358db685b6f3da123d05ec200e3",
+        "tokenizer.json": "ce64fce797c24f68df90b40a3f74f579b336a493db14bd583fd520ea0d8c9a98",
+        "tokenizer_config.json": "eaf913a687e8eed3010b6479d0d84631038212aa50c14d9b812e08cbc891d925"
+      }
+    },
+    "llm": {
+      "name": "gemma2:9b",
+      "digest": "ff02c3702f322b9e075e9568332d96c0a7028002f1a5a056e0a6784320a4db0b",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "gemma2",
+        "families": [
+          "gemma2"
+        ],
+        "parameter_size": "9.2B",
+        "quantization_level": "Q4_0",
+        "context_length": 8192,
+        "embedding_length": 3584
+      }
+    },
+    "ollama": {
+      "version": "0.35.1",
+      "asset_digest": "sha256:dc50b9ca7f9023c86525012632cd1615b093d0407987444a7f62ecab617e8e93",
+      "asset_url": "https://github.com/ollama/ollama/releases/download/v0.35.1/ollama-windows-amd64.zip"
+    },
+    "hardware": {
+      "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU, 8188 MiB",
+      "physical_cpu_cores": 24,
+      "logical_cpu_cores": 32,
+      "ram_bytes": 16978403328,
+      "platform": "Windows-11-10.0.26200-SP0",
+      "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel"
+    }
+  },
+  "dependencies": {
+    "langchain": "0.2.6",
+    "qdrant-client": "1.10.1",
+    "fastembed": "0.3.3",
+    "flashrank": "0.2.8",
+    "pypdfium2": "4.30.0"
+  },
+  "latency_definition": "Warm models; query embedding, search and fusion in retrieval; cross-encoder timed separately; no cached query embeddings.",
+  "generation_evaluation": "Real model calls; fixed local LLM judge; checkpointed. See saved per-sample judge labels."
+}

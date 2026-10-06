@@ -1,0 +1,2 @@
+2026-10-06T17:27:34.646839+08:00 Actual test retrieval; 120 queries; code=cbd6975a9fa0cfe370343b51f45df46b857c06fdc909e2e585e0e80db175375b; index=4d7f831de112c20aac2f27d1
+Generation complete: 120 real query outcomes, generator=gemma2:9b, judge=gemma2:9b.

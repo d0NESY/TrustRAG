@@ -1,0 +1,131 @@
+{
+  "attempt": 2,
+  "timestamp": "2026-10-07T01:45:45.391025+08:00",
+  "before": {
+    "timestamp": "2026-10-07T01:45:14.499293+08:00",
+    "gpu": {
+      "command": [
+        "nvidia-smi",
+        "--query-gpu=name,driver_version,memory.used,memory.total",
+        "--format=csv,noheader"
+      ],
+      "returncode": 0,
+      "stdout": "NVIDIA GeForce RTX 4060 Laptop GPU, 616.92, 1293 MiB, 8188 MiB\n",
+      "stderr": ""
+    },
+    "gpu_compute_processes": {
+      "command": [
+        "nvidia-smi",
+        "--query-compute-apps=pid,process_name,used_gpu_memory",
+        "--format=csv,noheader"
+      ],
+      "returncode": 0,
+      "stdout": "15872, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\CrossDeviceResume.exe, [N/A]\n14532, C:\\Windows\\explorer.exe, [N/A]\n22328, C:\\Windows\\SystemApps\\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\\StartMenuExperienceHost.exe, [N/A]\n22372, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\SearchHost.exe, [N/A]\n7508, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\TextInputHost.exe, [N/A]\n18872, C:\\Windows\\SystemApps\\Microsoft.LockApp_cw5n1h2txyewy\\LockApp.exe, [N/A]\n21816, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\154.0.4258.53\\msedgewebview2.exe, [N/A]\n6420, C:\\Program Files\\WindowsApps\\MicrosoftWindows.Client.WebExperience_526.21100.40.0_x64__cw5n1h2txyewy\\WidgetBoard.exe, [N/A]\n5028, C:\\Program Files\\WindowsApps\\E046963F.LenovoVoice_3.0.13.0_x64__k1h2ywk1493x8\\GlobalPresenter\\GlobalPresenter.exe, [N/A]\n2704, C:\\Windows\\SystemApps\\ShellExperienceHost_cw5n1h2txyewy\\ShellExperienceHost.exe, [N/A]\n22616, C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe, [N/A]\n9184, C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe, [N/A]\n15508, C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe, [N/A]\n24280, C:\\Windows\\System32\\ApplicationFrameHost.exe, [N/A]\n18880, C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.930.7945.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe, [N/A]\n3788, C:\\Users\\lenovo\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\71e3f41277f96d73\\bin\\node_modules\\@oai\\sky\\bin\\windows\\swift\\x64\\codex-computer-use-swift.exe, [N/A]\n14772, C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.930.7945.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe, [N/A]\n29240, D:\\VScode\\Microsoft VS Code\\Code.exe, [N/A]\n31732, D:\\VScode\\Microsoft VS Code\\Code.exe, [N/A]\n37088, C:\\Program Files\\WindowsApps\\Microsoft.YourPhone_1.26072.257.0_x64__8wekyb3d8bbwe\\PhoneExperienceHost.exe, [N/A]\n28940, C:\\Windows\\System32\\ShellHost.exe, [N/A]\n35084, D:\\WPS\\WPS Office\\12.1.0.28505\\office6\\promecefpluginhost.exe, [N/A]\n",
+      "stderr": ""
+    },
+    "client_version": {
+      "command": [
+        "E:\\实习\\agent学习\\ragbase\\.runtime\\ollama\\bin\\ollama.exe",
+        "--version"
+      ],
+      "returncode": 0,
+      "stdout": "ollama version is 0.35.1\n",
+      "stderr": ""
+    },
+    "inventory": {
+      "command": [
+        "E:\\实习\\agent学习\\ragbase\\.runtime\\ollama\\bin\\ollama.exe",
+        "list"
+      ],
+      "returncode": 0,
+      "stdout": "NAME         ID              SIZE      MODIFIED     \ngemma2:9b    ff02c3702f32    5.4 GB    10 hours ago    \n",
+      "stderr": ""
+    },
+    "launch_environment": {
+      "CUDA_VISIBLE_DEVICES": null,
+      "OLLAMA_HOST": null,
+      "OLLAMA_MODELS": null,
+      "OLLAMA_CONTEXT_LENGTH": null,
+      "OLLAMA_LLM_LIBRARY": null
+    },
+    "expected_digest": "ff02c3702f322b9e075e9568332d96c0a7028002f1a5a056e0a6784320a4db0b",
+    "expected_ollama": "0.35.1",
+    "server_version": "0.35.1",
+    "model_digest": "ff02c3702f322b9e075e9568332d96c0a7028002f1a5a056e0a6784320a4db0b",
+    "frozen_model_matches": true,
+    "loaded_models": {
+      "models": []
+    }
+  },
+  "after": {
+    "timestamp": "2026-10-07T01:45:44.908033+08:00",
+    "gpu": {
+      "command": [
+        "nvidia-smi",
+        "--query-gpu=name,driver_version,memory.used,memory.total",
+        "--format=csv,noheader"
+      ],
+      "returncode": 0,
+      "stdout": "NVIDIA GeForce RTX 4060 Laptop GPU, 616.92, 1297 MiB, 8188 MiB\n",
+      "stderr": ""
+    },
+    "gpu_compute_processes": {
+      "command": [
+        "nvidia-smi",
+        "--query-compute-apps=pid,process_name,used_gpu_memory",
+        "--format=csv,noheader"
+      ],
+      "returncode": 0,
+      "stdout": "15872, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\CrossDeviceResume.exe, [N/A]\n14532, C:\\Windows\\explorer.exe, [N/A]\n22328, C:\\Windows\\SystemApps\\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\\StartMenuExperienceHost.exe, [N/A]\n22372, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\SearchHost.exe, [N/A]\n7508, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\TextInputHost.exe, [N/A]\n18872, C:\\Windows\\SystemApps\\Microsoft.LockApp_cw5n1h2txyewy\\LockApp.exe, [N/A]\n21816, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\154.0.4258.53\\msedgewebview2.exe, [N/A]\n6420, C:\\Program Files\\WindowsApps\\MicrosoftWindows.Client.WebExperience_526.21100.40.0_x64__cw5n1h2txyewy\\WidgetBoard.exe, [N/A]\n5028, C:\\Program Files\\WindowsApps\\E046963F.LenovoVoice_3.0.13.0_x64__k1h2ywk1493x8\\GlobalPresenter\\GlobalPresenter.exe, [N/A]\n2704, C:\\Windows\\SystemApps\\ShellExperienceHost_cw5n1h2txyewy\\ShellExperienceHost.exe, [N/A]\n22616, C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe, [N/A]\n9184, C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe, [N/A]\n15508, C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe, [N/A]\n24280, C:\\Windows\\System32\\ApplicationFrameHost.exe, [N/A]\n18880, C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.930.7945.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe, [N/A]\n3788, C:\\Users\\lenovo\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\71e3f41277f96d73\\bin\\node_modules\\@oai\\sky\\bin\\windows\\swift\\x64\\codex-computer-use-swift.exe, [N/A]\n14772, C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.930.7945.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe, [N/A]\n29240, D:\\VScode\\Microsoft VS Code\\Code.exe, [N/A]\n31732, D:\\VScode\\Microsoft VS Code\\Code.exe, [N/A]\n37088, C:\\Program Files\\WindowsApps\\Microsoft.YourPhone_1.26072.257.0_x64__8wekyb3d8bbwe\\PhoneExperienceHost.exe, [N/A]\n28940, C:\\Windows\\System32\\ShellHost.exe, [N/A]\n35084, D:\\WPS\\WPS Office\\12.1.0.28505\\office6\\promecefpluginhost.exe, [N/A]\n",
+      "stderr": ""
+    },
+    "client_version": {
+      "command": [
+        "E:\\实习\\agent学习\\ragbase\\.runtime\\ollama\\bin\\ollama.exe",
+        "--version"
+      ],
+      "returncode": 0,
+      "stdout": "ollama version is 0.35.1\n",
+      "stderr": ""
+    },
+    "inventory": {
+      "command": [
+        "E:\\实习\\agent学习\\ragbase\\.runtime\\ollama\\bin\\ollama.exe",
+        "list"
+      ],
+      "returncode": 0,
+      "stdout": "NAME         ID              SIZE      MODIFIED     \ngemma2:9b    ff02c3702f32    5.4 GB    10 hours ago    \n",
+      "stderr": ""
+    },
+    "launch_environment": {
+      "CUDA_VISIBLE_DEVICES": null,
+      "OLLAMA_HOST": null,
+      "OLLAMA_MODELS": null,
+      "OLLAMA_CONTEXT_LENGTH": null,
+      "OLLAMA_LLM_LIBRARY": null
+    },
+    "expected_digest": "ff02c3702f322b9e075e9568332d96c0a7028002f1a5a056e0a6784320a4db0b",
+    "expected_ollama": "0.35.1",
+    "server_version": "0.35.1",
+    "model_digest": "ff02c3702f322b9e075e9568332d96c0a7028002f1a5a056e0a6784320a4db0b",
+    "frozen_model_matches": true,
+    "loaded_models": {
+      "models": []
+    }
+  },
+  "restart_command": {
+    "command": [
+      "powershell",
+      "-NoProfile",
+      "-Command",
+      "\n$ReleaseRoot = (Get-Location).Path\n$ReleaseExe = (Resolve-Path -LiteralPath '.runtime\\ollama\\bin\\ollama.exe').Path\n$ReleaseKnownId = [int](Get-Content -LiteralPath '.runtime\\ollama\\server.pid')\n$ReleaseServers = @(Get-CimInstance Win32_Process -Filter \"ProcessId=$ReleaseKnownId\")\nif ($ReleaseServers.Count -ne 1 -or $ReleaseServers[0].ExecutablePath -ne $ReleaseExe -or $ReleaseServers[0].CommandLine -notmatch '\\bserve\\b') { throw 'Known service PID is not the task-owned Ollama; refusing termination' }\n$ReleaseOwned = @(Get-CimInstance Win32_Process -Filter \"ParentProcessId=$ReleaseKnownId\" | Where-Object { $_.ExecutablePath -like (Join-Path $ReleaseRoot '.runtime\\ollama\\bin\\*') })\nforeach ($ReleaseRunner in $ReleaseOwned) { Stop-Process -Id $ReleaseRunner.ProcessId -ErrorAction SilentlyContinue }\nforeach ($ReleaseServer in $ReleaseServers) { Stop-Process -Id $ReleaseServer.ProcessId -ErrorAction Stop }\n$env:OLLAMA_MODELS = Join-Path $ReleaseRoot '.runtime\\ollama\\models'\n$env:OLLAMA_HOST = '127.0.0.1:11434'\n$env:OLLAMA_KEEP_ALIVE = '1h'\n$env:OLLAMA_NUM_PARALLEL = '1'\n$env:OLLAMA_MAX_LOADED_MODELS = '1'\n$env:OLLAMA_CONTEXT_LENGTH = '2048'\n$ReleaseLog = Join-Path $ReleaseRoot 'reports\\release\\recovery'\n$ReleaseNew = Start-Process -FilePath $ReleaseExe -ArgumentList 'serve' -WorkingDirectory $ReleaseRoot -WindowStyle Hidden -PassThru -RedirectStandardOutput (Join-Path $ReleaseLog 'attempt_2.stdout.log') -RedirectStandardError (Join-Path $ReleaseLog 'attempt_2.stderr.log')\n$ReleaseNew.Id | Set-Content -LiteralPath '.runtime\\ollama\\server.pid' -Encoding ASCII\n$ReleaseNew.Id\n"
+    ],
+    "returncode": 124,
+    "stdout": "",
+    "stderr": "Bounded environment command exceeded 30 seconds; no unrecorded retry."
+  },
+  "probe_command": "python -m scripts.release.recovery --probe",
+  "status": "FAILED",
+  "error": "{\"command\": [\"powershell\", \"-NoProfile\", \"-Command\", \"\\n$ReleaseRoot = (Get-Location).Path\\n$ReleaseExe = (Resolve-Path -LiteralPath '.runtime\\\\ollama\\\\bin\\\\ollama.exe').Path\\n$ReleaseKnownId = [int](Get-Content -LiteralPath '.runtime\\\\ollama\\\\server.pid')\\n$ReleaseServers = @(Get-CimInstance Win32_Process -Filter \\\"ProcessId=$ReleaseKnownId\\\")\\nif ($ReleaseServers.Count -ne 1 -or $ReleaseServers[0].ExecutablePath -ne $ReleaseExe -or $ReleaseServers[0].CommandLine -notmatch '\\\\bserve\\\\b') { throw 'Known service PID is not the task-owned Ollama; refusing termination' }\\n$ReleaseOwned = @(Get-CimInstance Win32_Process -Filter \\\"ParentProcessId=$ReleaseKnownId\\\" | Where-Object { $_.ExecutablePath -like (Join-Path $ReleaseRoot '.runtime\\\\ollama\\\\bin\\\\*') })\\nforeach ($ReleaseRunner in $ReleaseOwned) { Stop-Process -Id $ReleaseRunner.ProcessId -ErrorAction SilentlyContinue }\\nforeach ($ReleaseServer in $ReleaseServers) { Stop-Process -Id $ReleaseServer.ProcessId -ErrorAction Stop }\\n$env:OLLAMA_MODELS = Join-Path $ReleaseRoot '.runtime\\\\ollama\\\\models'\\n$env:OLLAMA_HOST = '127.0.0.1:11434'\\n$env:OLLAMA_KEEP_ALIVE = '1h'\\n$env:OLLAMA_NUM_PARALLEL = '1'\\n$env:OLLAMA_MAX_LOADED_MODELS = '1'\\n$env:OLLAMA_CONTEXT_LENGTH = '2048'\\n$ReleaseLog = Join-Path $ReleaseRoot 'reports\\\\release\\\\recovery'\\n$ReleaseNew = Start-Process -FilePath $ReleaseExe -ArgumentList 'serve' -WorkingDirectory $ReleaseRoot -WindowStyle Hidden -PassThru -RedirectStandardOutput (Join-Path $ReleaseLog 'attempt_2.stdout.log') -RedirectStandardError (Join-Path $ReleaseLog 'attempt_2.stderr.log')\\n$ReleaseNew.Id | Set-Content -LiteralPath '.runtime\\\\ollama\\\\server.pid' -Encoding ASCII\\n$ReleaseNew.Id\\n\"], \"returncode\": 124, \"stdout\": \"\", \"stderr\": \"Bounded environment command exceeded 30 seconds; no unrecorded retry.\"}",
+  "config_sha256": "ad3d3f3abcbbb616fe3a9b9f7d9a029d6c52a8011987404428a069b6c1b2fd9b"
+}

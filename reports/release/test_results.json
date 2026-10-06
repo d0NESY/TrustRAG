@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-10-07T02:07:23.970082+08:00",
+  "pytest": {
+    "command": ".venv/Scripts/python.exe -m pytest -q",
+    "passed": 48,
+    "failed": 0,
+    "warnings": 2,
+    "observed_run": "Current release actual run; two dependency deprecation warnings, no failures."
+  },
+  "lint": {
+    "command": ".venv/Scripts/python.exe -m ruff check ragbase scripts tests --select F",
+    "status": "passed"
+  },
+  "artifact_verification": {
+    "metric_sets_recomputed": 27,
+    "frozen_files_unchanged": 805
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "status": "BLOCKED",
+  "attempts": 3,
+  "maximum_attempts": 3,
+  "same_frozen_model_and_config": true,
+  "historical_failure_attempts": 2
+}

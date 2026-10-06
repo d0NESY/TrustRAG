@@ -1,0 +1,10 @@
+{
+  "status": "PENDING_HUMAN_REVIEW",
+  "rows": 28,
+  "filled_human_cells": 0,
+  "required_human_cells": 112,
+  "legacy_filled_rows": 0,
+  "comparison_created": false,
+  "reviewer_identity_required": true,
+  "sampling": "28 purposeful error/boundary samples; not an unbiased test-accuracy estimate."
+}

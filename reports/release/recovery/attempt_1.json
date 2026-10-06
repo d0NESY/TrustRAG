@@ -1,0 +1,124 @@
+{
+  "attempt": 1,
+  "timestamp": "2026-10-07T01:45:08.963306+08:00",
+  "timestamp_note": "Recorded after failed initial bounded command; start time was not persisted.",
+  "before": {
+    "timestamp": "2026-10-07T01:45:08.583163+08:00",
+    "gpu": {
+      "command": [
+        "nvidia-smi",
+        "--query-gpu=name,driver_version,memory.used,memory.total",
+        "--format=csv,noheader"
+      ],
+      "returncode": 0,
+      "stdout": "NVIDIA GeForce RTX 4060 Laptop GPU, 616.92, 1311 MiB, 8188 MiB\n",
+      "stderr": ""
+    },
+    "gpu_compute_processes": {
+      "command": [
+        "nvidia-smi",
+        "--query-compute-apps=pid,process_name,used_gpu_memory",
+        "--format=csv,noheader"
+      ],
+      "returncode": 0,
+      "stdout": "15872, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\CrossDeviceResume.exe, [N/A]\n14532, C:\\Windows\\explorer.exe, [N/A]\n22328, C:\\Windows\\SystemApps\\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\\StartMenuExperienceHost.exe, [N/A]\n22372, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\SearchHost.exe, [N/A]\n7508, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\TextInputHost.exe, [N/A]\n18872, C:\\Windows\\SystemApps\\Microsoft.LockApp_cw5n1h2txyewy\\LockApp.exe, [N/A]\n21816, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\154.0.4258.53\\msedgewebview2.exe, [N/A]\n6420, C:\\Program Files\\WindowsApps\\MicrosoftWindows.Client.WebExperience_526.21100.40.0_x64__cw5n1h2txyewy\\WidgetBoard.exe, [N/A]\n5028, C:\\Program Files\\WindowsApps\\E046963F.LenovoVoice_3.0.13.0_x64__k1h2ywk1493x8\\GlobalPresenter\\GlobalPresenter.exe, [N/A]\n2704, C:\\Windows\\SystemApps\\ShellExperienceHost_cw5n1h2txyewy\\ShellExperienceHost.exe, [N/A]\n22616, C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe, [N/A]\n9184, C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe, [N/A]\n15508, C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe, [N/A]\n24280, C:\\Windows\\System32\\ApplicationFrameHost.exe, [N/A]\n18880, C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.930.7945.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe, [N/A]\n3788, C:\\Users\\lenovo\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\71e3f41277f96d73\\bin\\node_modules\\@oai\\sky\\bin\\windows\\swift\\x64\\codex-computer-use-swift.exe, [N/A]\n14772, C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.930.7945.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe, [N/A]\n29240, D:\\VScode\\Microsoft VS Code\\Code.exe, [N/A]\n31732, D:\\VScode\\Microsoft VS Code\\Code.exe, [N/A]\n37088, C:\\Program Files\\WindowsApps\\Microsoft.YourPhone_1.26072.257.0_x64__8wekyb3d8bbwe\\PhoneExperienceHost.exe, [N/A]\n28940, C:\\Windows\\System32\\ShellHost.exe, [N/A]\n35084, D:\\WPS\\WPS Office\\12.1.0.28505\\office6\\promecefpluginhost.exe, [N/A]\n",
+      "stderr": ""
+    },
+    "client_version": {
+      "command": [
+        "E:\\实习\\agent学习\\ragbase\\.runtime\\ollama\\bin\\ollama.exe",
+        "--version"
+      ],
+      "returncode": 0,
+      "stdout": "ollama version is 0.35.1\n",
+      "stderr": ""
+    },
+    "inventory": {
+      "command": [
+        "E:\\实习\\agent学习\\ragbase\\.runtime\\ollama\\bin\\ollama.exe",
+        "list"
+      ],
+      "returncode": 0,
+      "stdout": "NAME         ID              SIZE      MODIFIED     \ngemma2:9b    ff02c3702f32    5.4 GB    10 hours ago    \n",
+      "stderr": ""
+    },
+    "launch_environment": {
+      "CUDA_VISIBLE_DEVICES": null,
+      "OLLAMA_HOST": null,
+      "OLLAMA_MODELS": null,
+      "OLLAMA_CONTEXT_LENGTH": null,
+      "OLLAMA_LLM_LIBRARY": null
+    },
+    "expected_digest": "ff02c3702f322b9e075e9568332d96c0a7028002f1a5a056e0a6784320a4db0b",
+    "expected_ollama": "0.35.1",
+    "server_version": "0.35.1",
+    "model_digest": "ff02c3702f322b9e075e9568332d96c0a7028002f1a5a056e0a6784320a4db0b",
+    "frozen_model_matches": true,
+    "loaded_models": {
+      "models": []
+    }
+  },
+  "after": {
+    "timestamp": "2026-10-07T01:45:08.583163+08:00",
+    "gpu": {
+      "command": [
+        "nvidia-smi",
+        "--query-gpu=name,driver_version,memory.used,memory.total",
+        "--format=csv,noheader"
+      ],
+      "returncode": 0,
+      "stdout": "NVIDIA GeForce RTX 4060 Laptop GPU, 616.92, 1311 MiB, 8188 MiB\n",
+      "stderr": ""
+    },
+    "gpu_compute_processes": {
+      "command": [
+        "nvidia-smi",
+        "--query-compute-apps=pid,process_name,used_gpu_memory",
+        "--format=csv,noheader"
+      ],
+      "returncode": 0,
+      "stdout": "15872, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\CrossDeviceResume.exe, [N/A]\n14532, C:\\Windows\\explorer.exe, [N/A]\n22328, C:\\Windows\\SystemApps\\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\\StartMenuExperienceHost.exe, [N/A]\n22372, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\SearchHost.exe, [N/A]\n7508, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\TextInputHost.exe, [N/A]\n18872, C:\\Windows\\SystemApps\\Microsoft.LockApp_cw5n1h2txyewy\\LockApp.exe, [N/A]\n21816, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\154.0.4258.53\\msedgewebview2.exe, [N/A]\n6420, C:\\Program Files\\WindowsApps\\MicrosoftWindows.Client.WebExperience_526.21100.40.0_x64__cw5n1h2txyewy\\WidgetBoard.exe, [N/A]\n5028, C:\\Program Files\\WindowsApps\\E046963F.LenovoVoice_3.0.13.0_x64__k1h2ywk1493x8\\GlobalPresenter\\GlobalPresenter.exe, [N/A]\n2704, C:\\Windows\\SystemApps\\ShellExperienceHost_cw5n1h2txyewy\\ShellExperienceHost.exe, [N/A]\n22616, C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe, [N/A]\n9184, C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe, [N/A]\n15508, C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe, [N/A]\n24280, C:\\Windows\\System32\\ApplicationFrameHost.exe, [N/A]\n18880, C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.930.7945.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe, [N/A]\n3788, C:\\Users\\lenovo\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\71e3f41277f96d73\\bin\\node_modules\\@oai\\sky\\bin\\windows\\swift\\x64\\codex-computer-use-swift.exe, [N/A]\n14772, C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.930.7945.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe, [N/A]\n29240, D:\\VScode\\Microsoft VS Code\\Code.exe, [N/A]\n31732, D:\\VScode\\Microsoft VS Code\\Code.exe, [N/A]\n37088, C:\\Program Files\\WindowsApps\\Microsoft.YourPhone_1.26072.257.0_x64__8wekyb3d8bbwe\\PhoneExperienceHost.exe, [N/A]\n28940, C:\\Windows\\System32\\ShellHost.exe, [N/A]\n35084, D:\\WPS\\WPS Office\\12.1.0.28505\\office6\\promecefpluginhost.exe, [N/A]\n",
+      "stderr": ""
+    },
+    "client_version": {
+      "command": [
+        "E:\\实习\\agent学习\\ragbase\\.runtime\\ollama\\bin\\ollama.exe",
+        "--version"
+      ],
+      "returncode": 0,
+      "stdout": "ollama version is 0.35.1\n",
+      "stderr": ""
+    },
+    "inventory": {
+      "command": [
+        "E:\\实习\\agent学习\\ragbase\\.runtime\\ollama\\bin\\ollama.exe",
+        "list"
+      ],
+      "returncode": 0,
+      "stdout": "NAME         ID              SIZE      MODIFIED     \ngemma2:9b    ff02c3702f32    5.4 GB    10 hours ago    \n",
+      "stderr": ""
+    },
+    "launch_environment": {
+      "CUDA_VISIBLE_DEVICES": null,
+      "OLLAMA_HOST": null,
+      "OLLAMA_MODELS": null,
+      "OLLAMA_CONTEXT_LENGTH": null,
+      "OLLAMA_LLM_LIBRARY": null
+    },
+    "expected_digest": "ff02c3702f322b9e075e9568332d96c0a7028002f1a5a056e0a6784320a4db0b",
+    "expected_ollama": "0.35.1",
+    "server_version": "0.35.1",
+    "model_digest": "ff02c3702f322b9e075e9568332d96c0a7028002f1a5a056e0a6784320a4db0b",
+    "frozen_model_matches": true,
+    "loaded_models": {
+      "models": []
+    }
+  },
+  "restart_command": {
+    "command": "Initial controlled process/port discovery and same-service restart command",
+    "returncode": 124
+  },
+  "probe_command": "Not reached",
+  "status": "FAILED",
+  "error": "Initial PowerShell environment discovery exceeded 30-second bound; PID stayed 30064, no new service/probe log existed. Counted as attempt 1, not silently retried."
+}

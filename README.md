@@ -1,174 +1,95 @@
 # TrustRAG
 
-基于混合检索、证据引用与校准拒答的企业知识库问答系统。基于 MIT 开源项目 RagBase 二次开发，围绕 **Retrieval + Grounding + Evaluation**，不引入 Agent、GraphRAG、训练或分布式基础设施。
+基于开源 [RagBase](https://github.com/curiousily/ragbase) 二次开发的 RAG 实验与引用问答项目。最终方案为 **Dense + Existing Cross-Encoder Reranker，Gate OFF，Citation ON**。统一阅读入口：[FINAL_PROJECT_REPORT.md](FINAL_PROJECT_REPORT.md)。
 
-## 1. Project Overview
+## Overview
 
-PDF 按页解析并生成稳定 chunk ID；Dense 与 BM25 使用同一份文本和身份，经 RRF 融合后由 FlashRank 重排。证据门限由 dev 集校准；证据不足时直接拒答。生成答案使用 `[S1]` 等引用，并检查来源 ID。独立评测流程保存逐题检索、答案、judge 输出和计时，指标可重算。
+按页解析PDF、保留metadata与稳定chunk ID，经BGE/Qdrant检索、现有FlashRank重排后提供Top5来源；Gemma2:9b使用grounding/refusal prompt，输出source ID引用并校验。所有实验保存逐题预测、原输出、指标与SHA，可重算。
 
-## 2. Upstream Project
+## Why this project
 
-- Upstream: [curiousily/ragbase](https://github.com/curiousily/ragbase)，作者 Venelin Valkov。
-- 原始 commit: `5af7b79162329fa0b725b39d1aeeea7eb1e4428b`。
-- 原始架构与依赖：[docs/upstream_baseline.md](docs/upstream_baseline.md)。
-- 已实际复现原版上传、解析、分块、Qdrant、检索、重排、本地生成及 UI：[docs/baseline_reproduction.md](docs/baseline_reproduction.md)。
-- 原版实验使用 `git archive` 冻结源码，避免后续开发悄悄改变基线。
+把Demo转成可评测系统，并通过受控消融与失败分析选择简单、实验支持的架构。没有Agent、GraphRAG或训练，不声称生产商业系统。
 
-PDF ingestion、Semantic/Recursive Chunking、FastEmbed、Qdrant、FlashRank、Streamlit、Ollama/Groq 和对话历史是原项目已有能力，不是本项目的原创贡献。
+## Architecture
 
-## 3. Motivation
+`PDF → Page-preserving Recursive Chunks → BGE → Qdrant Dense Top10 → Cross-Encoder → Top5 Context → Gemma2:9b → Citation Validation`
 
-原项目主要依赖 Dense 检索和提示词拒答，丢失原始页码，引用只是在答案下展开片段，也缺少固定评测。本项目让检索方法、来源、拒答依据与失败原因都可以检查，并把开发集选择与测试集报告分开。
+默认分数gate关闭，提示词拒答与引用校验保留。[最终架构决策](reports/release/FINAL_ARCHITECTURE_DECISION.md)。
 
-## 4. Architecture
+## Upstream RagBase
 
-```mermaid
-flowchart TD
-    A[PDF Documents] --> B[Page-aware Parsing]
-    B --> C[Deterministic Chunking]
-    C --> D[Dense / Qdrant]
-    C --> E[BM25]
-    D --> F[RRF Candidate Fusion]
-    E --> F
-    F --> G[FlashRank Cross-Encoder]
-    G --> H[Evidence Gate calibrated on dev]
-    H -->|sufficient| I[Grounded Generation]
-    H -->|insufficient| J[Standard Abstention]
-    I --> K[Source ID Validation / Citation]
-    C --> L[Independent Evaluation]
-    K --> L
-    J --> L
-```
+作者 Venelin Valkov；原始commit `5af7b79162329fa0b725b39d1aeeea7eb1e4428b`。PDF parsing、Semantic/Recursive chunking、FastEmbed、Dense/Qdrant、FlashRank、LLM和Streamlit是上游已有组件；保留MIT署名，不将它们称为原创算法。[实际复现记录](docs/baseline_reproduction.md)。
 
-新流程位于 `ragbase/ingestion`、`retrieval`、`generation`、`evaluation`。保留原始模块与冻结复现入口，便于追溯与渐进迁移。
+## My Contributions
 
-## 5. My Contributions
+Benchmark与span/chunk对齐；受控Dense/BM25/RRF/CE实验；来源ID/页码/引用摘录与拒答评测；Hard Benchmark、Failure/rescue/rank分析；paired bootstrap、稳定性/batch/延迟验证；公开自然文本检索sanity check；证据支持的架构简化。
 
-1. Dense + BM25 混合检索与 RRF；统一 `RetrievalResult` 和稳定 chunk 身份。
-2. 将原有 FlashRank 接入可控候选池，建立五组受控检索比较。
-3. 按页 metadata、答案内 source-level citation、来源 ID 与无效引用检查。
-4. 根据 dev 正负样本扫描 top1、top3 mean、margin，选择证据门限与拒答策略。
-5. 固定语料、dev/test benchmark、独立检索/生成评测、实验工件、消融、失败分类和指标重算。
+## Benchmark
 
-这些是系统改造与实验工程贡献；RRF、BM25、已有模型及 upstream 功能不被描述为新算法发明。
+V2是**synthetic hard benchmark**：240问=180 answerable+60 near-miss，dev80/test160，30家族隔离，90PDF/180页，test每正例类20问。事实与问题由Codex在评测前共同编写，不是独立人工或自然企业QA；原gold不因结果修改。[数据边界](reports/v2/BENCHMARK_CARD.md)。
 
-## 6. Dataset / Knowledge Base
+## Results
 
-`data/documents/` 包含 10 份公开可审计的虚构 Northstar Labs 政策 PDF、共 120 页。每页一个事实目标，正文包含程序性说明。没有真实员工资料或企业机密。
+**Frozen V2 synthetic hard benchmark；120 answerable test questions**（另40 near-miss用于拒答评测）。
 
-文档覆盖员工手册、请假、报销、IT 安全、远程办公、产品手册、定价、客服、入职和采购。[data/README.md](data/README.md) 说明来源、构造方法和局限；`data/source/facts.jsonl` 保存事实；`data/benchmark/manifest.json` 保存文件 SHA-256。
-
-## 7. Benchmark
-
-| Split | Answerable | Unanswerable | Total |
+| Method | Recall@1 | Recall@5 | MRR |
 | --- | ---: | ---: | ---: |
-| dev | 30 | 10 | 40 |
-| test | 90 | 30 | 120 |
-| total | 120 | 40 | 160 |
+| Dense | 68.33% | 96.67% | 0.8052 |
+| Dense + Reranker | **95.83%** | **100%** | **0.9792** |
+| Hybrid | 80.00% | 99.17% | 0.8873 |
+| Hybrid + Reranker | 94.17% | 100% | 0.9708 |
 
-按文档分层、seed=42；两组问题和事实目标分离。语料共用，这是知识库检索评测，并非未见文档泛化评测。原始 gold 用文件名、1-based 页码和事实 span 标注；`benchmark_aligned.jsonl` 把实际保留的 span 映射到稳定 chunk ID，无法对齐则失败。
+Dense+CE − Dense：R@1 **+27.5 pp**，95% paired-bootstrap CI **[+20.0,+35.83] pp**；MRR **+0.1739**，CI **[+0.1242,+0.2251]**。10,000 replicates。Paired bootstrap supports a robust positive ranking gain on the frozen V2 test set，非严格总体证明。
 
-参数、chunking 和门限只在 dev 上选择。正式 test 的输入、代码、模型和配置写入 `experiments/formal_test_freeze.json`，检查点只能按同一配置恢复；已完成的预测不被手工改写。
+Dense+CE − Hybrid+CE 的CI包含0；选择更简单架构，不宣称显著优于。[V2明细](reports/v2/FINAL_V2_REPORT.md) / [最终可信度验证](reports/final_validation/FINAL_VALIDATION_REPORT.md)。
 
-## 8. Retrieval Pipeline
+## Ablation
 
-- Dense：原 BGE `BAAI/bge-base-en-v1.5`、FastEmbed、Qdrant cosine retrieval。
-- BM25：Okapi BM25、统一 query/document tokenizer、倒排 postings。
-- RRF：`sum(1 / (k + rank))`，按排名融合，不比较不同尺度的原始分数。
-- 重排：原有 `ms-marco-MiniLM-L-12-v2`，保留共享身份和 component scores。
-- dev 选择：Recursive 2048/128；候选深度 10、RRF k=60；保存排名 Top-10，生成使用 Top-5。
+同语料/chunks/model，candidate/final10、context5，page-preserving Recursive2048/128。原RRF/门限的正式参数保留冻结。引用precision为gold-source attribution，非逐claim蕴含；LLM judge可出错。
 
-配置位于 `configs/baseline.yaml`、`dense_reranker.yaml`、`bm25.yaml`、`hybrid.yaml`、`hybrid_reranker.yaml`。所有受控组共用 corpus、chunking、embedding、question set 和 Top-K 定义。
+## What did not help
 
-## 9. Answerability / Citation
+- **Hybrid**：最终Hybrid+CE没有净质量优势，当前K10无BM25 unique rescue；不等于BM25在任何语料没用。
+- **Answerability Gate**：同Hybrid+CE的V2 G0/G1中FAR均0.025；FRR0.0083→0.0333，F1 0.9917→0.9789。门限默认OFF。
+- **Complex Semantic Chunking**：旧V1 dev小型消融三种方案MRR均1.0，未观察到稳定优势，按预定平局规则采用Recursive；不是在所有文档下否定语义分块。
 
-证据分数是相关性特征，不是答案正确概率。三种特征在各检索模式自己的分数尺度上扫描门限。主方案使用 dev 校准的 top1 重排分数；完整扫描见 [reports/answerability_calibration.md](reports/answerability_calibration.md)。
+## Reliability Validation
 
-低于门限直接返回统一拒答，并跳过 LLM。通过门限后，模型仍须只根据来源回答并使用 `[S1]`。无效/缺失 source ID 被拦截，原始输出保留供审计。模型拒答后不会继续发布补充的参数知识。
+固定候选30诊断题×双方法×5轮，完整排名/Top1重复一致；batch对照复现2道固定passage pair翻转，padding/量化具体原因仍是假说。随机顺序五轮延迟两种方案同量级，不宣传单次80ms速度优势。
 
-每条引用映射到实际文件、页码、chunk 和提供给模型的 excerpt。默认每个来源最多 1024 字符，截取到完整词边界；保存引用 excerpt 的起止偏移。来源 ID 合法性不能保证语义支持，因此另做固定 LLM judge 与抽样复核。
+External retrieval sanity check完成：15个SQuAD2自然文章摘录/75原生人工问，45正例均Top1命中；小且主题分散，非100%自然RAG准确率。
 
-## 10. Experiments
+**Human Audit：PENDING_HUMAN_REVIEW；External Generation：BLOCKED。** [盲审CSV](reports/release/human_audit_blind.csv) / [恢复记录](reports/release/external_generation_recovery_log.md)。未测生成指标N/A，不冒充真人审核。
 
-正式矩阵：Dense、Dense + Reranker、BM25、Hybrid、Hybrid + Reranker。原版整文档分块基线单独见 [docs/original_baseline_results.md](docs/original_baseline_results.md)，不能把它与页码分块组的差异直接归因于 RRF。
+## Demo
 
-每组保存配置、resolved config、aligned gold、chunks、retrieval/generation predictions、metrics、raw judge results、模型计数、检查点和 `run.log`。正式结果已完成，见 [reports/comparison.md](reports/comparison.md)。主方案 MRR 0.9889，Dense 0.9615；两者 Recall@5 均为 1.0000。主方案端到端 Answerability F1 0.9655，FAR 0、FRR 0.0667。六组共 720 条系统结果，全部通过预测重算一致性检查。
-
-检索指标为 Recall@1/3/5/10、MRR、nDCG@5；无答案问题不进入 ranking 指标，仍进入 latency。生成正确性和 groundedness 使用固定 `gemma2:9b` judge、固定 prompt、temperature=0、seed=42；逐题保存 raw/parsed 标签。Citation Accuracy 是 gold-source precision；语义支持另报 judge 指标。Answerability/FAR/FRR 根据 gold booleans 和实际发布状态确定。
-
-## 11. Ablation
-
-- [Chunking](reports/chunking_ablation.md)：Fixed、Recursive、Semantic + Recursive；其他检索设置固定。三者 dev MRR 同为 1.0000，按预定平局规则选择 Recursive。
-- [Candidate/RRF](reports/retrieval_tuning.md)：候选 10/20/40 与 RRF k=10/60/100 的小型 dev 网格。深度 10 与 40 的 MRR 相同，选择 10。
-- Gate：正式矩阵预先声明主方案 gate on/off 对照，复用相同 test 检索输入，重新执行真实生成与 judge。
-
-本轮 gate off 的 F1 为 0.9944，gate on 为 0.9655，FAR 均为 0。证据门限增加误拒答，未测得误答率收益。保留真实结果，不用 test 重新选择门限；gate 单独的 test F1 0.8901 与端到端 F1 分开报告。
-
-## 12. Failure Analysis
-
-已生成 `reports/failure_analysis.csv` 和 `.md`，区分 Retrieval Miss、Ranking Error、Chunk Boundary Error、Insufficient Context、Generation Hallucination、Wrong Citation、False Refusal、False Answer，另区分有依据但答错的问题与 judge 失败。主方案有 6 个按原始 gold 计算的误拒答；20 条 Codex 语义复核见 [reports/sample_review.md](reports/sample_review.md)，其中一条发现 Finance 角色表述歧义，未修改 test 标签。
-
-分类为可复核的多标签假设，百分比分母为问题数。`reports/review_samples.jsonl` 提供失败及对照样本、gold、完整引用 excerpt、原始答案、门限和 judge 解释；独立人工核验不由自动标签替代。
-
-## 13. Demo
-
-启动本地 Ollama 与 Streamlit 后访问 `http://127.0.0.1:8501`。界面展示问题、答案、来源、检索方式、证据评分与回答/拒答状态，上传与索引按会话隔离。算法评测后已实际验证引用回答、拒答、PDF 上传页码和清空记录：[UI 验证](docs/demo_ui_results.json)。
-
-默认演示知识库使用已校准的固定 corpus。上传其他 PDF 后，门限存在域迁移限制，需要针对新语料建立 dev benchmark 后重新校准。
-
-## 14. Installation
-
-要求 Python 3.12，已验证环境为 Windows、Python 3.12.7、RTX 4060 Laptop GPU 8GB。模型与硬件记录见 [docs/model_artifacts.json](docs/model_artifacts.json)。
+历史真实浏览器验证完成：引用回答、拒答、PDF上传、页码、清空会话。默认Dense+重排，gate关闭；当前GPU问题可能阻塞生成，历史检查不等于当前环境无故障。
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File scripts/setup.ps1
-.venv\Scripts\python.exe -m scripts.prefetch_models
-.venv\Scripts\python.exe scripts/download_ollama.py --version 0.35.1
 powershell -ExecutionPolicy Bypass -File scripts/start_local.ps1
-.venv\Scripts\python.exe scripts/pull_local_model.py --model gemma2:9b
-$env:HF_HUB_OFFLINE = '1'
-.venv\Scripts\python.exe -m streamlit run app.py
+.venv\Scripts\python.exe -m streamlit run app.py --server.address 127.0.0.1 --server.port 8501 --server.headless true
 ```
 
-下载需要联网；其后本地推理、检索和生成不需要付费 API。便携服务和模型位于被 Git 忽略的 `.runtime/`。安装脚本把 Poetry 工具环境与项目环境分开，避免工具依赖影响已锁定的 RAG 依赖。
+## Installation
 
-## 15. Reproduction
+Python3.12，原验证环境Windows3.12.7。模型/硬件与checksum在 [model_artifacts.json](docs/model_artifacts.json)，依赖快照在 [environment_requirements.txt](reports/v2/environment_requirements.txt)。Ollama固定0.35.1、Gemma2:9b原digest。完整步骤见 [REPRODUCE.md](REPRODUCE.md)；不升级/换模型绕过正式条件。
+
+## Reproduction
+
+优先只读校验和recompute-only，不调用模型、不覆盖旧metrics。Full rerun必须写独立新目录，会重新调用本地模型且耗时更长；同一冻结条件的有限外测恢复也保留全部错误。
 
 ```powershell
-$env:HF_HUB_OFFLINE = '1'
-.venv\Scripts\python.exe -m pytest tests -q
-.venv\Scripts\python.exe -m ruff check ragbase scripts tests
-.venv\Scripts\python.exe -m pip check
-
-# 先复现原版；原始 source 与平台兼容细节见 baseline_reproduction.md
-.venv\Scripts\python.exe scripts/export_upstream.py
-.venv\Scripts\python.exe -m streamlit run scripts/baseline_app.py
-
-# dev 开发过程；这些命令会重新选择 dev 参数，请使用独立 checkout
-.venv\Scripts\python.exe -m scripts.run_ablation --kind chunking
-.venv\Scripts\python.exe -m scripts.run_ablation --kind retrieval
-.venv\Scripts\python.exe -m scripts.run_dev_matrix
-.venv\Scripts\python.exe -m scripts.calibrate_answerability
-
-# 固定已发布参数重现 test；独立目录保护原始工件
-.venv\Scripts\python.exe -m scripts.run_benchmark --output-root experiments/reproduction --phase all
-
-# 只从保存的预测重算，不重新调用模型
-.venv\Scripts\python.exe -m scripts.recompute_metrics experiments/hybrid_reranker
+.venv\Scripts\python.exe -m scripts.release.verify_artifacts --recompute
+.venv\Scripts\python.exe -m pytest -q
+.venv\Scripts\python.exe -m ruff check ragbase scripts tests --select F
 ```
 
-恢复中断运行时使用同一个 output-root；freeze 校验不允许中途换参数。模型 prefetch 固定 Hugging Face revision，并校验 BGE/FlashRank 文件哈希；Ollama 与 LLM digest 同样校验。不同硬件/运行时的生成结果未保证逐字节一致。
+## Limitations
 
-## 16. Limitations
+合成作者/模板偏差、每类小N；候选覆盖仍饱和；部分同页hard negative不能只用chunk命中判断事实区分；英语/自包含问题、无OCR；引用结构不保证语义支持；同模型族judge偏差；人工pending；自然小规模检索sanity check与预训练/annotation-scope限制；外测生成实际状态如上。
 
-- 160 题、单事实单页、模板性虚构语料，较真实企业知识库容易；尚未达到建议的更大自然文档 benchmark。
-- 相同 dev 集承担小型参数选择与阈值拟合，40 题较小，存在过拟合风险；test 保持隔离。
-- BGE 与 reranker 为英语模型，本轮正式评测仅覆盖英语、自包含、单轮问题。
-- 页码解析不包含 OCR，扫描 PDF 或复杂跨页证据不属于已验证能力。
-- 高相关性不等于答案存在；门限在其他语料上需要重新校准。
-- 引用 ID 检查不能证明每个 claim 的正确性。Judge 与 generator 使用同一模型族，可能有偏差；独立人工审核仍重要。
-- Groq 接口能力保留，本轮没有用远程 API 做正式测量。
+## License
 
-## 17. License / Attribution
+保留上游 MIT [LICENSE](LICENSE) 与作者 attribution。模型、依赖和公开外测数据遵循各自许可（SQuAD2数据卡CC BY-SA4.0）；[外部来源卡](reports/final_validation/EXTERNAL_SOURCE_CARD.md)。
 
-保留原始 MIT [LICENSE](LICENSE) 与作者 attribution。新增项目代码沿用 MIT。第三方模型与依赖遵循各自许可证。个人改造文件与贡献范围见 `docs/my_changes.md`，真实简历素材见 `docs/resume_material.md`，完整验收状态见 `FINAL_REPORT.md`。
+项目封版，不开启V3。后续只用于RAG原理学习、[简历](docs/final_resume_claims.md)、[讲稿](docs/project_pitch.md)与[面试防守](docs/project_defense_qa.md)。

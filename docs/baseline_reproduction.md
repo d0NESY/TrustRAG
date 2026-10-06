@@ -31,11 +31,16 @@ real local Gemma 2 9B model before algorithm changes.
 
 `poetry install --only main --no-interaction` failed while building upstream-locked
 PyStemmer 2.2.0.1: Microsoft Visual C++ 14.0 or greater was required. That version
-does not publish a CPython 3.12 Windows wheel. The original `pyproject.toml` and
-`poetry.lock` were retained unchanged. Runtime dependencies were exported from the
+does not publish a CPython 3.12 Windows wheel. During Phase 0, the original
+`pyproject.toml` and `poetry.lock` were retained unchanged. Runtime dependencies were exported from the
 original lock into `docs/baseline_windows_requirements.txt`; only PyStemmer was
 changed to 2.2.0.3, which publishes the required official wheel and satisfies the
 upstream FastEmbed dependency range. Installation then succeeded.
+
+The later TrustRAG project updates its own dependency declarations/lock for the
+Windows wheel and evaluation tools. The exact original dependency files remain
+recoverable in the archived upstream commit, rather than being confused with the
+updated TrustRAG environment.
 
 ```powershell
 python -m venv .venv

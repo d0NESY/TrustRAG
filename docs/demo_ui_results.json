@@ -1,0 +1,18 @@
+[
+  {
+    "case": "demo_cited_answer",
+    "ui_text": "Employees receive 10 working days of paid sick leave per calendar year. [S1]\n\n回答状态\n\n已回答\n\n证据评分\n\n0.9786\n\n校准门限\n\n0.0398\n\n检索方式：混合检索 + 重排 · 分数特征：top1。评分衡量检索证据，不是答案正确概率。\n\nSources / 来源\n\n[S1] employee_handbook.pdf — Page 1 · 已引用\n\n[S2] leave_policy.pdf — Page 1\n\n[S3] leave_policy.pdf — Page 4\n\n[S4] leave_policy.pdf — Page 9\n\n[S5] leave_policy.pdf — Page 6\n\nRetrieved Evidence / 检索证据"
+  },
+  {
+    "case": "demo_refusal",
+    "ui_text": "I couldn't find sufficient evidence in the current knowledge base to answer this question reliably.\n\n回答状态\n\n拒答\n\n证据评分\n\n0.4896\n\n校准门限\n\n0.0398\n\n检索方式：混合检索 + 重排 · 分数特征：top1。评分衡量检索证据，不是答案正确概率。\n\nSources / 来源\n\n[S1] procurement_policy.pdf — Page 4\n\n[S2] procurement_policy.pdf — Page 5\n\n[S3] onboarding_guide.pdf — Page 3\n\n[S4] expense_policy.pdf — Page 5\n\n[S5] customer_support_faq.pdf — Page 3\n\nRetrieved Evidence / 检索证据"
+  },
+  {
+    "case": "uploaded_pdf_cited_answer",
+    "ui_text": "Employees receive 10 working days of paid sick leave per calendar year. [S1]\n\n回答状态\n\n已回答\n\n证据评分\n\n1.0000\n\n校准门限\n\n0.0398\n\n检索方式：混合检索 + 重排 · 分数特征：top1。评分衡量检索证据，不是答案正确概率。\n\nSources / 来源\n\n[S1] fictional_handbook.pdf — Page 1 · 已引用\n\n[S2] fictional_handbook.pdf — Page 2\n\n[S3] fictional_handbook.pdf — Page 3"
+  },
+  {
+    "case": "clear_history",
+    "passed": true
+  }
+]

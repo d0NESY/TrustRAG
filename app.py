@@ -1,132 +1,139 @@
-import asyncio
-import random
+"""TrustRAG local demo: isolated documents, cited answers and explicit abstention."""
 
-import streamlit as st
+import hashlib
+import json
+import os
+from pathlib import Path
+import uuid
+
 from dotenv import load_dotenv
-
-from ragbase.chain import ask_question, create_chain
-from ragbase.config import Config
-from ragbase.ingestor import Ingestor
-from ragbase.model import create_llm
-from ragbase.retriever import create_retriever
-from ragbase.uploader import upload_files
+import streamlit as st
 
 load_dotenv()
+os.environ.setdefault("HF_HUB_OFFLINE", "1")
 
-LOADING_MESSAGES = [
-    "Calculating your answer through multiverse...",
-    "Adjusting quantum entanglement...",
-    "Summoning star wisdom... almost there!",
-    "Consulting Schrödinger's cat...",
-    "Warping spacetime for your response...",
-    "Balancing neutron star equations...",
-    "Analyzing dark matter... please wait...",
-    "Engaging hyperdrive... en route!",
-    "Gathering photons from a galaxy...",
-    "Beaming data from Andromeda... stand by!",
-]
+from langchain_qdrant import Qdrant  # noqa: E402
+from ragbase.config import load_config  # noqa: E402
+from ragbase.generation.generator import AnswerGenerator  # noqa: E402
+from ragbase.ingestion.indexer import build_index  # noqa: E402
+from ragbase.model import create_embeddings  # noqa: E402
+from ragbase.retrieval.hybrid import RetrievalPipeline  # noqa: E402
 
+ROOT = Path(__file__).resolve().parent
+MODES = {"混合检索 + 重排": "hybrid_reranker", "Dense": "baseline", "Dense + 重排": "dense_reranker", "BM25": "bm25", "混合检索": "hybrid"}
 
-@st.cache_resource(show_spinner=False)
-def build_qa_chain(files):
-    file_paths = upload_files(files)
-    vector_store = Ingestor().ingest(file_paths)
-    llm = create_llm()
-    retriever = create_retriever(llm, vector_store=vector_store)
-    return create_chain(llm, retriever)
+st.set_page_config(page_title="TrustRAG", page_icon="📚", layout="wide")
+st.title("TrustRAG")
+st.caption("从资料中回答，给出可核对的来源；证据不足时明确拒答。")
+if "session_id" not in st.session_state:
+    st.session_state.session_id = uuid.uuid4().hex
+    st.session_state.messages = []
 
+with st.sidebar:
+    st.header("知识库")
+    knowledge_mode = st.radio("资料来源", ["企业演示知识库", "上传 PDF"])
+    selected_mode = st.selectbox("检索方式", list(MODES))
+    uploaded = st.file_uploader("选择 PDF 文档", type=["pdf"], accept_multiple_files=True) if knowledge_mode == "上传 PDF" else []
+    if knowledge_mode == "企业演示知识库":
+        st.caption("10 份虚构企业政策，120 页。评分门限由独立 dev 问题校准。")
+    else:
+        st.caption("上传文档只保存在当前本地会话目录。新语料需单独校准评分门限。")
+    if st.button("清空聊天记录"):
+        st.session_state.messages = []
+        st.rerun()
 
-async def ask_chain(question: str, chain):
-    full_response = ""
-    assistant = st.chat_message(
-        "assistant", avatar=str(Config.Path.IMAGES_DIR / "assistant-avatar.png")
-    )
-    with assistant:
-        message_placeholder = st.empty()
-        message_placeholder.status(random.choice(LOADING_MESSAGES), state="running")
-        documents = []
-        async for event in ask_question(chain, question, session_id="session-id-42"):
-            if type(event) is str:
-                full_response += event
-                message_placeholder.markdown(full_response)
-            if type(event) is list:
-                documents.extend(event)
-        for i, doc in enumerate(documents):
-            with st.expander(f"Source #{i+1}"):
-                st.write(doc.page_content)
-
-    st.session_state.messages.append({"role": "assistant", "content": full_response})
-
-
-def show_upload_documents():
-    holder = st.empty()
-    with holder.container():
-        st.header("RagBase")
-        st.subheader("Get answers from your documents")
-        uploaded_files = st.file_uploader(
-            label="Upload PDF files", type=["pdf"], accept_multiple_files=True
-        )
-    if not uploaded_files:
-        st.warning("Please upload PDF documents to continue!")
-        st.stop()
-
-    with st.spinner("Analyzing your document(s)..."):
-        holder.empty()
-        return build_qa_chain(uploaded_files)
-
-
-def show_message_history():
-    for message in st.session_state.messages:
-        role = message["role"]
-        avatar_path = (
-            Config.Path.IMAGES_DIR / "assistant-avatar.png"
-            if role == "assistant"
-            else Config.Path.IMAGES_DIR / "user-avatar.png"
-        )
-        with st.chat_message(role, avatar=str(avatar_path)):
-            st.markdown(message["content"])
-
-
-def show_chat_input(chain):
-    if prompt := st.chat_input("Ask your question here"):
-        st.session_state.messages.append({"role": "user", "content": prompt})
-        with st.chat_message(
-            "user",
-            avatar=str(Config.Path.IMAGES_DIR / "user-avatar.png"),
-        ):
-            st.markdown(prompt)
-        asyncio.run(ask_chain(prompt, chain))
-
-
-st.set_page_config(page_title="RagBase", page_icon="🐧")
-
-st.html(
-    """
-<style>
-    .st-emotion-cache-p4micv {
-        width: 2.75rem;
-        height: 2.75rem;
-    }
-</style>
-"""
-)
-
-if "messages" not in st.session_state:
-    st.session_state.messages = [
-        {
-            "role": "assistant",
-            "content": "Hi! What do you want to know about your documents?",
-        }
-    ]
-
-if Config.CONVERSATION_MESSAGES_LIMIT > 0 and Config.CONVERSATION_MESSAGES_LIMIT <= len(
-    st.session_state.messages
-):
-    st.warning(
-        "You have reached the conversation limit. Refresh the page to start a new conversation."
-    )
+config = load_config(ROOT / "configs" / (MODES[selected_mode] + ".yaml"))
+if knowledge_mode == "上传 PDF" and not uploaded:
+    st.info("先上传 PDF 文档，再输入问题。")
     st.stop()
 
-chain = show_upload_documents()
-show_message_history()
-show_chat_input(chain)
+if knowledge_mode == "企业演示知识库":
+    paths = sorted((ROOT / "data/documents").glob("*.pdf"))
+    fingerprint = "demo:" + config.chunking.strategy
+else:
+    fingerprint = hashlib.sha256(b"".join(file.name.encode() + file.getvalue() for file in uploaded)).hexdigest()
+    storage = ROOT / ".runtime" / "app_sessions" / st.session_state.session_id / "documents" / fingerprint
+    storage.mkdir(parents=True, exist_ok=True)
+    paths = []
+    names = set()
+    for file in uploaded:
+        filename = file.name.replace("\\", "/").rsplit("/", 1)[-1]
+        if filename in names or not filename.lower().endswith(".pdf"):
+            st.error("请使用不同文件名的 PDF 文档。")
+            st.stop()
+        names.add(filename)
+        path = storage / filename
+        if not path.exists():
+            path.write_bytes(file.getvalue())
+        paths.append(path)
+
+if st.session_state.get("corpus_fingerprint") != fingerprint:
+    previous = st.session_state.get("index")
+    if previous:
+        previous.close()
+    st.session_state.messages = []
+    try:
+        with st.spinner("正在建立资料索引…"):
+            index = build_index(paths, config, ROOT / ".runtime/app_sessions" / st.session_state.session_id / "indexes")
+            # Each session owns one client. Reopen it for Streamlit's script-thread
+            # lifecycle; queries are serialized per session, and indexing is complete.
+            index.close()
+            index.vector_store = Qdrant.from_existing_collection(embedding=create_embeddings(config), collection_name="documents",
+                                                                path=index.path / "qdrant", force_disable_check_same_thread=True)
+            st.session_state.index = index
+            st.session_state.corpus_fingerprint = fingerprint
+    except Exception as error:
+        st.error(f"索引建立失败：{error}")
+        st.stop()
+
+index = st.session_state.index
+calibration = json.loads((ROOT / config.answerability.calibration_file).read_text(encoding="utf-8"))
+calibrated = calibration["index_id"] == index.manifest["index_id"]
+if calibrated:
+    st.caption(f"当前知识库：{len(paths)} 份文档 · {index.manifest['chunk_count']} 个片段 · dev 校准门限")
+else:
+    st.info("当前为新语料，暂沿用演示门限；评分与拒答行为尚未在这些文档上校准。")
+
+
+def show_answer(payload):
+    st.markdown(payload["answer"])
+    gate = payload["gate"]
+    columns = st.columns(3)
+    columns[0].metric("回答状态", "拒答" if payload["abstained"] else "已回答")
+    columns[1].metric("证据评分", f"{gate['confidence']:.4f}")
+    columns[2].metric("校准门限", f"{gate['threshold']:.4f}")
+    st.caption(f"检索方式：{payload['retrieval_mode']} · 分数特征：{gate['feature']}。评分衡量检索证据，不是答案正确概率。")
+    if payload["sources"]:
+        st.markdown("**Sources / 来源**")
+        cited = set(payload["citation_validation"]["cited_ids"])
+        for source in payload["sources"]:
+            marker = " · 已引用" if source["source_id"] in cited and not payload["abstained"] else ""
+            with st.expander(f"[{source['source_id']}] {source['filename']} — Page {source['page']}{marker}"):
+                st.write(source["text"])
+    with st.expander("Retrieved Evidence / 检索证据"):
+        for evidence in payload["evidence"][:5]:
+            st.write(f"{evidence['metadata']['filename']} · Page {evidence['metadata']['page']} · score={evidence['score']:.4f}")
+            st.write(evidence["text"][:1024])
+
+
+for message in st.session_state.messages:
+    with st.chat_message(message["role"]):
+        if message["role"] == "assistant":
+            show_answer(message["payload"])
+        else:
+            st.markdown(message["content"])
+
+if question := st.chat_input("输入一个自包含的问题，例如：How much paid sick leave do employees receive?"):
+    st.session_state.messages.append({"role": "user", "content": question})
+    with st.chat_message("user"):
+        st.markdown(question)
+    with st.chat_message("assistant"):
+        try:
+            with st.spinner("正在检索资料并核对来源…"):
+                batch = RetrievalPipeline(config, index).retrieve(question)
+                answer = AnswerGenerator(config).generate(question, batch.results)
+                payload = {**answer.to_dict(), "retrieval_mode": selected_mode, "evidence": [result.to_dict() for result in batch.results]}
+            show_answer(payload)
+            st.session_state.messages.append({"role": "assistant", "payload": payload})
+        except Exception as error:
+            st.error(f"问答失败：{error}")

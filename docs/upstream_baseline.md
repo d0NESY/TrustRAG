@@ -67,13 +67,14 @@ These are source observations, not measured benchmark results.
 - Abstention relies on the prompt; there is no calibrated evidence gate.
 - No fixed benchmark or evaluation harness is included upstream.
 
-## Planned additions and attribution boundary
+## Additions and attribution boundary
 
-The requested TrustRAG additions are BM25 over shared chunk identities, RRF fusion,
-controlled reranking comparisons, preserved metadata/source citations, dev-calibrated
-answerability, and reproducible evaluation/failure analysis. These have **not yet been
-implemented**. Algorithm work must wait until the original end-to-end pipeline has
-been reproduced, as required by the user's Phase 0 gate.
+TrustRAG adds BM25 over shared chunk identities, RRF fusion, controlled reranking
+comparisons, preserved metadata/source citations, dev-calibrated answerability,
+and reproducible evaluation/failure analysis. Algorithm work began only after the
+original end-to-end pipeline passed the user's Phase 0 gate. The actual change
+inventory is recorded in `docs/my_changes.md`; formal experiments preserve their
+own frozen code version independently of later documentation/UI changes.
 
 PDF ingestion, semantic/recursive splitting, FastEmbed, Qdrant, FlashRank, Streamlit,
 local/remote model support and chat history are upstream features, not new contributions.

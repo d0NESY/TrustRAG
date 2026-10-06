@@ -1,0 +1,6 @@
+Supplier invoice controls - reference annex
+CURRENT REFERENCE; named scope only
+
+Controlling reference for supplier invoice controls. Invoice matching, payment terms and currency conversion are separate decisions; conversion is a treasury responsibility.
+The treasury conversion memo uses the settlement-day rate for foreign service invoices; the invoice control guide sets matching checks only.
+Apply only the activity and conditions named in this annex. An operational guide cannot be used to invent an absent commercial rate, compensation clause or retention term. Where an entity-specific negotiated term is requested, the general policy is not sufficient evidence.

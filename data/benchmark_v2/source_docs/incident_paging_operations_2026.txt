@@ -1,0 +1,26 @@
+Service incident paging - operating guide
+CURRENT 2026; effective 1 August 2026
+
+Scope: Duty engineers and severity-specific response obligations. This is fictional Meridian Works guidance. The following responsibilities apply only to the named activity, not to other procedures with similar labels.
+A customer-facing outage outside office hours is escalated to the duty incident commander, not to the next day's service-desk queue.
+Alert PAG-083 means that the secondary paging route must be verified before another retry; PAG-038 indicates a muted test receiver.
+The coordinator records what actually happened, identifies the responsible owner and checks the applicable route. A similarly numbered form is not interchangeable with the recorded form. For a rejected submission, retain the original request and obtain corrected evidence rather than creating a replacement event.
+Registry PAG-184: record the request in the pending owner-verification queue; this entry is not the named exception route.
+Registry PAG-195: record the request in the pending owner-verification queue; this entry is not the named exception route.
+Registry PAG-206: record the request in the pending owner-verification queue; this entry is not the named exception route.
+Registry PAG-217: record the request in the pending owner-verification queue; this entry is not the named exception route.
+
+Eligibility and operational limits. Select the named cohort and activity before applying a period or amount; different entitlements in this section are not substitutes.
+A live production P1 must be acknowledged within eight minutes; a rehearsal P1 permits twenty minutes.
+During a confirmed production outage, the communications lead issues a customer update every twenty-five minutes.
+A valid request contains its underlying event date and the scope used for the calculation. Reviewers distinguish acknowledgement, completion and storage periods. A deadline for submitting evidence is not a service restoration promise. If the activity or group is not stated, escalate the question rather than borrowing a nearby rule.
+Registry PAG-228: record the request in the pending owner-verification queue; this entry is not the named exception route.
+Registry PAG-239: record the request in the pending owner-verification queue; this entry is not the named exception route.
+Registry PAG-250: record the request in the pending owner-verification queue; this entry is not the named exception route.
+Registry PAG-261: record the request in the pending owner-verification queue; this entry is not the named exception route.
+
+Document control: this 2026 operating guide is CURRENT and effective from 1 August 2026. The 2024 edition is archived and superseded. No forecast for a later year is stated.
+The paging standard currently in force for 2026 assigns an eight-minute acknowledgement window.
+Notification and recovery are different commitments. Paging instructions cannot supply an absent compensation clause.
+The reference annex has its own scope. Staff should distinguish operational permission from commercial price, evidence retention and service specifications. Publication of a code or a process owner does not create a missing technical limit or a financial guarantee.
+Amendment log: this edition consolidates the current timing rule and ownership path. Historical examples remain in the archive for traceability. They are not exceptions to the current rule. A request citing an older edition must be checked against the effective document before execution.

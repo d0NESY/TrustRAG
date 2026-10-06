@@ -1,0 +1,6 @@
+International goods returns - reference annex
+CURRENT REFERENCE; named scope only
+
+Controlling reference for international goods returns. Customs evidence and commercial courier surcharges answer different parts of a shipment request.
+The carrier charges appendix sets a EUR 23 customs-document correction surcharge; the customs instruction contains no carrier prices.
+Apply only the activity and conditions named in this annex. An operational guide cannot be used to invent an absent commercial rate, compensation clause or retention term. Where an entity-specific negotiated term is requested, the general policy is not sufficient evidence.

@@ -1,0 +1,6 @@
+API credential custody - reference annex
+CURRENT REFERENCE; named scope only
+
+Controlling reference for api credential custody. Credential validity belongs to the custody guide. Audit retention belongs to the security records schedule.
+The security records schedule retains emergency revocation audit entries for 180 days; the key-management guide does not set a records lifetime.
+Apply only the activity and conditions named in this annex. An operational guide cannot be used to invent an absent commercial rate, compensation clause or retention term. Where an entity-specific negotiated term is requested, the general policy is not sufficient evidence.

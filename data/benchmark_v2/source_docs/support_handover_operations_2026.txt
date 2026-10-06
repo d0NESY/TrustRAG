@@ -1,0 +1,26 @@
+Support shift handover - operating guide
+CURRENT 2026; effective 1 August 2026
+
+Scope: Customer support ownership transfers and escalation records. This is fictional Meridian Works guidance. The following responsibilities apply only to the named activity, not to other procedures with similar labels.
+Before a shift ends, a named receiving agent must accept ownership of each waiting customer case.
+State SUP-925 means customer confirmation is outstanding; SUP-952 means technical ownership is outstanding.
+The coordinator records what actually happened, identifies the responsible owner and checks the applicable route. A similarly numbered form is not interchangeable with the recorded form. For a rejected submission, retain the original request and obtain corrected evidence rather than creating a replacement event.
+Registry SUP-1026: record the request in the pending owner-verification queue; this entry is not the named exception route.
+Registry SUP-1037: record the request in the pending owner-verification queue; this entry is not the named exception route.
+Registry SUP-1048: record the request in the pending owner-verification queue; this entry is not the named exception route.
+Registry SUP-1059: record the request in the pending owner-verification queue; this entry is not the named exception route.
+
+Eligibility and operational limits. Select the named cohort and activity before applying a period or amount; different entitlements in this section are not substitutes.
+Premium cases require handover acknowledgement within ten minutes; standard cases allow thirty minutes.
+A handover is escalated after two unsuccessful contacts with the receiving owner.
+A valid request contains its underlying event date and the scope used for the calculation. Reviewers distinguish acknowledgement, completion and storage periods. A deadline for submitting evidence is not a service restoration promise. If the activity or group is not stated, escalate the question rather than borrowing a nearby rule.
+Registry SUP-1070: record the request in the pending owner-verification queue; this entry is not the named exception route.
+Registry SUP-1081: record the request in the pending owner-verification queue; this entry is not the named exception route.
+Registry SUP-1092: record the request in the pending owner-verification queue; this entry is not the named exception route.
+Registry SUP-1103: record the request in the pending owner-verification queue; this entry is not the named exception route.
+
+Document control: this 2026 operating guide is CURRENT and effective from 1 August 2026. The 2024 edition is archived and superseded. No forecast for a later year is stated.
+The handover guide effective in 2026 sets premium acknowledgement at ten minutes.
+Case ownership is an operating duty, while transcript retention is a records-management obligation.
+The reference annex has its own scope. Staff should distinguish operational permission from commercial price, evidence retention and service specifications. Publication of a code or a process owner does not create a missing technical limit or a financial guarantee.
+Amendment log: this edition consolidates the current timing rule and ownership path. Historical examples remain in the archive for traceability. They are not exceptions to the current rule. A request citing an older edition must be checked against the effective document before execution.

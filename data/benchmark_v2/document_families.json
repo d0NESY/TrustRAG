@@ -1,0 +1,632 @@
+[
+  {
+    "filename": "device_exit_operations_2026.pdf",
+    "family_id": "device_exit",
+    "split": "test",
+    "status": "CURRENT 2026; effective 1 August 2026",
+    "pages": 3
+  },
+  {
+    "filename": "device_exit_archive_2024.pdf",
+    "family_id": "device_exit",
+    "split": "test",
+    "status": "ARCHIVED 2024; superseded",
+    "pages": 2
+  },
+  {
+    "filename": "device_exit_reference_annex.pdf",
+    "family_id": "device_exit",
+    "split": "test",
+    "status": "CURRENT REFERENCE; named scope only",
+    "pages": 1
+  },
+  {
+    "filename": "hotel_travel_operations_2026.pdf",
+    "family_id": "hotel_travel",
+    "split": "test",
+    "status": "CURRENT 2026; effective 1 August 2026",
+    "pages": 3
+  },
+  {
+    "filename": "hotel_travel_archive_2024.pdf",
+    "family_id": "hotel_travel",
+    "split": "test",
+    "status": "ARCHIVED 2024; superseded",
+    "pages": 2
+  },
+  {
+    "filename": "hotel_travel_reference_annex.pdf",
+    "family_id": "hotel_travel",
+    "split": "test",
+    "status": "CURRENT REFERENCE; named scope only",
+    "pages": 1
+  },
+  {
+    "filename": "incident_paging_operations_2026.pdf",
+    "family_id": "incident_paging",
+    "split": "test",
+    "status": "CURRENT 2026; effective 1 August 2026",
+    "pages": 3
+  },
+  {
+    "filename": "incident_paging_archive_2024.pdf",
+    "family_id": "incident_paging",
+    "split": "test",
+    "status": "ARCHIVED 2024; superseded",
+    "pages": 2
+  },
+  {
+    "filename": "incident_paging_reference_annex.pdf",
+    "family_id": "incident_paging",
+    "split": "test",
+    "status": "CURRENT REFERENCE; named scope only",
+    "pages": 1
+  },
+  {
+    "filename": "access_keys_operations_2026.pdf",
+    "family_id": "access_keys",
+    "split": "test",
+    "status": "CURRENT 2026; effective 1 August 2026",
+    "pages": 3
+  },
+  {
+    "filename": "access_keys_archive_2024.pdf",
+    "family_id": "access_keys",
+    "split": "test",
+    "status": "ARCHIVED 2024; superseded",
+    "pages": 2
+  },
+  {
+    "filename": "access_keys_reference_annex.pdf",
+    "family_id": "access_keys",
+    "split": "test",
+    "status": "CURRENT REFERENCE; named scope only",
+    "pages": 1
+  },
+  {
+    "filename": "warehouse_spills_operations_2026.pdf",
+    "family_id": "warehouse_spills",
+    "split": "test",
+    "status": "CURRENT 2026; effective 1 August 2026",
+    "pages": 3
+  },
+  {
+    "filename": "warehouse_spills_archive_2024.pdf",
+    "family_id": "warehouse_spills",
+    "split": "test",
+    "status": "ARCHIVED 2024; superseded",
+    "pages": 2
+  },
+  {
+    "filename": "warehouse_spills_reference_annex.pdf",
+    "family_id": "warehouse_spills",
+    "split": "test",
+    "status": "CURRENT REFERENCE; named scope only",
+    "pages": 1
+  },
+  {
+    "filename": "supplier_quotes_operations_2026.pdf",
+    "family_id": "supplier_quotes",
+    "split": "test",
+    "status": "CURRENT 2026; effective 1 August 2026",
+    "pages": 3
+  },
+  {
+    "filename": "supplier_quotes_archive_2024.pdf",
+    "family_id": "supplier_quotes",
+    "split": "test",
+    "status": "ARCHIVED 2024; superseded",
+    "pages": 2
+  },
+  {
+    "filename": "supplier_quotes_reference_annex.pdf",
+    "family_id": "supplier_quotes",
+    "split": "test",
+    "status": "CURRENT REFERENCE; named scope only",
+    "pages": 1
+  },
+  {
+    "filename": "backup_restore_operations_2026.pdf",
+    "family_id": "backup_restore",
+    "split": "test",
+    "status": "CURRENT 2026; effective 1 August 2026",
+    "pages": 3
+  },
+  {
+    "filename": "backup_restore_archive_2024.pdf",
+    "family_id": "backup_restore",
+    "split": "test",
+    "status": "ARCHIVED 2024; superseded",
+    "pages": 2
+  },
+  {
+    "filename": "backup_restore_reference_annex.pdf",
+    "family_id": "backup_restore",
+    "split": "test",
+    "status": "CURRENT REFERENCE; named scope only",
+    "pages": 1
+  },
+  {
+    "filename": "clinic_booking_operations_2026.pdf",
+    "family_id": "clinic_booking",
+    "split": "dev",
+    "status": "CURRENT 2026; effective 1 August 2026",
+    "pages": 3
+  },
+  {
+    "filename": "clinic_booking_archive_2024.pdf",
+    "family_id": "clinic_booking",
+    "split": "dev",
+    "status": "ARCHIVED 2024; superseded",
+    "pages": 2
+  },
+  {
+    "filename": "clinic_booking_reference_annex.pdf",
+    "family_id": "clinic_booking",
+    "split": "dev",
+    "status": "CURRENT REFERENCE; named scope only",
+    "pages": 1
+  },
+  {
+    "filename": "parental_requests_operations_2026.pdf",
+    "family_id": "parental_requests",
+    "split": "test",
+    "status": "CURRENT 2026; effective 1 August 2026",
+    "pages": 3
+  },
+  {
+    "filename": "parental_requests_archive_2024.pdf",
+    "family_id": "parental_requests",
+    "split": "test",
+    "status": "ARCHIVED 2024; superseded",
+    "pages": 2
+  },
+  {
+    "filename": "parental_requests_reference_annex.pdf",
+    "family_id": "parental_requests",
+    "split": "test",
+    "status": "CURRENT REFERENCE; named scope only",
+    "pages": 1
+  },
+  {
+    "filename": "workspace_access_operations_2026.pdf",
+    "family_id": "workspace_access",
+    "split": "test",
+    "status": "CURRENT 2026; effective 1 August 2026",
+    "pages": 3
+  },
+  {
+    "filename": "workspace_access_archive_2024.pdf",
+    "family_id": "workspace_access",
+    "split": "test",
+    "status": "ARCHIVED 2024; superseded",
+    "pages": 2
+  },
+  {
+    "filename": "workspace_access_reference_annex.pdf",
+    "family_id": "workspace_access",
+    "split": "test",
+    "status": "CURRENT REFERENCE; named scope only",
+    "pages": 1
+  },
+  {
+    "filename": "water_sampling_operations_2026.pdf",
+    "family_id": "water_sampling",
+    "split": "dev",
+    "status": "CURRENT 2026; effective 1 August 2026",
+    "pages": 3
+  },
+  {
+    "filename": "water_sampling_archive_2024.pdf",
+    "family_id": "water_sampling",
+    "split": "dev",
+    "status": "ARCHIVED 2024; superseded",
+    "pages": 2
+  },
+  {
+    "filename": "water_sampling_reference_annex.pdf",
+    "family_id": "water_sampling",
+    "split": "dev",
+    "status": "CURRENT REFERENCE; named scope only",
+    "pages": 1
+  },
+  {
+    "filename": "privileged_access_operations_2026.pdf",
+    "family_id": "privileged_access",
+    "split": "dev",
+    "status": "CURRENT 2026; effective 1 August 2026",
+    "pages": 3
+  },
+  {
+    "filename": "privileged_access_archive_2024.pdf",
+    "family_id": "privileged_access",
+    "split": "dev",
+    "status": "ARCHIVED 2024; superseded",
+    "pages": 2
+  },
+  {
+    "filename": "privileged_access_reference_annex.pdf",
+    "family_id": "privileged_access",
+    "split": "dev",
+    "status": "CURRENT REFERENCE; named scope only",
+    "pages": 1
+  },
+  {
+    "filename": "deployment_windows_operations_2026.pdf",
+    "family_id": "deployment_windows",
+    "split": "test",
+    "status": "CURRENT 2026; effective 1 August 2026",
+    "pages": 3
+  },
+  {
+    "filename": "deployment_windows_archive_2024.pdf",
+    "family_id": "deployment_windows",
+    "split": "test",
+    "status": "ARCHIVED 2024; superseded",
+    "pages": 2
+  },
+  {
+    "filename": "deployment_windows_reference_annex.pdf",
+    "family_id": "deployment_windows",
+    "split": "test",
+    "status": "CURRENT REFERENCE; named scope only",
+    "pages": 1
+  },
+  {
+    "filename": "invoice_controls_operations_2026.pdf",
+    "family_id": "invoice_controls",
+    "split": "test",
+    "status": "CURRENT 2026; effective 1 August 2026",
+    "pages": 3
+  },
+  {
+    "filename": "invoice_controls_archive_2024.pdf",
+    "family_id": "invoice_controls",
+    "split": "test",
+    "status": "ARCHIVED 2024; superseded",
+    "pages": 2
+  },
+  {
+    "filename": "invoice_controls_reference_annex.pdf",
+    "family_id": "invoice_controls",
+    "split": "test",
+    "status": "CURRENT REFERENCE; named scope only",
+    "pages": 1
+  },
+  {
+    "filename": "factory_inspection_operations_2026.pdf",
+    "family_id": "factory_inspection",
+    "split": "test",
+    "status": "CURRENT 2026; effective 1 August 2026",
+    "pages": 3
+  },
+  {
+    "filename": "factory_inspection_archive_2024.pdf",
+    "family_id": "factory_inspection",
+    "split": "test",
+    "status": "ARCHIVED 2024; superseded",
+    "pages": 2
+  },
+  {
+    "filename": "factory_inspection_reference_annex.pdf",
+    "family_id": "factory_inspection",
+    "split": "test",
+    "status": "CURRENT REFERENCE; named scope only",
+    "pages": 1
+  },
+  {
+    "filename": "wallet_disputes_operations_2026.pdf",
+    "family_id": "wallet_disputes",
+    "split": "dev",
+    "status": "CURRENT 2026; effective 1 August 2026",
+    "pages": 3
+  },
+  {
+    "filename": "wallet_disputes_archive_2024.pdf",
+    "family_id": "wallet_disputes",
+    "split": "dev",
+    "status": "ARCHIVED 2024; superseded",
+    "pages": 2
+  },
+  {
+    "filename": "wallet_disputes_reference_annex.pdf",
+    "family_id": "wallet_disputes",
+    "split": "dev",
+    "status": "CURRENT REFERENCE; named scope only",
+    "pages": 1
+  },
+  {
+    "filename": "support_handover_operations_2026.pdf",
+    "family_id": "support_handover",
+    "split": "dev",
+    "status": "CURRENT 2026; effective 1 August 2026",
+    "pages": 3
+  },
+  {
+    "filename": "support_handover_archive_2024.pdf",
+    "family_id": "support_handover",
+    "split": "dev",
+    "status": "ARCHIVED 2024; superseded",
+    "pages": 2
+  },
+  {
+    "filename": "support_handover_reference_annex.pdf",
+    "family_id": "support_handover",
+    "split": "dev",
+    "status": "CURRENT REFERENCE; named scope only",
+    "pages": 1
+  },
+  {
+    "filename": "rail_booking_operations_2026.pdf",
+    "family_id": "rail_booking",
+    "split": "test",
+    "status": "CURRENT 2026; effective 1 August 2026",
+    "pages": 3
+  },
+  {
+    "filename": "rail_booking_archive_2024.pdf",
+    "family_id": "rail_booking",
+    "split": "test",
+    "status": "ARCHIVED 2024; superseded",
+    "pages": 2
+  },
+  {
+    "filename": "rail_booking_reference_annex.pdf",
+    "family_id": "rail_booking",
+    "split": "test",
+    "status": "CURRENT REFERENCE; named scope only",
+    "pages": 1
+  },
+  {
+    "filename": "laser_training_operations_2026.pdf",
+    "family_id": "laser_training",
+    "split": "test",
+    "status": "CURRENT 2026; effective 1 August 2026",
+    "pages": 3
+  },
+  {
+    "filename": "laser_training_archive_2024.pdf",
+    "family_id": "laser_training",
+    "split": "test",
+    "status": "ARCHIVED 2024; superseded",
+    "pages": 2
+  },
+  {
+    "filename": "laser_training_reference_annex.pdf",
+    "family_id": "laser_training",
+    "split": "test",
+    "status": "CURRENT REFERENCE; named scope only",
+    "pages": 1
+  },
+  {
+    "filename": "software_licensing_operations_2026.pdf",
+    "family_id": "software_licensing",
+    "split": "dev",
+    "status": "CURRENT 2026; effective 1 August 2026",
+    "pages": 3
+  },
+  {
+    "filename": "software_licensing_archive_2024.pdf",
+    "family_id": "software_licensing",
+    "split": "dev",
+    "status": "ARCHIVED 2024; superseded",
+    "pages": 2
+  },
+  {
+    "filename": "software_licensing_reference_annex.pdf",
+    "family_id": "software_licensing",
+    "split": "dev",
+    "status": "CURRENT REFERENCE; named scope only",
+    "pages": 1
+  },
+  {
+    "filename": "customs_returns_operations_2026.pdf",
+    "family_id": "customs_returns",
+    "split": "test",
+    "status": "CURRENT 2026; effective 1 August 2026",
+    "pages": 3
+  },
+  {
+    "filename": "customs_returns_archive_2024.pdf",
+    "family_id": "customs_returns",
+    "split": "test",
+    "status": "ARCHIVED 2024; superseded",
+    "pages": 2
+  },
+  {
+    "filename": "customs_returns_reference_annex.pdf",
+    "family_id": "customs_returns",
+    "split": "test",
+    "status": "CURRENT REFERENCE; named scope only",
+    "pages": 1
+  },
+  {
+    "filename": "privacy_requests_operations_2026.pdf",
+    "family_id": "privacy_requests",
+    "split": "dev",
+    "status": "CURRENT 2026; effective 1 August 2026",
+    "pages": 3
+  },
+  {
+    "filename": "privacy_requests_archive_2024.pdf",
+    "family_id": "privacy_requests",
+    "split": "dev",
+    "status": "ARCHIVED 2024; superseded",
+    "pages": 2
+  },
+  {
+    "filename": "privacy_requests_reference_annex.pdf",
+    "family_id": "privacy_requests",
+    "split": "dev",
+    "status": "CURRENT REFERENCE; named scope only",
+    "pages": 1
+  },
+  {
+    "filename": "field_repairs_operations_2026.pdf",
+    "family_id": "field_repairs",
+    "split": "test",
+    "status": "CURRENT 2026; effective 1 August 2026",
+    "pages": 3
+  },
+  {
+    "filename": "field_repairs_archive_2024.pdf",
+    "family_id": "field_repairs",
+    "split": "test",
+    "status": "ARCHIVED 2024; superseded",
+    "pages": 2
+  },
+  {
+    "filename": "field_repairs_reference_annex.pdf",
+    "family_id": "field_repairs",
+    "split": "test",
+    "status": "CURRENT REFERENCE; named scope only",
+    "pages": 1
+  },
+  {
+    "filename": "accessible_events_operations_2026.pdf",
+    "family_id": "accessible_events",
+    "split": "dev",
+    "status": "CURRENT 2026; effective 1 August 2026",
+    "pages": 3
+  },
+  {
+    "filename": "accessible_events_archive_2024.pdf",
+    "family_id": "accessible_events",
+    "split": "dev",
+    "status": "ARCHIVED 2024; superseded",
+    "pages": 2
+  },
+  {
+    "filename": "accessible_events_reference_annex.pdf",
+    "family_id": "accessible_events",
+    "split": "dev",
+    "status": "CURRENT REFERENCE; named scope only",
+    "pages": 1
+  },
+  {
+    "filename": "router_replacement_operations_2026.pdf",
+    "family_id": "router_replacement",
+    "split": "dev",
+    "status": "CURRENT 2026; effective 1 August 2026",
+    "pages": 3
+  },
+  {
+    "filename": "router_replacement_archive_2024.pdf",
+    "family_id": "router_replacement",
+    "split": "dev",
+    "status": "ARCHIVED 2024; superseded",
+    "pages": 2
+  },
+  {
+    "filename": "router_replacement_reference_annex.pdf",
+    "family_id": "router_replacement",
+    "split": "dev",
+    "status": "CURRENT REFERENCE; named scope only",
+    "pages": 1
+  },
+  {
+    "filename": "volunteer_time_operations_2026.pdf",
+    "family_id": "volunteer_time",
+    "split": "test",
+    "status": "CURRENT 2026; effective 1 August 2026",
+    "pages": 3
+  },
+  {
+    "filename": "volunteer_time_archive_2024.pdf",
+    "family_id": "volunteer_time",
+    "split": "test",
+    "status": "ARCHIVED 2024; superseded",
+    "pages": 2
+  },
+  {
+    "filename": "volunteer_time_reference_annex.pdf",
+    "family_id": "volunteer_time",
+    "split": "test",
+    "status": "CURRENT REFERENCE; named scope only",
+    "pages": 1
+  },
+  {
+    "filename": "audit_evidence_operations_2026.pdf",
+    "family_id": "audit_evidence",
+    "split": "dev",
+    "status": "CURRENT 2026; effective 1 August 2026",
+    "pages": 3
+  },
+  {
+    "filename": "audit_evidence_archive_2024.pdf",
+    "family_id": "audit_evidence",
+    "split": "dev",
+    "status": "ARCHIVED 2024; superseded",
+    "pages": 2
+  },
+  {
+    "filename": "audit_evidence_reference_annex.pdf",
+    "family_id": "audit_evidence",
+    "split": "dev",
+    "status": "CURRENT REFERENCE; named scope only",
+    "pages": 1
+  },
+  {
+    "filename": "retail_warranty_operations_2026.pdf",
+    "family_id": "retail_warranty",
+    "split": "test",
+    "status": "CURRENT 2026; effective 1 August 2026",
+    "pages": 3
+  },
+  {
+    "filename": "retail_warranty_archive_2024.pdf",
+    "family_id": "retail_warranty",
+    "split": "test",
+    "status": "ARCHIVED 2024; superseded",
+    "pages": 2
+  },
+  {
+    "filename": "retail_warranty_reference_annex.pdf",
+    "family_id": "retail_warranty",
+    "split": "test",
+    "status": "CURRENT REFERENCE; named scope only",
+    "pages": 1
+  },
+  {
+    "filename": "visitor_facilities_operations_2026.pdf",
+    "family_id": "visitor_facilities",
+    "split": "test",
+    "status": "CURRENT 2026; effective 1 August 2026",
+    "pages": 3
+  },
+  {
+    "filename": "visitor_facilities_archive_2024.pdf",
+    "family_id": "visitor_facilities",
+    "split": "test",
+    "status": "ARCHIVED 2024; superseded",
+    "pages": 2
+  },
+  {
+    "filename": "visitor_facilities_reference_annex.pdf",
+    "family_id": "visitor_facilities",
+    "split": "test",
+    "status": "CURRENT REFERENCE; named scope only",
+    "pages": 1
+  },
+  {
+    "filename": "research_data_operations_2026.pdf",
+    "family_id": "research_data",
+    "split": "test",
+    "status": "CURRENT 2026; effective 1 August 2026",
+    "pages": 3
+  },
+  {
+    "filename": "research_data_archive_2024.pdf",
+    "family_id": "research_data",
+    "split": "test",
+    "status": "ARCHIVED 2024; superseded",
+    "pages": 2
+  },
+  {
+    "filename": "research_data_reference_annex.pdf",
+    "family_id": "research_data",
+    "split": "test",
+    "status": "CURRENT REFERENCE; named scope only",
+    "pages": 1
+  }
+]

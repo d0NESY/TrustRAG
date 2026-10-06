@@ -1,0 +1,6 @@
+Research dataset custody - reference annex
+CURRENT REFERENCE; named scope only
+
+Controlling reference for research dataset custody. Export labels do not define study statistics. Key custody is addressed in the study security annex.
+The study security annex keeps the reidentification key in the restricted key vault; the export guide does not identify the key location.
+Apply only the activity and conditions named in this annex. An operational guide cannot be used to invent an absent commercial rate, compensation clause or retention term. Where an entity-specific negotiated term is requested, the general policy is not sufficient evidence.

@@ -1,0 +1,13 @@
+Production deployment windows - historical edition
+ARCHIVED 2024; superseded
+
+ARCHIVED, SUPERSEDED: this 2024 edition is retained for historical record only and is not the current operating policy.
+The retired 2024 release calendar assigned weekday deployments to 20:00 to 22:00 UTC.
+The old edition covered the same operating activity. Its prior timing must not be treated as a forecast. Historic case records show how approvals were documented at the time; they do not authorise new work under that edition.
+
+Historical route register. These entries are examples of administrative queues in the retired edition, not current forms.
+Registry REL-680: record the request in the pending owner-verification queue; this entry is not the named exception route.
+Registry REL-691: record the request in the pending owner-verification queue; this entry is not the named exception route.
+Registry REL-702: record the request in the pending owner-verification queue; this entry is not the named exception route.
+Registry REL-713: record the request in the pending owner-verification queue; this entry is not the named exception route.
+Registry REL-724: record the request in the pending owner-verification queue; this entry is not the named exception route.

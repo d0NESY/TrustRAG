@@ -1,0 +1,6 @@
+Service incident paging - reference annex
+CURRENT REFERENCE; named scope only
+
+Controlling reference for service incident paging. Notification and recovery are different commitments. Paging instructions cannot supply an absent compensation clause.
+The service restoration appendix defines a three-hour recovery target; the paging instructions define notification timing only.
+Apply only the activity and conditions named in this annex. An operational guide cannot be used to invent an absent commercial rate, compensation clause or retention term. Where an entity-specific negotiated term is requested, the general policy is not sufficient evidence.

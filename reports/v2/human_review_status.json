@@ -1,0 +1,6 @@
+{
+  "status": "PENDING_HUMAN_REVIEW",
+  "reviewer": null,
+  "template": "reports/human_review_template.csv",
+  "sample_count": 20
+}

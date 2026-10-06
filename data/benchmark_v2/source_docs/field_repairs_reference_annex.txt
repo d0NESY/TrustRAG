@@ -1,0 +1,6 @@
+Field equipment repair visits - reference annex
+CURRENT REFERENCE; named scope only
+
+Controlling reference for field equipment repair visits. Technical kits, customer access and tariff terms must be traced to their separate controlling references.
+The field service tariff sets a USD 75 charge for a cancelled escorted visit; the repair instruction states no customer cancellation price.
+Apply only the activity and conditions named in this annex. An operational guide cannot be used to invent an absent commercial rate, compensation clause or retention term. Where an entity-specific negotiated term is requested, the general policy is not sufficient evidence.

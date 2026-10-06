@@ -1,0 +1,6 @@
+Digital wallet dispute handling - reference annex
+CURRENT REFERENCE; named scope only
+
+Controlling reference for digital wallet dispute handling. Operational case classification cannot determine fraud or tariff terms absent from the merchant service tariff.
+The merchant service tariff sets a USD 6 evidence-retrieval fee; the case-handling manual lists intake steps without prices.
+Apply only the activity and conditions named in this annex. An operational guide cannot be used to invent an absent commercial rate, compensation clause or retention term. Where an entity-specific negotiated term is requested, the general policy is not sufficient evidence.

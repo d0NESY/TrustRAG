@@ -1,0 +1,6 @@
+Travel lodging and room exceptions - reference annex
+CURRENT REFERENCE; named scope only
+
+Controlling reference for travel lodging and room exceptions. Room eligibility is covered by the lodging guide. Guest-account settlement is governed by the finance annex.
+The guest-rate finance annex specifies EUR settlement; the lodging guide's USD limits are reimbursement ceilings, not invoice currency.
+Apply only the activity and conditions named in this annex. An operational guide cannot be used to invent an absent commercial rate, compensation clause or retention term. Where an entity-specific negotiated term is requested, the general policy is not sufficient evidence.

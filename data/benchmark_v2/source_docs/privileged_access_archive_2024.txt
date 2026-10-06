@@ -1,0 +1,13 @@
+Privileged access attestations - historical edition
+ARCHIVED 2024; superseded
+
+ARCHIVED, SUPERSEDED: this 2024 edition is retained for historical record only and is not the current operating policy.
+The superseded 2024 attestation policy reviewed break-glass credentials monthly.
+The old edition covered the same operating activity. Its prior timing must not be treated as a forecast. Historic case records show how approvals were documented at the time; they do not authorise new work under that edition.
+
+Historical route register. These entries are examples of administrative queues in the retired edition, not current forms.
+Registry CTRL-569: record the request in the pending owner-verification queue; this entry is not the named exception route.
+Registry CTRL-580: record the request in the pending owner-verification queue; this entry is not the named exception route.
+Registry CTRL-591: record the request in the pending owner-verification queue; this entry is not the named exception route.
+Registry CTRL-602: record the request in the pending owner-verification queue; this entry is not the named exception route.
+Registry CTRL-613: record the request in the pending owner-verification queue; this entry is not the named exception route.

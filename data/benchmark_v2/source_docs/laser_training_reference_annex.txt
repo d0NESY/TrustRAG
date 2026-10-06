@@ -1,0 +1,6 @@
+Laser laboratory qualification - reference annex
+CURRENT REFERENCE; named scope only
+
+Controlling reference for laser laboratory qualification. Training records and equipment inspection records have different owners and must not be substituted for one another.
+The optical equipment annex requires protective eyewear inspection every six weeks; the training rule governs people rather than equipment.
+Apply only the activity and conditions named in this annex. An operational guide cannot be used to invent an absent commercial rate, compensation clause or retention term. Where an entity-specific negotiated term is requested, the general policy is not sufficient evidence.

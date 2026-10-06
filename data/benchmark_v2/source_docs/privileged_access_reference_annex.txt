@@ -1,0 +1,6 @@
+Privileged access attestations - reference annex
+CURRENT REFERENCE; named scope only
+
+Controlling reference for privileged access attestations. Access duration and review cadence are operating controls; legal evidence storage belongs to the control evidence schedule.
+The control evidence schedule archives privileged-access attestations for seven years; the access policy sets review cadence only.
+Apply only the activity and conditions named in this annex. An operational guide cannot be used to invent an absent commercial rate, compensation clause or retention term. Where an entity-specific negotiated term is requested, the general policy is not sufficient evidence.

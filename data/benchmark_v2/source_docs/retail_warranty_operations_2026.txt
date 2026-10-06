@@ -1,0 +1,26 @@
+Retail accessory warranties - operating guide
+CURRENT 2026; effective 1 August 2026
+
+Scope: Store service desks and defect-return classification. This is fictional Meridian Works guidance. The following responsibilities apply only to the named activity, not to other procedures with similar labels.
+Staff first establish whether a failed accessory is a defect claim before treating the visit as a change-of-mind return.
+RET-367 classifies intermittent connector failure; RET-376 classifies a cosmetic surface mark.
+The coordinator records what actually happened, identifies the responsible owner and checks the applicable route. A similarly numbered form is not interchangeable with the recorded form. For a rejected submission, retain the original request and obtain corrected evidence rather than creating a replacement event.
+Registry RET-468: record the request in the pending owner-verification queue; this entry is not the named exception route.
+Registry RET-479: record the request in the pending owner-verification queue; this entry is not the named exception route.
+Registry RET-490: record the request in the pending owner-verification queue; this entry is not the named exception route.
+Registry RET-501: record the request in the pending owner-verification queue; this entry is not the named exception route.
+
+Eligibility and operational limits. Select the named cohort and activity before applying a period or amount; different entitlements in this section are not substitutes.
+A defective cable goes to warranty assessment; an unwanted working cable goes to discretionary returns.
+The store provides a warranty-inspection update within three calendar days of receiving a cable.
+A valid request contains its underlying event date and the scope used for the calculation. Reviewers distinguish acknowledgement, completion and storage periods. A deadline for submitting evidence is not a service restoration promise. If the activity or group is not stated, escalate the question rather than borrowing a nearby rule.
+Registry RET-512: record the request in the pending owner-verification queue; this entry is not the named exception route.
+Registry RET-523: record the request in the pending owner-verification queue; this entry is not the named exception route.
+Registry RET-534: record the request in the pending owner-verification queue; this entry is not the named exception route.
+Registry RET-545: record the request in the pending owner-verification queue; this entry is not the named exception route.
+
+Document control: this 2026 operating guide is CURRENT and effective from 1 August 2026. The 2024 edition is archived and superseded. No forecast for a later year is stated.
+The accessory service policy active in 2026 sets a three-calendar-day inspection update deadline.
+A fault category is not a warranty duration. Delivery reimbursements remain governed by the delivery appendix.
+The reference annex has its own scope. Staff should distinguish operational permission from commercial price, evidence retention and service specifications. Publication of a code or a process owner does not create a missing technical limit or a financial guarantee.
+Amendment log: this edition consolidates the current timing rule and ownership path. Historical examples remain in the archive for traceability. They are not exceptions to the current rule. A request citing an older edition must be checked against the effective document before execution.

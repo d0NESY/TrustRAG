@@ -1,0 +1,6 @@
+Occupational clinic appointments - reference annex
+CURRENT REFERENCE; named scope only
+
+Controlling reference for occupational clinic appointments. Appointments and consent collection belong to clinic operations; storage periods belong to the health records schedule.
+The health records schedule retains a signed visit-consent form for six years; the appointment procedure does not define record retention.
+Apply only the activity and conditions named in this annex. An operational guide cannot be used to invent an absent commercial rate, compensation clause or retention term. Where an entity-specific negotiated term is requested, the general policy is not sufficient evidence.

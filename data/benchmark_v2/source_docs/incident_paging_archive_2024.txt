@@ -1,0 +1,13 @@
+Service incident paging - historical edition
+ARCHIVED 2024; superseded
+
+ARCHIVED, SUPERSEDED: this 2024 edition is retained for historical record only and is not the current operating policy.
+The retired 2024 paging standard assigned a fifteen-minute acknowledgement window.
+The old edition covered the same operating activity. Its prior timing must not be treated as a forecast. Historic case records show how approvals were documented at the time; they do not authorise new work under that edition.
+
+Historical route register. These entries are examples of administrative queues in the retired edition, not current forms.
+Registry PAG-184: record the request in the pending owner-verification queue; this entry is not the named exception route.
+Registry PAG-195: record the request in the pending owner-verification queue; this entry is not the named exception route.
+Registry PAG-206: record the request in the pending owner-verification queue; this entry is not the named exception route.
+Registry PAG-217: record the request in the pending owner-verification queue; this entry is not the named exception route.
+Registry PAG-228: record the request in the pending owner-verification queue; this entry is not the named exception route.

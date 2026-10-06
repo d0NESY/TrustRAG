@@ -1,0 +1,6 @@
+Audit evidence transfer - reference annex
+CURRENT REFERENCE; named scope only
+
+Controlling reference for audit evidence transfer. Transfer controls define access and handling. Record lifetimes are set in the assurance records schedule.
+The assurance records schedule retains signed management responses for eight years; the transfer procedure sets no archive period.
+Apply only the activity and conditions named in this annex. An operational guide cannot be used to invent an absent commercial rate, compensation clause or retention term. Where an entity-specific negotiated term is requested, the general policy is not sufficient evidence.

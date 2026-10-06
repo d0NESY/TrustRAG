@@ -1,0 +1,6 @@
+Support shift handover - reference annex
+CURRENT REFERENCE; named scope only
+
+Controlling reference for support shift handover. Case ownership is an operating duty, while transcript retention is a records-management obligation.
+The customer records schedule retains handover transcripts for nine months; the shift guide contains no deletion schedule.
+Apply only the activity and conditions named in this annex. An operational guide cannot be used to invent an absent commercial rate, compensation clause or retention term. Where an entity-specific negotiated term is requested, the general policy is not sufficient evidence.

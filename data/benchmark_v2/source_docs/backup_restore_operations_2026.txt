@@ -1,0 +1,26 @@
+Application backup recovery - operating guide
+CURRENT 2026; effective 1 August 2026
+
+Scope: Platform custodians, restore drills and retained recovery points. This is fictional Meridian Works guidance. The following responsibilities apply only to the named activity, not to other procedures with similar labels.
+Only a platform recovery custodian may restore a saved tenant folder after accidental deletion.
+Job code BAK-298 requires verification of the snapshot catalogue; BAK-289 indicates a completed checksum pass.
+The coordinator records what actually happened, identifies the responsible owner and checks the applicable route. A similarly numbered form is not interchangeable with the recorded form. For a rejected submission, retain the original request and obtain corrected evidence rather than creating a replacement event.
+Registry BAK-399: record the request in the pending owner-verification queue; this entry is not the named exception route.
+Registry BAK-410: record the request in the pending owner-verification queue; this entry is not the named exception route.
+Registry BAK-421: record the request in the pending owner-verification queue; this entry is not the named exception route.
+Registry BAK-432: record the request in the pending owner-verification queue; this entry is not the named exception route.
+
+Eligibility and operational limits. Select the named cohort and activity before applying a period or amount; different entitlements in this section are not substitutes.
+Tenant data snapshots are retained for thirty-five days, while synthetic drill snapshots are retained for seven days.
+The backup schedule permits no more than four hours between successful application backups.
+A valid request contains its underlying event date and the scope used for the calculation. Reviewers distinguish acknowledgement, completion and storage periods. A deadline for submitting evidence is not a service restoration promise. If the activity or group is not stated, escalate the question rather than borrowing a nearby rule.
+Registry BAK-443: record the request in the pending owner-verification queue; this entry is not the named exception route.
+Registry BAK-454: record the request in the pending owner-verification queue; this entry is not the named exception route.
+Registry BAK-465: record the request in the pending owner-verification queue; this entry is not the named exception route.
+Registry BAK-476: record the request in the pending owner-verification queue; this entry is not the named exception route.
+
+Document control: this 2026 operating guide is CURRENT and effective from 1 August 2026. The 2024 edition is archived and superseded. No forecast for a later year is stated.
+The effective 2026 recovery schedule retains tenant snapshots for thirty-five days.
+Restore authorisation and snapshot retention belong to the recovery guide; transfer limits belong to the network annex.
+The reference annex has its own scope. Staff should distinguish operational permission from commercial price, evidence retention and service specifications. Publication of a code or a process owner does not create a missing technical limit or a financial guarantee.
+Amendment log: this edition consolidates the current timing rule and ownership path. Historical examples remain in the archive for traceability. They are not exceptions to the current rule. A request citing an older edition must be checked against the effective document before execution.

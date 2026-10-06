@@ -1,0 +1,13 @@
+Supplier selection and sourcing - historical edition
+ARCHIVED 2024; superseded
+
+ARCHIVED, SUPERSEDED: this 2024 edition is retained for historical record only and is not the current operating policy.
+The retired 2024 sourcing standard demanded two written equipment bids.
+The old edition covered the same operating activity. Its prior timing must not be treated as a forecast. Historic case records show how approvals were documented at the time; they do not authorise new work under that edition.
+
+Historical route register. These entries are examples of administrative queues in the retired edition, not current forms.
+Registry RFQ-815: record the request in the pending owner-verification queue; this entry is not the named exception route.
+Registry RFQ-826: record the request in the pending owner-verification queue; this entry is not the named exception route.
+Registry RFQ-837: record the request in the pending owner-verification queue; this entry is not the named exception route.
+Registry RFQ-848: record the request in the pending owner-verification queue; this entry is not the named exception route.
+Registry RFQ-859: record the request in the pending owner-verification queue; this entry is not the named exception route.

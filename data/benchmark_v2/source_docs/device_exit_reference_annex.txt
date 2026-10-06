@@ -1,0 +1,6 @@
+Equipment recovery after departure - reference annex
+CURRENT REFERENCE; named scope only
+
+Controlling reference for equipment recovery after departure. Transport prices belong to the carrier annex. Device condition and credential removal belong to the exit checklist.
+The carrier annex sets the home pickup charge at USD 18; the exit checklist lists no transport price.
+Apply only the activity and conditions named in this annex. An operational guide cannot be used to invent an absent commercial rate, compensation clause or retention term. Where an entity-specific negotiated term is requested, the general policy is not sufficient evidence.

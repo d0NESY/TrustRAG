@@ -1,0 +1,6 @@
+Production deployment windows - reference annex
+CURRENT REFERENCE; named scope only
+
+Controlling reference for production deployment windows. Deployment calendars authorise work. Incident communications timings remain in a separate runbook.
+The incident communications runbook requires rollback updates every fifteen minutes; the release calendar does not define incident messages.
+Apply only the activity and conditions named in this annex. An operational guide cannot be used to invent an absent commercial rate, compensation clause or retention term. Where an entity-specific negotiated term is requested, the general policy is not sufficient evidence.

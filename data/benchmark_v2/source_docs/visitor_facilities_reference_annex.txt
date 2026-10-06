@@ -1,0 +1,6 @@
+Building visitor reception - reference annex
+CURRENT REFERENCE; named scope only
+
+Controlling reference for building visitor reception. Escorts and badges are reception controls; log retention is governed by physical security records.
+The physical security records schedule retains visitor sign-in logs for ninety days; the reception instructions do not set log retention.
+Apply only the activity and conditions named in this annex. An operational guide cannot be used to invent an absent commercial rate, compensation clause or retention term. Where an entity-specific negotiated term is requested, the general policy is not sufficient evidence.

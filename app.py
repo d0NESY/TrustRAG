@@ -42,7 +42,7 @@ with st.sidebar:
         st.session_state.messages = []
         st.rerun()
 
-config = load_config(ROOT / "configs" / (MODES[selected_mode] + ".yaml"))
+config = load_config(ROOT / "configs/demo" / (MODES[selected_mode] + ".yaml"))
 if knowledge_mode == "上传 PDF" and not uploaded:
     st.info("先上传 PDF 文档，再输入问题。")
     st.stop()
@@ -90,9 +90,9 @@ index = st.session_state.index
 calibration = json.loads((ROOT / config.answerability.calibration_file).read_text(encoding="utf-8"))
 calibrated = calibration["index_id"] == index.manifest["index_id"]
 if calibrated:
-    st.caption(f"当前知识库：{len(paths)} 份文档 · {index.manifest['chunk_count']} 个片段 · dev 校准门限")
+    st.caption(f"当前知识库：{len(paths)} 份文档 · {index.manifest['chunk_count']} 个片段 · 提示词拒答与引用核验")
 else:
-    st.info("当前为新语料，暂沿用演示门限；评分与拒答行为尚未在这些文档上校准。")
+    st.info("当前资料尚未完成独立评测，使用提示词拒答与引用核验；证据门限默认关闭。")
 
 
 def show_answer(payload):
@@ -101,8 +101,8 @@ def show_answer(payload):
     columns = st.columns(3)
     columns[0].metric("回答状态", "拒答" if payload["abstained"] else "已回答")
     columns[1].metric("证据评分", f"{gate['confidence']:.4f}")
-    columns[2].metric("校准门限", f"{gate['threshold']:.4f}")
-    st.caption(f"检索方式：{payload['retrieval_mode']} · 分数特征：{gate['feature']}。评分衡量检索证据，不是答案正确概率。")
+    columns[2].metric("证据门限", "关闭" if gate["reason"] == "gate_disabled" else f"{gate['threshold']:.4f}")
+    st.caption(f"检索方式：{payload['retrieval_mode']} · 分数特征：{gate['feature']}。评分衡量检索证据，不是答案正确概率；门限暂为实验功能。")
     if payload["sources"]:
         st.markdown("**Sources / 来源**")
         cited = set(payload["citation_validation"]["cited_ids"])

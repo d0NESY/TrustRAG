@@ -1,0 +1,6 @@
+Warehouse spill response - reference annex
+CURRENT REFERENCE; named scope only
+
+Controlling reference for warehouse spill response. The response card governs isolation. Material disposal codes are maintained in the waste classification annex.
+The waste classification annex assigns container WST-44 to used solvent absorbent; the spill response card does not classify waste.
+Apply only the activity and conditions named in this annex. An operational guide cannot be used to invent an absent commercial rate, compensation clause or retention term. Where an entity-specific negotiated term is requested, the general policy is not sufficient evidence.

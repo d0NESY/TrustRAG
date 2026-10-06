@@ -8,14 +8,14 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 os.environ["FASTEMBED_CACHE_PATH"] = str(ROOT / ".runtime" / "fastembed")
 
-from flashrank import Ranker
+from flashrank import Ranker  # noqa: E402
 
 defaults = list(Ranker.__init__.__defaults__)
 defaults[1] = str(ROOT / ".runtime" / "flashrank")
 Ranker.__init__.__defaults__ = tuple(defaults)
 
-from ragbase.model import create_embeddings, create_reranker
-from langchain_core.documents import Document
+from ragbase.model import create_embeddings, create_reranker  # noqa: E402
+from langchain_core.documents import Document  # noqa: E402
 
 embedding = create_embeddings()
 print("Embedding verified; dimensions:", len(embedding.embed_query("paid sick leave")), flush=True)

@@ -20,15 +20,15 @@ UPSTREAM = ROOT / ".runtime" / "upstream"
 sys.path.insert(0, str(UPSTREAM))
 os.environ["FASTEMBED_CACHE_PATH"] = str(ROOT / ".runtime" / "fastembed")
 
-from flashrank import Ranker
+from flashrank import Ranker  # noqa: E402
 defaults = list(Ranker.__init__.__defaults__)
 defaults[1] = str(ROOT / ".runtime" / "flashrank")
 Ranker.__init__.__defaults__ = tuple(defaults)
 
-from ragbase.config import Config
-from ragbase.ingestor import Ingestor
-from ragbase.model import create_reranker, create_embeddings
-from langchain_qdrant import Qdrant
+from ragbase.config import Config  # noqa: E402 - import the upstream snapshot
+from ragbase.ingestor import Ingestor  # noqa: E402
+from ragbase.model import create_reranker, create_embeddings  # noqa: E402
+from langchain_qdrant import Qdrant  # noqa: E402
 
 
 def load_support_module(name):

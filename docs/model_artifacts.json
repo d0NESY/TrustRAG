@@ -1,0 +1,54 @@
+{
+  "embedding": {
+    "name": "BAAI/bge-base-en-v1.5",
+    "repo": "qdrant/bge-base-en-v1.5-onnx-q",
+    "revision": "199291fdd1aa89faf9c20b722dc72ad5e17aa0d0",
+    "files": {
+      "config.json": "86f84a5285de7f1ee673f712387219ef1e261ec27dcd870e793a80f9da1aaa3b",
+      "model_optimized.onnx": "4e556722bc4f65716c544c8a931f1e90fb3f866e5741fd93a96f051d673339c7",
+      "special_tokens_map.json": "5d5b662e421ea9fac075174bb0688ee0d9431699900b90662acd44b2a350503a",
+      "tokenizer.json": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66",
+      "tokenizer_config.json": "0b29c7bfc889e53b36d9dd3e686dd4300f6525110eaa98c76a5dafceb2029f53"
+    }
+  },
+  "reranker": {
+    "name": "ms-marco-MiniLM-L-12-v2",
+    "files": {
+      ".DS_Store": "d65165279105ca6773180500688df4bdc69a2c7b771752f0a46ef120b7fd8ec3",
+      "config.json": "2144195e107cd7ea61556478e7add12986ebfbc3085f924fc0b90c2410604879",
+      "flashrank-MiniLM-L-12-v2_Q.onnx": "d3dd7b09fcf06b0c070081d6819b5effbb40b667bcad78b2d7543400271141d1",
+      "special_tokens_map.json": "303df45a03609e4ead04bc3dc1536d0ab19b5358db685b6f3da123d05ec200e3",
+      "tokenizer.json": "ce64fce797c24f68df90b40a3f74f579b336a493db14bd583fd520ea0d8c9a98",
+      "tokenizer_config.json": "eaf913a687e8eed3010b6479d0d84631038212aa50c14d9b812e08cbc891d925"
+    }
+  },
+  "llm": {
+    "name": "gemma2:9b",
+    "digest": "ff02c3702f322b9e075e9568332d96c0a7028002f1a5a056e0a6784320a4db0b",
+    "details": {
+      "parent_model": "",
+      "format": "gguf",
+      "family": "gemma2",
+      "families": [
+        "gemma2"
+      ],
+      "parameter_size": "9.2B",
+      "quantization_level": "Q4_0",
+      "context_length": 8192,
+      "embedding_length": 3584
+    }
+  },
+  "ollama": {
+    "version": "0.35.1",
+    "asset_digest": "sha256:dc50b9ca7f9023c86525012632cd1615b093d0407987444a7f62ecab617e8e93",
+    "asset_url": "https://github.com/ollama/ollama/releases/download/v0.35.1/ollama-windows-amd64.zip"
+  },
+  "hardware": {
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU, 8188 MiB",
+    "physical_cpu_cores": 24,
+    "logical_cpu_cores": 32,
+    "ram_bytes": 16978403328,
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel"
+  }
+}

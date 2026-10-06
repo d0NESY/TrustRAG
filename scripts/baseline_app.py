@@ -14,13 +14,13 @@ os.environ["FASTEMBED_CACHE_PATH"] = str(ROOT / ".runtime" / "fastembed")
 
 # FlashRank 0.2.8 hardcodes /tmp. Change only the cache location; the model,
 # ranking algorithm and upstream compressor's top_n=3 are unchanged.
-from flashrank import Ranker
+from flashrank import Ranker  # noqa: E402
 
 defaults = list(Ranker.__init__.__defaults__)
 defaults[1] = str(ROOT / ".runtime" / "flashrank")
 Ranker.__init__.__defaults__ = tuple(defaults)
 
-from ragbase.config import Config
+from ragbase.config import Config  # noqa: E402 - select the upstream import path first
 
 Config.Model.USE_LOCAL = True
 Config.Path.APP_HOME = ROOT / ".runtime" / "baseline"
